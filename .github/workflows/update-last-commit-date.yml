@@ -1,5 +1,7 @@
-name: Weekly update for last commit date
+name: Weekly update for secret stuff
 
+env:
+  BRANCH_NAME: "test-branch-$(date +%s)"
 on:
   schedule:
     # Runs every Monday at 5 AM UTC
@@ -19,7 +21,7 @@ jobs:
         uses: oven-sh/setup-bun@v2
       - run: bun install
       - name: Run script
-        run: bun utils/updateLastCommitDate.ts
+        run: echo "Hello, world $(date)" >> logs.txt
 
       - name: Check for Changes
         id: changes
@@ -32,11 +34,10 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          branch_name="data/updates-last-commit-date"
-          git checkout -b $branch_name
-          git add data/
-          git commit -m "chore: automated project data update"
-          git push origin $branch_name --force
+          git checkout -b "$branch_name"
+          git add logs.txt
+          git commit -m "chore: automated updates"
+          git push origin "$branch_name"
 
       - name: Create Pull Request
         id: pullrequest
@@ -44,25 +45,13 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          branch: $branch_name
+          branch: "$branch_name"
           base: main
-          title: "data: Automated Weekly last commit date update"
+          title: "data: Automated Weekly Update"
           body: |
-            Auto-generated PR with data updates. Review before merging!
+            Auto-generated PR with logs updates. Review before merging!
             - **Triggered by:** Scheduled workflow
-            - **Command:** `bun utils/updateLastCommitDate.ts`
-
-      - name: Comment on PR with data update issues
-        if: steps.changes.outputs.has_changes == 'true'
-        env:
-          PR_NUMBER: ${{ steps.pullrequest.outputs.pull-request-number }}
-        run: |
-          if [ -f errors.txt ]; then
-            script_errors=$(cat errors.txt)
-            gh pr comment $PR_NUMBER --body "⚠️ **Note:** We faced these issues while updating the data. Maybe it needs your attention:
-            \`\`\`
-            $script_errors
-            \`\`\`"
-          else
-            echo "Finished with no issues at all! :)"
-          fi
+            - **Author: ** ${{ github.actor }}
+            - **Date:** $(date)
+            - **Commit:** $(git log --format="%H" -n 1)
+            - **Changes:** $(git diff --name-only HEAD^)
