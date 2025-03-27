@@ -1,0 +1,74 @@
+projects:
+  # Most common fields:
+  jumbotrace:
+    name: JumboTrace
+    description: >
+      Java program tracer to record execution state
+    type: "Toolset"
+    categories:
+      - "Other"
+    applications:
+      - "Info"
+    tags:
+      - Development
+      - Code Analysis
+    layman_desc: >
+      JumboTrace is a tool that can track and record what happens when a
+      Java program runs, including the values of variables and which
+      lines of code get executed. It modifies the program's code to add
+      logging, and the logs get stored in a file for later viewing.
+      This can help understand how a program works and find bugs.
+    tech_desc: >
+      JumboTrace is an experimental tracer for Java programs that records
+      the evolution of program state during execution to build a trace
+      (sequence of events and executed lines). It works by injecting
+      logging calls into the program using a compiler plugin for javac.
+      The logged events are written to a binary file using serialization,
+      and a minimal frontend can display the traces in the console.
+    code:
+      type: Lab Github
+      url: https://github.com/epfl-systemf/JumboTrace
+      date_last_commit: 2024-01-05
+    language: Java
+    license: MIT
+    date_added: 2024-04-14
+
+  regelk:
+    name: RegElk
+    logo: https://github.com/epfl-systemf/RegElk/blob/master/etc/regelk_logo.jpg?raw=true
+    description: >
+      Linear regex engine for JavaScript in OCaml
+    type: "Library"
+    categories:
+      - "Verification"
+    applications:
+      - "Infra"
+    tags:
+      - Development
+      - Optimization
+    layman_desc: >
+      This project provides a software implementation of a regular
+      expression engine for matching text patterns in JavaScript. It
+      has efficient linear time and space complexity for advanced
+      features like lookarounds and capture groups. The engine is
+      written in OCaml and aims to improve privacy-preserving and
+      digital trust by offering a reliable and efficient regex
+      matching solution.
+    tech_desc: >
+      This is a linear regular expression engine for a subset of
+      JavaScript regexes, implemented in OCaml. It supports features
+      like nullable quantifiers, capture reset, and lookarounds with
+      linear time and space complexity. The engine is based on an
+      extension of the PikeVM algorithm, described in the paper
+      "Linear Matching of JavaScript Regular Expressions".
+    code:
+      type: Lab Github
+      url: https://github.com/epfl-systemf/RegElk
+      date_last_commit: 2024-04-04
+    language: OCaml
+    license: MIT
+    date_added: 2024-04-14
+    information:
+      - type: Paper
+        title: Linear Matching of JavaScript Regular Expressions
+        url: https://arxiv.org/abs/2311.17620

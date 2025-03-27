@@ -1,0 +1,62 @@
+projects:
+  quick-adc:
+    name: Quick ADC
+    categories:
+      - Other
+    applications:
+      - Infra
+    description: Fast distance computation for searches in large databases
+    tech_desc: >
+      Quick ADC is an implementation of fast distance computation techniques for nearest neighbor search in large databases of
+      high-dimensional vectors.
+    code:
+      type: Non-lab GitHub
+      url: https://github.com/technicolor-research/quick-adc
+      date_last_commit: 2019-05-31
+    language: C++
+    type: Library, Simulation
+    license: BSD-3-Clause Clear
+    tags:
+      - Database
+    information:
+      - type: Paper
+        title: Accelerated Nearest Neighbor Search with Quick ADC
+        url: https://arxiv.org/abs/1704.07355
+        notes:
+          - label: Published in
+            text: ICMR 2017
+            url: https://dl.acm.org/doi/10.1145/3078971.3078992
+    date_added: 2021-11-05
+    date_updated: 2022-07-07
+
+  proteustm:
+    name: ProteusTM
+    categories:
+      - Other
+    applications:
+      - Infra
+    description: Automatic transactional memory adaptation
+    tech_desc: >
+      There are many designs and implementations of Transactional Memory, and that is not a coincidence: different ones perform best on
+      different workloads. One cannot expect the developer to be aware of such concerns, as it is even contradictory with the simplicity
+      advocated by the use of the transactional abstraction. With ProteusTM, the developer writes transactions and the underlying
+      implementation uses techniques to automatically change Transactional Memory algorithms, parallelism degree, and others.
+    code:
+      type: Personal GitHub
+      url: https://github.com/nmldiegues/proteustm
+      date_last_commit: 2016-03-19
+    language: C, C++
+    type: Framework, Experiments
+    tags:
+      - Development
+      - Concurrency
+    information:
+      - type: Paper
+        title: "ProteusTM: Abstraction Meets Performance in Transactional Memory"
+        url: https://infoscience.epfl.ch/record/215897
+        notes:
+          - label: Published at
+            text: ASPLOS 2016
+            url: https://research.ece.cmu.edu/calcm/asplos2016/
+    date_added: 2021-11-05
+    date_updated: 2022-07-07
