@@ -1,0 +1,83 @@
+projects:
+  wehey:
+    name: wehey
+    description: >
+      WeHe𝕐 - Localizing Traffic Differentiation
+    type: Application
+    categories:
+      - Privacy
+    applications:
+      - Infra
+    tags:
+      - Adversarial
+      - Anonymity
+    layman_desc: >
+      This project aims to provide evidence of traffic differentiation
+      practices by Internet providers. It first detects if a provider
+      differentiates against certain types of traffic. If differentiation
+      is detected, additional tests are run to determine if it is
+      occurring within the user's Internet provider. This can empower
+      users to make informed choices about their Internet access and
+      assist policymakers in understanding the landscape. The system does
+      not require access to provider infrastructure, instead relying
+      on end-to-end performance measurements from user devices.
+    tech_desc: >
+      This project detects traffic differentiation using end-to-end
+      throughput comparisons between an original network trace and
+      a bit-inverted version that hides any packet payload patterns. It
+      then attempts to localize where the differentiation occurs by
+      analyzing measurements from additional paths that converge at
+      the client's ISP. The localization relies on throughput comparison
+      and loss trend correlation between these paths.
+    url: https://nal-epfl.github.io/WeHeY/
+    code:
+      type: Old Lab Github
+      url: https://github.com/NEU-SNS/wehe-py3/tree/wehe+Y
+      date_last_commit: 2023-12-05
+    language: Python
+    license: Apache-2.0
+    information:
+      - type: Paper
+        title: Localizing Traffic Differentiation
+        url: https://nal-epfl.github.io/WeHeY/material/paper.pdf
+    date_added: 2024-03-05
+
+  tero:
+    name: tero project
+    description: >
+      Studying Internet latency from Gaming Footage
+    type: Application
+    categories:
+      - Privacy
+    applications:
+      - Infra
+    tags:
+      - Anonymity
+      - Benchmark
+      - Cloud
+    layman_desc: >
+      The project collects screenshots from video game
+      live streams on Twitch. It reads the Internet latency
+      numbers displayed on screen during gameplay. It figures out
+      the streamer's location from their social media information.
+      It processes all this data to estimate the Internet speed
+      in different parts of the world.
+    tech_desc: >
+      The system downloads gaming footage from the Twitch
+      streaming platform. It extracts the displayed latency
+      measurements using optical character recognition and
+      knowledge of each game's user interface. It maps streamers
+      to locations using natural language processing on their
+      social media profiles. It analyzes the measurements to produce
+      latency distributions per geographical location.
+    url: https://nal-epfl.github.io/tero-project/
+    code:
+      type: Lab Github
+      url: https://github.com/nal-epfl/tero-source-code
+      date_last_commit: 2023-12-12
+    language: Python
+    information:
+      - type: Paper
+        title: Using Gaming Footage as a Source of Internet Latency Information
+        url: https://nal-epfl.github.io/tero-project/assets/paper.pdf
+    date_added: 2024-03-08

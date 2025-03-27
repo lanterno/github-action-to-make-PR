@@ -1,0 +1,82 @@
+projects:
+  scala-js:
+    name: Scala.js
+    type: Library, Toolset
+    categories:
+      - Other
+    applications:
+      - Infra
+    description: Use Scala to develop Web frontends
+    tech_desc: >
+      Scala.js optimizes your Scala code into highly efficient JavaScript. Strong typing guarantees your code is free of silly mistakes. You
+      can use any JavaScript library right from your Scala.js code, either in a statically or dynamically typed way.
+    url: https://www.scala-js.org/
+    code:
+      type: Project GitHub
+      url: https://github.com/scala-js/scala-js
+      date_last_commit: 2024-04-06
+    language: Scala
+    license: Apache-2.0
+    tags:
+      - Development
+    information:
+      - type: Tutorial
+        title: Scala.js Tutorial
+        url: https://www.scala-js.org/doc/tutorial/
+    date_added: 2021-11-05
+    date_updated: 2024-04-12
+
+  scala-native:
+    name: Scala Native
+    type: Library, Toolset
+    categories:
+      - Other
+    applications:
+      - Infra
+    description: Generate native code from Scala
+    tech_desc: >
+      Native is an optimizing ahead-of-time compiler and lightweight managed runtime designed specifically for Scala. It features low-level
+      primitices, seamless interop with native code and instant startup time.
+    url: http://scala-native.org/
+    doc: https://scala-native.readthedocs.io/
+    code:
+      type: Project GitHub
+      url: https://github.com/scala-native/scala-native
+      date_last_commit: 2024-04-12
+    language: Scala, C
+    license: Apache-2.0
+    tags:
+      - Development
+    date_added: 2021-11-05
+    date_updated: 2024-04-12
+
+  scala3:
+    name: Scala 3
+    description: >
+      Scala 3 release updates and new features
+    type: "Application"
+    categories:
+      - "Other"
+    applications:
+      - "Other"
+    tags:
+      - Development
+    layman_desc: >
+      Scala 3 is a major update to the Scala programming language.  
+      It aims to make the language more solid, learnable, and expressive.
+      Changes include new type system features, simplifications to make code safer,
+      restrictions on surprising behaviors, and an overhaul of metaprogramming capabilities.
+    tech_desc: >
+      Scala 3 implements many language changes and improvements over Scala 2.
+      It strengthens Scala's foundations, makes the language easier and safer to use,
+      and improves the consistency and expressiveness of language constructs.
+      Key changes include intersection and union types, trait parameters, given instances,
+      opaque type aliases, restricted implicit conversions, and a new metaprogramming model.
+    url: https://dotty.epfl.ch/
+    code:
+      type: Project Github
+      url: https://github.com/scala/scala3
+      date_last_commit: 2024-04-12
+    language: Scala
+    license: Apache-2.0
+    date_added: 2024-04-12

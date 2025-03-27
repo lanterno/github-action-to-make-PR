@@ -1,0 +1,206 @@
+projects:
+  stainless:
+    name: Stainless
+    categories:
+      - Verification
+    applications:
+      - Infra
+    description: Verification framework for a subset of the Scala programming language
+    tech_desc: >
+      Stainless is a tool for verifying Scala programs developed by the LARA. It can verify that your program is correct for all inputs, it
+      can report inputs for which your program fails when they exist, and it can prove that functions do not loop.
+    url: http://stainless.epfl.ch/
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfl-lara/stainless
+      date_last_commit: 2024-02-29
+    doc: https://epfl-lara.github.io/stainless/
+    contacts:
+      - name: Viktor Kunčak
+        email: viktor.kuncak@epfl.ch
+      - name: Nicolas Voirol
+        email: nicolas.voirol@epfl.ch
+      - name: Jad Hamza
+        email: jad.hamza@epfl.ch
+    tags:
+      - Static Analysis
+      - Code Analysis
+    language: Scala
+    type: Library
+    license: Apache-2.0
+    information:
+      - type: Paper
+        title: "Satisfiability Modulo Recursive Programs"
+        url: https://lara.epfl.ch/~kuncak/papers/SuterETAL11SatisfiabilityModuloRecursivePrograms.pdf
+        notes:
+          - label: Published at
+            text: SAS 2011
+            url: https://staticanalysis.org
+      - type: Paper
+        title: "On Counter-Example Complete Verification for Higher-Order Functions"
+        url: https://infoscience.epfl.ch/record/207420
+      - type: Paper
+        title: "System FR as Foundations for Stainless"
+        url: https://arxiv.org/pdf/1904.03482.pdf
+        notes:
+          - label: Published at
+            text: OOPSLA 2019
+            url: https://2019.splashcon.org/track/splash-2019-OOPSLA
+      - type: Video
+        title: Tools for Verified Scala at Scala Days 2017
+        url: https://www.youtube.com/watch?v=d4VeFa0z_Lo
+      - type: Video
+        title: Formal verification of Scala programs with Stainless at Typelevel Summit 2019
+        url: https://www.youtube.com/watch?v=K1ZwpumSHCc
+      - type: Tutorial
+        title: Stainless Verification System Tutorial
+        url: https://raw.githubusercontent.com/epfl-lara/fmcad2021tutorial/main/Stainless-Tutorial-FMCAD2021.pdf
+      - type: Webpage
+        title: "Bolts: Stainless Verified Scala Examples"
+        url: https://github.com/epfl-lara/bolts
+    maturity: 2
+    date_added: 2019-03-18
+    date_updated: 2024-04-12
+
+  stainless-for-smart-contracts:
+    name: Stainless for smart contracts
+    categories:
+      - Verification
+    applications:
+      - Infra
+    description: Stainless fork aimed at smart contracts
+    tech_desc: >
+      Stainless is a tool for verifying Scala programs developed by the LARA. This fork can perform verification of Smart Contracts.
+    url: https://stainless.epfl.ch/smart-contracts.html
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfl-lara/smart
+      date_last_commit: 2020-10-03
+    contacts:
+      - name: Viktor Kunčak
+        email: viktor.kuncak@epfl.ch
+      - name: Nicolas Voirol
+        email: nicolas.voirol@epfl.ch
+    tags:
+      - Static Analysis
+      - Code Analysis
+    language: Scala
+    type: Library, Application
+    license: Apache-2.0
+    incubator:
+      type: retired_archived
+      work: 2021/Q2 - updated demonstrator with more explanations
+      products:
+        - type: Demo
+          title: Stainless-OmniLedger demonstrator
+          url: https://github.com/c4dt/service-stainless
+          code: https://github.com/c4dt/service-stainless
+    date_added: 2022-09-26
+    date_updated: 2024-04-12
+    maturity: 2
+
+  inox:
+    name: Inox
+    categories:
+      - Verification
+    applications:
+      - Infra
+    description: Constraint solver for Stainless
+    tech_desc: >
+      Inox can be used to prove constraints on methods in a program, to attest the correctness of these parts.
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfl-lara/inox
+      date_last_commit: 2023-10-31
+    contacts:
+      - name: Viktor Kunčak
+        email: viktor.kuncak@epfl.ch
+      - name: Nicolas Voirol
+        email: nicolas.voirol@epfl.ch
+      - name: Jad Hamza
+        email: jad.hamza@epfl.ch
+    tags:
+      - Low-Level
+    language: Scala
+    type: Library, Application
+    license: Apache-2.0
+    notes: >
+      Invokes https://github.com/Z3Prover/z3 and http://cvc4.cs.stanford.edu/web/
+    date_added: 2019-03-18
+    date_updated: 2024-04-12
+
+  rust-stainless:
+    name: Rust-Stainless
+    categories:
+      - Verification
+    applications:
+      - Infra
+    description: Rust frontend for Stainless
+    contacts:
+      - name: Georg Stefan Schmid
+        email: georg.schmid@epfl.ch
+      - name: Yann Bolliger
+        email: yann.bolliger@epfl.ch
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfl-lara/rust-stainless
+      date_last_commit: 2021-07-22
+    maturity: 1
+    language: Rust
+    type: Application
+    license: Apache-2.0
+    tags:
+      - Static Analysis
+      - Code Analysis
+    date_added: 2021-11-04
+    date_updated: 2024-04-12
+
+  lisa:
+    name: LISA
+    categories:
+      - Verification
+    applications:
+      - Info
+    description: A Proof Assistant based on first order logic, sequent calculus and set theory.
+    contacts:
+      - name: Simon Guilloud
+        email: simon.guilloud@epfl.ch
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfl-lara/lisa
+      date_last_commit: 2024-04-08
+    language: Scala
+    type: Framework, Application
+    license: Apache-2.0
+    tags:
+      - Code Analysis
+      - Development
+    date_added: 2022-07-05
+    date_updated: 2024-04-12
+
+  scallion:
+    name: Scallion
+    categories:
+      - Other
+    applications:
+      - Info
+    description: A library for writing parsers and pretty printers for LL(1) languages in Scala.
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfl-lara/scallion
+      date_last_commit: 2022-10-03
+    language: Scala
+    type: Library
+    license: Apache-2.0
+    tags:
+      - Development
+    information:
+      - type: Paper
+        title: Zippy LL(1) Parsing with Derivatives
+        url: https://infoscience.epfl.ch/record/284113
+        notes:
+          - label: Published at
+            text: PLDI 2020
+            url: https://pldi20.sigplan.org
+    date_added: 2022-07-05
+    date_updated: 2024-04-12

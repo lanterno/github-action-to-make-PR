@@ -1,0 +1,576 @@
+projects:
+  powergossip:
+    name: PowerGossip
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Practical low-rank communication compression in decentralized deep learning
+    tech_desc: >
+      Inspired by the PowerSGD algorithm for centralized deep learning, this algorithm uses power iteration steps to maximize the
+      information transferred per bit. We prove that our method requires no additional hyperparameters, converges faster than prior methods,
+      and is asymptotically independent of both the network and the compression.
+    tags:
+      - Deep Neural Networks
+    type: Library
+    code:
+      type: Lab Github
+      url: https://github.com/epfml/powergossip
+      date_last_commit: 2020-08-04
+    language: Python
+    license: MIT
+    information:
+      - type: Paper
+        title: "PowerGossip: Practical Low-Rank Communication Compression in Decentralized Deep Learning"
+        url: https://arxiv.org/abs/2008.01425
+        notes:
+          - label: Published at
+            text: NeurIPS 2020
+            url: https://proceedings.neurips.cc/paper/2020/hash/a376802c0811f1b9088828288eb0d3f0-Abstract.html
+    date_added: 2021-03-05
+    date_updated: 2024-04-09
+
+  chocosgd:
+    name: chocoSGD
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Decentralized communication-efficient machine learning and deep learning
+    tech_desc: >
+      Communication-efficient decentralized ML training (both deep learning, compatible with PyTorch, and traditional convex machine
+      learning models).
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfml/ChocoSGD
+      date_last_commit: 2020-09-10
+    tags:
+      - Decentralized
+      - Distributed Learning
+      - PyTorch
+    information:
+      - type: Paper
+        title: Decentralized Stochastic Optimization and Gossip Algorithms with Compressed Communication
+        url: https://infoscience.epfl.ch/record/267529
+        notes:
+          - label: Published at
+            text: ICML 2019
+            url: https://icml.cc/Conferences/2019/Schedule?showEvent=4005
+    type: Application
+    language: Python
+    license: Apache-2.0
+    date_added: 2019-07-30
+    date_updated: 2024-04-09
+    maturity: 1
+
+  cola:
+    name: cola
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Decentralized linear machine learning
+    tech_desc: >
+      Decentralized machine learning is a promising emerging paradigm in view of global challenges of data ownership and privacy. We
+      consider learning of linear classification and regression models, in the setting where the training data is decentralized over many
+      user devices, and the learning algorithm must run on-device, on an arbitrary communication network, without a central coordinator. We
+      propose COLA, a new decentralized training algorithm with strong theoretical guarantees and superior practical performance. Our
+      framework overcomes many limitations of existing methods, and achieves communication efficiency, scalability, elasticity as well as
+      resilience to changes in data and participating devices.
+    contacts:
+      - name: Lie He
+        email: lie.he@epfl.ch
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfml/cola
+      date_last_commit: 2021-11-29
+    maturity: 1
+    information:
+      - type: Paper
+        title: "COLA: Decentralized Linear Learning"
+        url: https://infoscience.epfl.ch/record/266638
+        notes:
+          - label: Published at
+            text: NeurIPS 2018
+            url: https://nips.cc/Conferences/2018/Schedule?showEvent=11447
+      - type: Paper
+        title: "Distribution System Voltage Prediction from Smart Inverters using Decentralized Regression"
+        url: https://arxiv.org/pdf/2101.04816.pdf
+    tags:
+      - Decentralized
+      - Distributed Learning
+    language: Python
+    license: Apache-2.0
+    type: Application
+    date_added: 2019-07-30
+    date_updated: 2024-04-09
+
+  mlbench:
+    name: MLBench
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Benchmarking of distributed ML
+    tech_desc: >
+      Framework for distributed machine learning. Its purpose is to improve transparency, reproducibility, robustness, and to provide fair
+      performance measures as well as reference implementations, helping adoption of distributed machine learning methods both in industry
+      and in the academic community. Besides algorithm comparison, a main use case is to help the selection of hardware (CPU, GPU) used to
+      run AI applications, as well as how to connect it into a cluster to get a good cost/performance tradeoff.
+    code:
+      type: Project GitHub
+      url: https://github.com/mlbench
+      date_last_commit: 2023-03-01
+    url: https://mlbench.github.io
+    doc: https://mlbench.readthedocs.io/
+    information:
+      - type: Tutorial
+        title: Tutorials for getting up to speed with MLBench
+        url: https://mlbench.readthedocs.io/en/latest/tutorials.html
+      - type: Blog
+        title: MLBench Blog
+        url: https://mlbench.github.io/blog/
+    tags:
+      - Benchmark
+    language: Python
+    type: Framework
+    license: Apache-2.0
+    incubator:
+      type: retired
+      work: 2020/Q4 evaluated and tested the project
+    date_added: 2019-07-30
+    date_updated: 2024-04-09
+    maturity: 2
+
+  sent2vec:
+    name: sent2vec
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Numerical representations for short texts
+    tech_desc: >
+      Library that delivers numerical representations (features) for words, short texts or sentences, which can be used as input to any
+      machine learning task later on.
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfml/sent2vec
+      date_last_commit: 2022-08-03
+    language: C++
+    license: BSD-3-Clause
+    contacts:
+      - name: Matteo Pagliardini
+        email: matteo.pagliardini@epfl.ch
+    tags:
+      - Natural Language
+    type: Library
+    date_added: 2019-03-18
+    date_updated: 2024-04-09
+    maturity: 1
+
+  powersgd:
+    name: PowerSGD
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Practical low-rank gradient compression for distributed optimization
+    tech_desc: >
+      New low-rank gradient compressor based on power iteration that can i) compress gradients rapidly, ii) efficiently aggregate the
+      compressed gradients using all-reduce, and iii) achieve test performance on par with SGD. The proposed algorithm is the only method
+      evaluated that achieves consistent wall-clock speedups when benchmarked against regular SGD with an optimized communication backend.
+      We demonstrate reduced training times for convolutional networks as well as LSTMs on common datasets.
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfml/powersgd
+      date_last_commit: 2023-07-04
+    information:
+      - type: Paper
+        title: "PowerSGD: Practical Low-Rank Gradient Compression for Distributed Optimization"
+        url: https://infoscience.epfl.ch/record/278542
+        notes:
+          - label: Presented at
+            text: NeurIPS 2019
+            url: https://nips.cc/Conferences/2019/Schedule?showEvent=14346
+      - type: Article
+        url: https://actu.epfl.ch/news/epfl-algorithm-in-the-world-s-most-popular-deep-le/
+        title: EPFL algorithm in the world's most popular deep learning software
+      - type: Article
+        url: https://actu.epfl.ch/news/using-the-matrix-to-help-meta-gear-up/
+        title: Using the matrix to help Meta gear up
+    tags:
+      - Decentralized
+      - Distributed Learning
+    language: Python
+    type: Application
+    license: MIT
+    date_added: 2020-05-01
+    date_updated: 2024-04-09
+    maturity: 2
+
+  relaysgd:
+    name: RelaySGD
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Improved information propagation in decentralized learning
+    tech_desc: >
+      Because the workers only communicate with few neighbors without central coordination, these updates propagate progressively over the
+      network. This paradigm enables distributed training on networks without all-to-all connectivity, helping to protect data privacy as
+      well as to reduce the communication cost of distributed training in data centers. A key challenge, primarily in decentralized deep
+      learning, remains the handling of differences between the workers' local data distributions. To tackle this challenge, we introduce
+      the RelaySum mechanism for information propagation in decentralized learning. RelaySum uses spanning trees to distribute information
+      exactly uniformly across all workers with finite delays depending on the distance between nodes. In contrast, the typical gossip
+      averaging mechanism only distributes data uniformly asymptotically while using the same communication volume per step as RelaySum.
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfml/relaysgd
+      date_last_commit: 2023-04-21
+    language: Python
+    type: Library, Experiments
+    license: MIT
+    tags:
+      - Distributed Learning
+      - PyTorch
+      - Decentralized
+    information:
+      - type: Paper
+        title: RelaySum for Decentralized Deep Learning on Heterogeneous Data
+        url: https://arxiv.org/pdf/2110.04175v1.pdf
+    date_added: 2021-11-04
+    date_updated: 2024-04-09
+
+  disco:
+    name: Disco
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Decentralized Collaborative Machine Learning
+    tech_desc: >
+      A collection of objects and routines to help you develop your own distributed machine learning algorithm. It has two modes, federated,
+      where a server is keeping track of the model, and decentralized, where each participant has their own local model. You can train your
+      model directly in the browser, allowing it to run on a variety of hardware. Many extensions are in the pipeline, such as adding
+      Byzantine resistance or training without revealing the model. Compared to other solutions, Disco is bridging the gap between people
+      creating machine learning models and people having relevant data. By running without installation nor complex configuration, anyone
+      can help. It's also a breeding ground for new machine learning technologies.
+    url: https://epfml.github.io/disco
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfml/disco
+      date_last_commit: 2024-04-03
+    language: TypeScript
+    license: Apache-2.0
+    incubator:
+      type: incubated
+      work: 2022/Q1 developing the project
+      products:
+        - type: Pilot
+          title: "Disco"
+          url: https://epfml.github.io/disco/
+    type: Framework
+    tags:
+      - Distributed Learning
+      - TensorFlow
+      - Decentralized
+    information:
+      - type: Web Page
+        title: Efficient - Powergossip
+        url: https://github.com/epfml/powergossip
+      - type: Web Page
+        title: Efficient - ChocoSGD
+        url: https://github.com/epfml/ChocoSGD
+      - type: Paper
+        title: Secure Byzantine-Robust Machine Learning
+        url: https://arxiv.org/abs/2006.04747
+      - type: Paper
+        title: Practical Secure Aggregation for Privacy-Preserving Machine Learning
+        url: https://eprint.iacr.org/2017/281.pdf
+        notes:
+          - label: Published in
+            text: "ACM Conference on Computer and Communications Security (CCS '17)"
+            url: https://acmccs.github.io/session-E5/
+      - type: Paper
+        title: Decentralized SGD with Asynchronous, Local and Quantized Updates
+        url: https://arxiv.org/abs/1910.12308
+        notes:
+          - label: Poster in
+            text: "Thirty-Fifth Conference on Neural Information Processing Systems (NeurIPS 2021)"
+            url: https://openreview.net/forum?id=9x10Q5J8e9W
+      - type: Paper
+        title: Byzantine-Robust Learning on Heterogeneous Datasets via Bucketing
+        url: https://arxiv.org/abs/2006.09365
+        notes:
+          - label: Published in
+            text: "The Tenth International Conference on Learning Representations (ICLR 2022)"
+            url: https://openreview.net/forum?id=jXKKDEi5vJt
+      - type: Paper
+        title: Learning from History for Byzantine Robust Optimization
+        url: https://arxiv.org/abs/2012.10333
+        notes:
+          - label: Published in
+            text: "Proceedings of Machine Learning Research, volume 139"
+            url: http://proceedings.mlr.press/v139/karimireddy21a.html
+    maturity: 2
+    date_added: 2022-02-18
+    date_updated: 2024-04-09
+
+  byzantine-robust-optimizer:
+    name: Byzantine Robust Optimizer
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Improved federated learning with Byzantine robustness
+    tech_desc: >
+      Byzantine robustness has received significant attention recently given its importance for distributed and federated learning. In spite
+      of this, there are severe flaws in existing algorithms even when the data across the participants is identically distributed. To
+      address these issues, we present two surprisingly simple strategies: a new robust iterative clipping procedure, and incorporating
+      worker momentum to overcome time-coupled attacks. This is the first provably robust method for the standard stochastic optimization
+      setting.
+    contacts:
+      - name: Lie He
+        email: lie.he@epfl.ch
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfml/byzantine-robust-optimizer
+      date_last_commit: 2021-06-11
+    language: Python
+    type: Simulation
+    license: MIT
+    tags:
+      - Distributed Learning
+      - TensorFlow
+      - Decentralized
+    information:
+      - type: Paper
+        title: Learning from History for Byzantine Robust Optimization
+        url: https://arxiv.org/pdf/2012.10333.pdf
+        notes:
+          - label: Published at
+            text: ICML 2021
+            url: https://icml.cc/Conferences/2021
+    date_added: 2021-11-04
+    date_updated: 2024-04-09
+
+  quasi-global-momentum:
+    name: Quasi-Global Momentum
+    categories:
+      - Learning
+    applications:
+      - Infra
+    description: Improved decentralized training with data heterogeneity
+    tech_desc: >
+      Decentralized training of deep learning models is a key element for enabling data privacy and on-device learning over networks. In
+      realistic learning scenarios, the presence of heterogeneity across different clients' local datasets poses an optimization challenge
+      and may severely deteriorate the generalization performance. We propose a novel momentum-based method to mitigate this decentralized
+      training difficulty.
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfml/quasi-global-momentum
+      date_last_commit: 2022-12-23
+    language: Python
+    type: Simulation
+    license: Apache-2.0
+    tags:
+      - Decentralized
+      - Distributed Learning
+      - Deep Neural Networks
+    information:
+      - type: Paper
+        title: "Quasi-Global Momentum: Accelerating Decentralized Deep Learning on Heterogeneous Data"
+        url: https://arxiv.org/pdf/2102.04761
+        notes:
+          - label: Published at
+            text: ICML 2021
+            url: https://icml.cc/Conferences/2021
+    date_added: 2021-11-04
+    date_updated: 2024-04-09
+
+  hyperaggregate:
+    name: HyperAggregate
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Sublinear aggregation algorithm
+    tech_desc: >
+      Novel decentralized aggregation protocol that can be parameterized so that the overall computation overhead scales logarithmically
+      with the number of nodes.
+    code:
+      type: Personal GitHub
+      url: https://github.com/mvujas/HyperAggregate
+      date_last_commit: 2021-07-03
+    type: Library, Experiments
+    language: Python, JavaScript
+    tags:
+      - Decentralized
+      - Distributed Learning
+    information:
+      - type: Report
+        title: "HyperAggregate: A sublinear secure aggregation protocol"
+        url: https://infoscience.epfl.ch/record/286909
+    date_added: 2021-11-04
+    date_updated: 2024-04-09
+
+  phantomedicus:
+    name: PhantoMedicus
+    categories:
+      - Learning
+    applications:
+      - Health
+    description: Medical Survey Generator
+    tech_desc: >
+      Phantomedicus is a framework for simulating patients and consultations. It can extract disease probabilities from given data.
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfml/phantomedicus
+      date_last_commit: 2022-06-25
+    language: Python
+    type: Framework
+    tags:
+      - Predictor
+    date_added: 2022-07-06
+    date_updated: 2024-04-09
+
+  paxlib:
+    name: PAXlib
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Augmentent PyTorch with some JAX
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfml/pax
+      date_last_commit: 2022-03-02
+    language: Python
+    license: Apache-2.0
+    type: Library
+    tags:
+      - PyTorch
+    date_added: 2022-07-07
+    date_updated: 2024-04-09
+
+  byzantine-robust-noniid-optimizer:
+    name: Byzantine-Robust NonIID optimizer
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Byzantine-Robust Learning on Heterogeneous Datasets via Bucketing
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfml/byzantine-robust-noniid-optimizer
+      date_last_commit: 2022-02-02
+    language: Python
+    license: MIT
+    type: Library
+    tags:
+      - PyTorch
+    date_added: 2022-07-07
+    date_updated: 2024-04-09
+
+  anomaly-detection:
+    name: Distributed Homomorphic Anomaly Detection
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Proof-of-concept ML algorithms to do anomaly detection compatible with distributed, encrypted algorithms.
+    tech_desc: >
+      The goal of this project is prove that state-of-the-art anomaly detection algorithms that already 
+      achieve over 99% accuracy can be run in a distributed and encrypted fashion. In other words, prove 
+      that multiple parties can collectively train a good anomaly detecting model without
+      revealing their data to each other. 
+      This has been achieved through transfer learning into a Multi-layer Perceptron (MLP)
+      model which achieved comparable results (95% compared to 99% False-Positive Rate accuracy).
+    code:
+      type: Lab GitHub
+      url: https://github.com/c4dt/predictive-maintenance
+      date_last_commit: 2023-09-11
+    language: Python
+    type: Experiments
+    tags:
+      - PyTorch
+      - Distributed Learning
+      - Homomorphic Encryption
+    date_added: 2024-01-03
+    date_updated: 2024-04-09
+
+  meditron:
+    name: Meditron
+    description: >
+      Open-source medical language model for clinical decision support
+    type: "Application"
+    categories:
+      - "Learning"
+    applications:
+      - "Health"
+    tags:
+      - Machine Learning
+      - Natural Language
+    layman_desc: >
+      MEDITRON is an AI model designed to help doctors and healthcare
+      professionals make better decisions by providing access to medical
+      knowledge.  It was trained on high-quality medical information from
+      research papers and guidelines.  Unlike other medical AI models that
+      are closed-source, MEDITRON's code and training data are open, allowing
+      transparency and further improvement by researchers.  The goal is to
+      safely bring the benefits of AI to healthcare in an ethical way.
+    tech_desc: >
+      MEDITRON is a pair of open-source large language models (LLMs) with 7
+      and 70 billion parameters, tailored to the medical domain.  It was
+      trained on carefully curated medical data sources, including
+      peer-reviewed literature and clinical practice guidelines.  MEDITRON
+      outperforms other open-source models and closed models like GPT-3.5 on
+      medical benchmarks, coming within 5-10% of GPT-4 and Med-PaLM-2.
+    code:
+      type: Lab Github
+      url: https://github.com/epfLLM/meditron
+      date_last_commit: 2024-04-10
+    language: Python
+    license: Apache-2.0
+    url: https://actu.epfl.ch/news/epfl-s-new-large-language-model-for-medical-knowle/
+    information:
+      - type: Paper
+        title: "MEDITRON-70B: Scaling Medical Pretraining for Large Language Models"
+        url: https://arxiv.org/abs/2311.16079
+    date_added: 2024-04-12
+
+  # Most common fields:
+  megatron:
+    name: Megatron-LLM
+    description: >
+      Large language model training library
+    type: "Application"
+    categories:
+      - "Learning"
+    applications:
+      - "Infra"
+    tags:
+      - Machine Learning
+      - Natural Language
+    layman_desc: >
+      Megatron-LLM is a software library that allows researchers and
+      developers to train and fine-tune large language models, which are powerful
+      AI systems that can understand and generate human-like text. It supports
+      various model architectures and enables training on regular hardware by
+      distributing the workload across multiple machines. The library offers advanced
+      features to improve model performance and integrates with popular tools for
+      tracking training progress and sharing models.
+    tech_desc: >
+      Megatron-LLM enables pre-training and fine-tuning of large language
+      models (LLMs) at scale. It supports architectures like Llama, Llama 2, Code
+      Llama, Falcon, and Mistral. The library allows training of large models (up to
+      70B parameters) on commodity hardware using tensor, pipeline, and data
+      parallelism. It provides features like grouped-query attention, rotary position
+      embeddings, BF16/FP16 training, and integration with Hugging Face and WandB.
+    code:
+      type: Lab Github
+      url: https://github.com/epfLLM/Megatron-LLM/
+      date_last_commit: 2023-12-03
+    language: Python
+    license: various
+    date_added: 2024-04-12

@@ -1,0 +1,159 @@
+projects:
+  choix:
+    name: Choix
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Library that provides inference algorithms for models based on Luce's choice axiom
+    code:
+      type: Personal GitHub
+      url: https://github.com/lucasmaystre/choix
+      date_last_commit: 2022-01-11
+    contacts:
+      - name: Lucas Maystre
+        url: https://lucas.maystre.ch/
+        email: lucas@maystre.ch
+    information:
+      - type: Paper
+        title: Fast and Accurate Inference of Plackett–Luce Models
+        url: https://infoscience.epfl.ch/record/213486
+        notes:
+          - label: Published in
+            text: proceedings of NeurIPS 28, 2015
+            url: https://proceedings.neurips.cc/paper/2015
+      - type: Paper
+        title: "ChoiceRank: Identifying Preferences from Node Traffic in Networks"
+        url: https://infoscience.epfl.ch/record/229164
+        notes:
+          - label: Published in
+            text: proceedings of Machine Learning Research Volume 70, August 2017
+            url: http://proceedings.mlr.press/v70/
+    tags:
+      - Low-Level
+    language: Python
+    license: MIT
+    type: Library
+    date_added: 2019-03-18
+    date_updated: 2022-07-05
+
+  who-is-that:
+    name: Who is that?
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Machine Learning framework to search a database via similarity samples
+    url: https://who-is-th.at/
+    tech_desc: >
+      Use machine learning to organize a collection of objects (e.g. faces of actors) so as to make them interactively searchable via
+      similarity queries. The approach combines concepts from representation learning, reinforcement learning, discrete-choice theory and
+      bayesian inference.
+    contacts:
+      - name: Daniyar Chumbalov
+        email: daniyar.chumbalov@epfl.ch
+    tags:
+      - Database
+    type: Library
+    date_added: 2019-09-09
+    date_updated: 2022-07-05
+
+  kickscore:
+    name: kickscore
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Dynamic skill rating system
+    tech_desc: >
+      Kickscore can be used to understand & visualize the skill of players (or teams) competing in pairwise matches, and to predict outcomes
+      of future matches. It extends the Elo rating system and TrueSkill.
+    code:
+      type: Personal GitHub
+      url: https://github.com/lucasmaystre/kickscore
+      date_last_commit: 2020-05-09
+    contacts:
+      - name: Lucas Maystre
+        url: https://lucas.maystre.ch/
+        email: lucas@maystre.ch
+      - name: Victor Kristof
+        url: https://victorkristof.me/
+        email: victor.kristof@epfl.ch
+    information:
+      - type: Paper
+        title: Pairwise Comparisons with Flexible Time-Dynamics
+        url: https://infoscience.epfl.ch/record/271096
+        notes:
+          - label: Published in
+            text: proceedings of ACM SIGKDD 25, July 2019
+            url: https://www.kdd.org/kdd2019/
+      - type: Paper
+        title: "The Player Kernel: Learning Team Strengths Based on Implicit Player Contributions"
+        url: https://infoscience.epfl.ch/record/221151
+        notes:
+          - label: Published in
+            text: proceedings of MLSA 2016
+            url: http://ceur-ws.org/Vol-1842/
+      - type: Paper
+        title: Efficient Learning from Comparisons
+        url: https://infoscience.epfl.ch/record/255399
+      - type: Demo
+        title: Prediction of football matches results
+        url: https://kickoff.ai/
+    tags:
+      - Predictor
+    language: Python
+    license: MIT
+    type: Library
+    date_added: 2020-05-01
+    date_updated: 2022-07-05
+
+  predikon:
+    name: Predikon
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Predictions about votes in Switzerland
+    url: http://www.predikon.ch/
+    layman_desc: >
+      Predikon provides predictions about votes in Switzerland, as soon as municipal results are published by Swiss cantons starting at
+      12:00 pm on the day of a vote.
+    tech_desc: >
+      We designed a predictive model of the municipal results (in percentage of "yes") for Swiss votes. Based on past results, our model
+      automatically learns features of municipalities. On the day of a vote, and as soon as some municipalities publish their results (their
+      percentage of "yes"), our model uses the features to predict the unpublished results of other municipalities. The prediction of the
+      national vote result is obtained by aggregating published results and predicted results.
+    contacts:
+      - name: Victor Kristof
+        url: https://victorkristof.me/
+        email: victor.kristof@epfl.ch
+    tags:
+      - Predictor
+    type: Library
+    date_added: 2020-05-01
+    date_updated: 2022-07-05
+
+  climpact:
+    name: Climpact
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Estimate your perception of carbon footprint
+    url: https://climpact.ch/
+    layman_desc: >
+      For the climate, flying to New York is worse than taking a long shower. But is it 10 times worse or is it 1000 times worse? The carbon
+      footprint of our actions have been widely analyzed and quantified, but it does not mean that people are well aware of their impact.
+      With this project, we would like to understand people’s perception of their carbon footprint, and how does it compare to the actual
+      carbon footprint of actions they take. This could help climate scientists, sociologists, news outlets, politicians, and the general
+      public to improve climate communication and enhance climate action.
+    contacts:
+      - name: Victor Kristof
+        url: https://victorkristof.me/
+        email: victor.kristof@epfl.ch
+    tags:
+      - Predictor
+    type: Application
+    date_added: 2023-04-24
+    date_updated: 2023-04-24

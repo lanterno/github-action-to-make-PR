@@ -1,0 +1,648 @@
+projects:
+  garfield:
+    name: Garfield
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: >
+      System support for byzantine machine learning
+    type: Library
+    tech_desc: >
+      Garfield is a library to build Byzantine machine learning (ML) applications on top of popular frameworks such as TensorFlow and
+      PyTorch. We show how to use Garfield to build different architectures for ML applications like single server, multiple workers (SSMW),
+      multiple servers, multiple workers (MSMW), and fully decentralized architecture.
+    layman_desc: >
+      Training ML is done in a distributed fashion these days due to the usage of big models and huge datasets (for scalability reasons).
+      This distribution inevitably leads to a higher probability of failure somewhere in the network. Garfield is a library/tool to ensure
+      the correctness/convergence of training despite the presence of these failures. Garfield can be used to do so with various ML
+      applications and architectures.
+    tags:
+      - Federated Learning
+      - Distributed Learning
+      - Decentralized
+      - Byzantine Resilience
+      - TensorFlow
+      - PyTorch
+    code:
+      type: Lab Github
+      url: https://github.com/LPD-EPFL/Garfield
+      date_last_commit: 2021-09-24
+    language: Python, Cuda, C++
+    license: MIT
+    incubator:
+      type: incubated
+      work: Started in Spring 2021, demo in Autumn.
+      products:
+        - type: Demo
+          title: Garfield Demonstrator
+          url: https://factory.c4dt.org/incubator/garfield/demo/
+          code: https://github.com/c4dt/Garfield
+    maturity: 1
+    information:
+      - type: Paper
+        title: "Garfield: System Support for Byzantine Machine Learning"
+        url: https://infoscience.epfl.ch/record/288430
+        notes:
+          - label: Published at
+            text: DSN 2021
+            url: https://dsn2021.ntu.edu.tw/
+      - type: Relevant paper
+        title: "Collaborative Learning in the Jungle"
+        url: https://arxiv.org/abs/2008.00742
+        notes:
+          - label: Published in
+            text: Proceedings of NeurIPS 2021
+            url: https://proceedings.neurips.cc/paper/2021
+      - type: Relevant paper
+        title: "Differential Privacy and Byzantine Resilience in SGD: Do They Add Up?"
+        url: https://arxiv.org/abs/2102.08166
+        notes:
+          - label: Published in
+            text: Proceedings of PODC 2021
+            url: https://dl.acm.org/doi/proceedings/10.1145/3465084
+      - type: Relevant paper
+        title: "Distributed Momentum for Byzantine-resilient Stochastic Gradient Descent"
+        url: https://infoscience.epfl.ch/record/287261
+        notes:
+          - label: Published at
+            text: ICLR 2021
+            url: https://iclr.cc/Conferences/2021
+      - type: Relevant paper
+        title: "AKSEL: Fast Byzantine SGD"
+        url: https://drops.dagstuhl.de/opus/volltexte/2021/13493/pdf/LIPIcs-OPODIS-2020-8.pdf
+        notes:
+          - label: Published at
+            text: OPODIS 2020
+            url: https://opodis2020.unistra.fr/
+      - type: Relevant paper
+        title: "Genuinely Distributed Byzantine Machine Learning"
+        url: https://arxiv.org/abs/1905.03853
+        notes:
+          - label: Published in
+            text: Proceedings of PODC 2020
+            url: https://dl.acm.org/doi/proceedings/10.1145/3382734
+      - type: Relevant paper
+        title: "Fast and Robust Distributed Learning in High Dimension"
+        url: https://infoscience.epfl.ch/record/282832
+        notes:
+          - label: Published at
+            text: SRDS 2020
+            url: https://ieeexplore.ieee.org/xpl/conhome/9251916/proceeding
+      - type: Relevant paper
+        title: "AggregaThor: Byzantine Machine Learning via Robust Gradient Aggregation"
+        url: https://infoscience.epfl.ch/record/265684
+        notes:
+          - label: Published at
+            text: SysML 2019
+            url: https://mlsys.org/Conferences/2019
+      - type: Relevant paper
+        title: "Asynchronous Byzantine Machine Learning (the case of SGD)"
+        url: https://infoscience.epfl.ch/record/269788
+        notes:
+          - label: Published at
+            text: ICML 2018
+            url: https://icml.cc/Conferences/2018
+      - type: Relevant paper
+        title: "The Hidden Vulnerability of Distributed Learning in Byzantium"
+        url: https://infoscience.epfl.ch/record/256124
+        notes:
+          - label: Published at
+            text: ICML 2018
+            url: https://icml.cc/Conferences/2018
+      - type: Relevant paper
+        title: "On The Robustness of a Neural Network"
+        url: https://infoscience.epfl.ch/record/230013
+        notes:
+          - label: Published at
+            text: SRDS 2017
+            url: http://srds2017.comp.polyu.edu.hk/
+      - type: Relevant paper
+        title: "Machine Learning with Adversaries:Byzantine Tolerant Gradient Descent"
+        url: https://proceedings.neurips.cc/paper/2017/file/f4b9ec30ad9f68f89b29639786cb62ef-Paper.pdf
+        notes:
+          - label: Published in
+            text: Proceedings of NeurIPS 2017
+            url: https://proceedings.neurips.cc/paper/2017
+    date_added: 2021-01-20
+    date_updated: 2024-03-22
+
+  at2:
+    name: AT2
+    categories:
+      - Blockchain
+    applications:
+      - Finance
+    description: Asset Transfer System using lightweight broadcast-based primitives instead of consensus
+    layman_desc: >
+      AT2 is a full-fledged asset transfer system (cryptocurrency) without the need for a global consensus, allowing for faster transactions
+      and better scalability than Bitcoin and consensus-based solutions.
+    tech_desc: >
+      We replace consensus with a lightweight building block -- a broadcast-based primitive -- to obtain a full-fledged asset transfer
+      system (cryptocurrency). This system is more efficient and more scalable compared with Bitcoin and consensus-based solutions. AT2 is
+      the first system to bypass consensus algorithms for implementing asset transfers.
+    code:
+      type: Lab GitHub
+      url: https://github.com/Distributed-EPFL/at2-web
+      date_last_commit: 2022-02-24
+    license: AGPL-3.0
+    maturity: 1
+    incubator:
+      type: incubated
+      work: 2021/Q2 started working on demonstrator
+      products:
+        - type: Demo
+          title: AT2 Demonstrator
+          url: https://factory.c4dt.org/incubator/at2/demo
+          code: https://github.com/Distributed-EPFL/at2-web
+    tags:
+      - Decentralized
+      - Byzantine Resilience
+      - Consensus
+    type: Library
+    language: Rust
+    information:
+      - type: Website
+        url: https://dcl.epfl.ch/site/cryptocurrencies
+        title: "Cryptocurrencies@EPFL"
+      - type: Website
+        url: https://dcl.epfl.ch/site/poc-at2_project
+        title: "Low Cost Cryptocurrency"
+      - type: Paper
+        title: "Scalable Byzantine Reliable Broadcast"
+        url: https://infoscience.epfl.ch/record/276218
+        notes:
+          - label: Published at
+            text: DISC 2019
+            url: http://www.disc-conference.org/wp/disc2019/
+      - type: Paper
+        title: "Online Payments by Merely Broadcasting Messages"
+        url: https://infoscience.epfl.ch/record/280772
+        notes:
+          - label: Published at
+            text: DSN 2020
+            url: https://dsn2020.webs.upv.es/
+      - type: Paper
+        title: "AT2: Asynchronous Trustworthy Transfers"
+        url: https://arxiv.org/abs/1812.10844
+      - type: Paper
+        title: "The Consensus Number of a Cryptocurrency"
+        url: https://arxiv.org/abs/1906.05574
+        notes:
+          - label: Published at
+            text: PODC 2019
+            url: https://dl.acm.org/doi/10.1145/3293611.3331589
+      - type: Paper
+        title: "Dynamic Byzantine Reliable Broadcast"
+        url: https://arxiv.org/abs/2001.06271
+      - type: Video
+        title: "Presentation of Dynamic Byzantine Reliable Broadcast"
+        url: https://www.youtube.com/watch?v=WIm8XGopqIA
+    date_added: 2019-03-18
+    date_updated: 2024-03-22
+
+  fegan:
+    name: FeGAN
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Scaling distributed Generative Adversarial Networks (GANs)
+    tech_desc: >
+      The FeGAN system enables training GANs in the Federated Learning setup. GANs are generative adversarial networks, a class of machine
+      learning where two neural networks contest with each other. FeGAN is implemented on PyTorch and is using less bandwidth and is faster
+      than using stat-of-the-art GANs implementations.
+    code:
+      type: Lab GitHub
+      url: https://github.com/LPD-EPFL/FeGAN
+      date_last_commit: 2020-12-31
+    maturity: 1
+    tags:
+      - Federated Learning
+      - PyTorch
+    type: Application
+    language: Python
+    license: MIT
+    information:
+      - type: Paper
+        title: "FeGAN: Scaling Distributed GANs"
+        url: https://infoscience.epfl.ch/record/282767
+        notes:
+          - label: Published at
+            text: ACM/IFIP Middleware 2020
+            url: https://2020.middleware-conference.org
+    date_added: 2020-11-11
+    date_updated: 2024-03-22
+
+  mvtil:
+    name: MVTIL
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Multiversion Timestamp Locking (MVTL)
+    tech_desc: >
+      MVTL is a new family of concurrency control algorithms. Improving performance of distributed databases by allowing read accesses to
+      lag behind the latest version of the data.
+    code:
+      type: Lab GitHub
+      url: https://github.com/LPD-EPFL/MVTIL
+      date_last_commit: 2019-09-19
+    tags:
+      - Concurrency
+      - Database
+      - Locking
+    type: Application
+    language: C++
+    license: GPL-2.0
+    information:
+      - type: Paper
+        title: Locking Timestamps versus Locking Objects
+        url: https://infoscience.epfl.ch/record/229425
+        notes:
+          - label: Published at
+            text: PODC 2018
+            url: https://www.podc.org/podc2018
+    date_added: 2019-09-19
+    date_updated: 2024-03-22
+
+  libnvram:
+    name: libNVRAM
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Log-free concurrent data structures
+    layman_desc: >
+      Storing data structures in non-volatile RAM such that transient failures don't corrupt the data.
+    url: http://dcl.epfl.ch/site/nvram
+    code:
+      type: Lab Github
+      url: https://github.com/LPD-EPFL/nv-lf-structures
+      date_last_commit: 2019-11-04
+    tags:
+      - Concurrency
+      - Data Structures
+      - Failure
+    type: Library, Application
+    language: C++
+    license: MIT
+    information:
+      - type: Paper
+        title: Log-Free Concurrent Data Structures
+        url: https://infoscience.epfl.ch/record/232485
+        notes:
+          - label: Published at
+            text: ATC 2018
+            url: https://www.usenix.org/conference/atc18/presentation/david
+    date_added: 2019-03-18
+    date_updated: 2024-03-22
+
+  flodb:
+    name: FloDB
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Unlocking memory in persistent key-value stores
+    layman_desc: >
+      High performance key-value store for servers with high amount of RAM and lots of CPUs.
+    url: http://dcl.epfl.ch/site/flodb
+    code:
+      type: Lab GitHub
+      url: https://github.com/LPD-EPFL/flodb
+      date_last_commit: 2017-03-28
+    tags:
+      - Database
+      - Server
+    type: Application
+    language: C++
+    license: BSD-3-Clause
+    information:
+      - type: Paper
+        title: "FloDB: Unlocking Memory in Persistent Key-Value Stores"
+        url: https://infoscience.epfl.ch/record/227333
+        notes:
+          - label: Published at
+            text: EuroSys 2017
+            url: https://eurosys2017.github.io
+    date_added: 2019-03-18
+    date_updated: 2024-03-22
+
+  fleet:
+    name: FLeet
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Federated machine learning on Android
+    layman_desc: >
+      MobNet is a framework for federated machine learning on Android devices. It consumes much less battery than Standard FL while
+      increasing the model's accuracy three times. It allows for Android to actually participate in the building of a ML model.
+    code:
+      type: Non-lab GitHub
+      url: https://github.com/gdamaskinos/fleet
+      date_last_commit: 2020-10-31
+    tags:
+      - Federated Learning
+      - Mobile App
+    type: Library, Application
+    language: Java, C++
+    license: MIT
+    maturity: 1
+    information:
+      - type: Paper
+        title: "FLeet: Online Federated Learning via Staleness Awareness and Performance Prediction"
+        url: https://infoscience.epfl.ch/record/282766
+        notes:
+          - label: Published at
+            text: ACM/IFIP Middleware 2020
+            url: https://2020.middleware-conference.org
+    date_added: 2019-07-01
+    date_updated: 2024-03-22
+
+  mctop:
+    name: MCTOP
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: A multi-core topology abstraction
+    layman_desc: >
+      MCTOP is an abstraction of multi-core topologies augmented with important low-level hardware information, such as memory bandwidths
+      and communication latencies.
+    url: https://dcl.epfl.ch/site/mctop
+    code:
+      type: Lab GitHub
+      url: https://github.com/LPD-EPFL/mctop
+      date_last_commit: 2017-05-04
+    tags:
+      - Server
+    type: Application
+    language: C
+    license: MIT
+    information:
+      - type: Paper
+        title: Abstracting Multi-Core Topologies with MCTOP
+        url: https://infoscience.epfl.ch/record/227458
+        notes:
+          - label: Published at
+            text: EuroSys 2017
+            url: https://eurosys2017.github.io
+    date_added: 2019-07-26
+    date_updated: 2024-03-22
+
+  lockin:
+    name: LOCKIN
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Automatically chose the best locking algorithm
+    layman_desc: >
+      LOCKIN is a lock library that includes several lock algorithm implementations mainly in header files for ease of use. Essentially, you
+      can use LOCKIN to easily modify the pthread mutex locks in a system with practically zero effort. GLS is a middleware that makes
+      lock-based programming simple and effective. GLS offers the classic lock-unlock interface of locks. However, in contrast to classic
+      lock libraries, GLS does not require any effort from the programmer for allocating and initializing locks, nor for selecting the
+      appropriate locking strategy.
+    url: https://dcl.epfl.ch/site/lockin
+    code:
+      type: Lab GitHub
+      url: https://github.com/LPD-EPFL/lockin
+      date_last_commit: 2017-04-19
+    tags:
+      - Concurrency
+    type: Library
+    language: C/C++
+    license: MIT
+    information:
+      - type: Paper
+        title: Unlocking Energy
+        url: https://infoscience.epfl.ch/record/221135
+        notes:
+          - label: Published at
+            text: ATC 2016
+            url: https://www.usenix.org/conference/atc16
+      - type: Paper
+        title: Locking Made Easy
+        url: https://infoscience.epfl.ch/record/222954
+        notes:
+          - label: Published at
+            text: ACM/IFIP Middleware 2016
+            url: http://2016.middleware-conference.org
+    date_added: 2019-07-01
+    date_updated: 2024-03-22
+
+  aggregathor:
+    name: AggregaThor
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Framework over TensorFlow implementing robust stochastic gradient descent
+    layman_desc: >
+      Framework built over TensorFlow implementing state-of-the-art Byzantine-resilient, distributed Stochastic Gradient Descent (SGD).
+      Modular approach allows most of its components to be reused in other projects. Unreliable communication channels are supported,
+      providing a performance speed-up over standard TensorFlow in saturated networks.
+    code:
+      type: Lab GitHub
+      url: https://github.com/LPD-EPFL/AggregaThor
+      date_last_commit: 2019-12-06
+    tags:
+      - Distributed Learning
+      - Byzantine Resilience
+      - TensorFlow
+    type: Library, Application
+    language: Python / C++
+    information:
+      - type: Paper
+        url: https://infoscience.epfl.ch/record/265684
+        title: "AggregaThor: Byzantine Machine Learning via Robust Gradient Aggregation"
+        notes:
+          - label: Published at
+            text: SysML 2019
+            url: https://mlsys.org/Conferences/2019
+    date_added: 2019-03-18
+    date_updated: 2024-03-22
+
+  ascylib-optik:
+    name: ASCYLIB + OPTIK
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: State-of-the-art concurrent data-structure library
+    layman_desc: >
+      Over 40 implementations of linked lists, hash tables, skip lists, binary search trees (BSTs), queues, priority queues, and stacks.
+      ASCYLIB contains sequential, lock-based, and lock-free implementations for each data structure.
+    url: https://dcl.epfl.ch/site/ascylib
+    code:
+      type: Lab GitHub
+      url: https://github.com/LPD-EPFL/ASCYLIB
+      date_last_commit: 2018-01-19
+    tags:
+      - Concurrency
+      - Data Structures
+      - Locking
+    type: Library
+    language: C
+    license: GPL-2.0
+    information:
+      - type: Paper
+        url: https://infoscience.epfl.ch/record/207109
+        title: "Asynchronized Concurrency: The Secret to Scaling Concurrent Search Data Structures"
+        notes:
+          - label: Published at
+            text: ASPLOS 2015
+            url: http://asplos15.bilkent.edu.tr
+      - type: Paper
+        url: https://infoscience.epfl.ch/record/217219
+        title: Optimistic Concurrency with OPTIK
+        notes:
+          - label: Published at
+            text: PPoPP 2016
+            url: https://ppopp16.sigplan.org
+      - type: Paper
+        url: https://infoscience.epfl.ch/record/203822
+        title: Designing ASCY-compliant Concurrent Search Data Structures
+    date_added: 2021-02-09
+    date_updated: 2024-03-22
+
+  carbon:
+    name: carbon
+    categories:
+      - Blockchain
+    applications:
+      - Finance
+    description: Blockchain using lightweight broadcast-based primitives instead of consensus
+    layman_desc: >
+      Carbon is a blockchain not using global consensus for transactions, allowing for faster transactions and better scalability than many
+      other chains.
+    tech_desc: >
+      Carbon is the next iteration on AT2, adding many new features, such as minting and a dynamic network. By decoupling leader selection
+      from transaction processing, this system is more efficient and more scalable compared with Bitcoin and consensus-based solutions.
+    maturity: 1
+    tags:
+      - Decentralized
+      - Byzantine Resilience
+      - Consensus
+    type: Library
+    language: Rust
+    information:
+      - type: Paper
+        title: "AT2: Asynchronous Trustworthy Transfers"
+        url: https://arxiv.org/abs/1812.10844
+    date_added: 2021-12-01
+    date_updated: 2024-03-22
+
+  clht:
+    name: CLHT
+    categories:
+      - Other
+    applications:
+      - Info
+    description: Very fast and scalable, resizable hash table
+    layman_desc: >
+      CLHT contains both a lock-based and lock-free implementation of hash tables. Its optimistic design allows for 50 MegaOP/s in a
+      concurrent run.
+    url: https://lpd.epfl.ch/site/ascylib
+    code:
+      type: Lab GitHub
+      url: https://github.com/LPD-EPFL/CLHT
+      date_last_commit: 2021-10-04
+    license: MIT
+    tags:
+      - Concurrency
+      - Data Structures
+    type: Library
+    language: C
+    information:
+      - type: Paper
+        title: Designing ASCY-compliant Concurrent Search Data Structures
+        url: https://infoscience.epfl.ch/record/203822
+    date_added: 2022-07-04
+    date_updated: 2024-03-22
+
+  nn-fault-tolerance:
+    name: Probabilistic Fault Tolerance of Neural Networks in the Continuous Limit
+    categories:
+      - Learning
+    applications:
+      - Info
+    type: Library
+    description: Regularizer for failing neurons
+    layman_desc: >
+      How is a neural network changing its output in presence of failing node? This project provides a regularizer adapting itself to
+      changing conditions.
+    code:
+      type: Lab GitHub
+      url: https://github.com/LPD-EPFL/nn-fault-tolerance
+      date_last_commit: 2020-11-24
+    license: other
+    tags:
+      - Deep Neural Networks
+    language: Python
+    information:
+      - type: Paper
+        title: The Probabilistic Fault Tolerance of Neural Networks in the Continuous Limit
+        url: https://arxiv.org/abs/1902.01686
+    date_added: 2022-07-04
+    date_updated: 2024-03-22
+
+  ukharon:
+    name: uKharon
+    categories:
+      - Other
+    applications:
+      - Info
+    description: Membership service for microsecond applications
+    code:
+      type: Lab GitHub
+      url: https://github.com/LPD-EPFL/ukharon-artifacts
+      date_last_commit: 2022-05-24
+    license: other
+    tags:
+      - Concurrency
+      - Network
+    type: Simulation
+    language: C
+    information:
+      - type: Paper
+        title: "uKharon: A Membership Service for Microsecond Applications"
+        url: https://www.usenix.org/conference/atc22/presentation/guerraoui
+        notes:
+          - label: Published at
+            text: ATC 2022
+            url: https://www.usenix.org/conference/atc22
+    date_added: 2022-07-04
+    date_updated: 2024-03-22
+
+  ubft:
+    name: uBFT
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Microsecond-scale BFT using Disaggregated Memory
+    code:
+      type: Lab GitHub
+      url: https://github.com/LPD-EPFL/ubft
+      date_last_commit: 2023-03-14
+    license: CC BY 4.0
+    tags:
+      - Byzantine Resilience
+      - Network
+      - Consensus
+      - Protocol
+    type: Library
+    language: C
+    information:
+      - type: Paper
+        title: "uBFT: Microsecond-scale BFT using Disaggregated Memory"
+        url: https://arxiv.org/abs/2210.17174v3
+        notes:
+          - label: Published at
+            text: ASPLOS 2023
+            url: https://dl.acm.org/doi/proceedings/10.1145/3575693
+    date_added: 2023-03-13
+    date_updated: 2024-03-22

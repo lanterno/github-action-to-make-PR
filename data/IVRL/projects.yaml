@@ -1,0 +1,296 @@
+projects:
+  slico:
+    name: SLICO Superpixels
+    categories:
+      - Other
+    applications:
+      - Info
+    description: Efficient Superpixels
+    layman_desc: >
+      Superpixels, which define similar regions in an image, are becoming increasingly popular for use in computer vision applications. This
+      research proposes a faster and more accurate way to get these pixels.
+    url: https://www.epfl.ch/labs/ivrl/research/slic-superpixels/#SLICO
+    code:
+      type: Lab Download
+      url: https://ivrl.epfl.ch/wp-content/uploads/2018/08/SLICSuperpixels_VC2008_SLICO_15Jun2013.zip
+    tags:
+      - Computer Vision
+    language: C++
+    type: Application
+    date_added: 2019-03-18
+    date_updated: 2024-04-14
+
+  image-completion:
+    name: Image Completion
+    categories:
+      - Other
+    applications:
+      - Info
+    description: Complete an image whose 99% pixels are randomly missing
+    layman_desc: >
+      It is challenging to complete an image whose 99% pixels are randomly missing. We present a solution to this extreme image completion
+      problem.
+    url: https://www.epfl.ch/labs/ivrl/research/image-completion/
+    code:
+      type: Lab Download
+      url: https://www.epfl.ch/labs/ivrl/wp-content/uploads/2018/08/fan_icassp17.zip
+    tags:
+      - Computer Vision
+    language: MATLAB
+    type: Application
+    date_added: 2019-03-18
+    date_updated: 2024-04-14
+
+  adefan:
+    name: ADEFAN
+    type: Application
+    categories:
+      - Other
+    applications:
+      - Info
+    description: Fast and energy-efficient video encoder and decoder
+    tech_desc: >
+      ADEFAN (Adaptive Depth Efficient Filtering by Adaptive Normaliztion) is a state-of-the-art technology for encoding and decoding videos
+      that presents many advantages over other available methods. It features extremely energy-efficient encoder, extremely fast encoding
+      process, no specialized hardware for encoding and added security with encoding key. It is this ideal for video-transmitting IoT
+      devices, continuously transmitting surveillance cameras, emergency deployment in areas without much infrastructure (remote, natural
+      disaster relief, etc.).
+    url: https://adefan.epfl.ch/static/index.html
+    code:
+      type: Lab GitHub
+      url: https://github.com/IVRL/ADEFAN
+      date_last_commit: 2020-04-15
+    language: Python
+    license: MIT
+    tags:
+      - Computer Vision
+      - Images
+    information:
+      - type: Paper
+        title: Divergence-Based Adaptive Extreme Video Completion
+        url: https://infoscience.epfl.ch/record/277003
+        notes:
+          - label: Published at
+            text: ICASSP 2020
+            url: https://2020.ieeeicassp.org/
+    date_added: 2021-11-05
+    date_updated: 2024-04-14
+
+  fg-nic:
+    name: FG-NIC
+    type: Application
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Noise-robust image classification
+    tech_desc: >
+      Image classification has significantly improved using deep learning. This is mainly due to convolutional neural networks (CNNs) that
+      are capable of learning rich feature extractors from large datasets. However, most deep learning classification methods are trained on
+      clean images and are not robust when handling noisy ones, even if a restoration preprocessing step is applied.  We propose a method
+      that can be applied on a pretrained classifier.  We improve the noisy-image classification (NIC) results by significantly large
+      margins, especially at high noise levels, and come close to the fully retrained approaches.
+    code:
+      type: Lab GitHub
+      url: https://github.com/IVRL/FG-NIC
+      date_last_commit: 2022-01-04
+    language: Python
+    license: MIT
+    tags:
+      - Images
+      - Deep Neural Networks
+      - Image Classification
+    information:
+      - type: Paper
+        title: Fidelity Estimation Improves Noisy-Image Classification with Pretrained Networks
+        url: https://infoscience.epfl.ch/record/287705
+        notes:
+          - label: Published in
+            text: IEEE Signal Processing Letters 2021
+            url: https://ieeexplore.ieee.org/document/9513558
+    date_added: 2021-11-05
+    date_updated: 2024-04-14
+
+  buifd:
+    name: BUIFD
+    type: Application
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Deep learning image denoiser
+    tech_desc: >
+      Blind and universal image denoising consists of using a unique model that denoises images with any level of noise. It is especially
+      practical as noise levels do not need to be known when the model is developed or at test time. We propose a blind and universal deep
+      learning image denoiser based on an optimal denoising solution, which we call fusion denoising. Our approach improves real-world
+      grayscale additive image denoising. It also improves state-of-the-art color image denoising performance on every single noise level by
+      an average of 0.1dB.
+    code:
+      type: Lab GitHub
+      url: https://github.com/IVRL/BUIFD
+      date_last_commit: 2020-11-24
+    language: Python
+    license: MIT
+    tags:
+      - Images
+      - Deep Neural Networks
+    information:
+      - type: Paper
+        title: Blind Universal Bayesian Image Denoising WithGaussian Noise Level Learning
+        url: https://infoscience.epfl.ch/record/276107
+        notes:
+          - label: Published in
+            text: IEEE Transactions on Image Processing, Vol. 29, 2020
+            url: https://ieeexplore.ieee.org/document/9024220
+    date_added: 2021-11-05
+    date_updated: 2024-04-14
+
+  zero-learning-medical-fusion:
+    name: Zero-Learning Fast Medical Image Fusion
+    type: Application
+    categories:
+      - Learning
+    applications:
+      - Info
+      - Health
+    description: High-quality image fusion
+    tech_desc: >
+      Medical image fusion plays a central role by integrating information from multiple sources into a single, more understandable output.
+      We propose a real-time image fusion method using pre-trained neural networks to generate a single image containing features from
+      multi-modal sources. Our method can be applied to any number of input sources.
+    code:
+      type: Lab GitHub
+      url: https://github.com/IVRL/Zero-Learning-Medical-Fusion
+      date_last_commit: 2019-05-10
+    language: Python
+    tags:
+      - Images
+      - Deep Neural Networks
+    information:
+      - type: Paper
+        title: Zero-Learning Fast Medical Image Fusion
+        url: https://infoscience.epfl.ch/record/270048
+        notes:
+          - label: Published at
+            text: FUSION 2019
+            url: https://ieeexplore.ieee.org/document/9011178
+    date_added: 2021-11-05
+    date_updated: 2024-04-14
+
+  lelsd:
+    name: LELSD
+    type: Application
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Interactive GAN-based image editing
+    tech_desc: >
+      When generating an image using a GAN, some errors might appear which are obvious to the human observer, but not to the computer. By
+      introducing this user feedback one can refine the generated image to look even more real.
+    code:
+      type: Lab GitHub
+      url: https://github.com/IVRL/LELSD
+      date_last_commit: 2022-02-20
+    language: Python
+    tags:
+      - Images
+      - Deep Neural Networks
+    license: MIT
+    information:
+      - type: Paper
+        title: Optimizing Latent Space Directions For GAN-based Local Image Editing
+        url: https://arxiv.org/abs/2111.12583
+    maturity: 1
+    date_added: 2022-07-05
+    date_updated: 2024-04-14
+
+  dsr:
+    name: DSR
+    type: Experiments, Simulation
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Drone Image Super-Resolution
+    tech_desc: >
+      Despite achieving remarkable progress in recent years, single-image super-resolution methods are developed with artificial
+      limitations. We propose a novel drone image dataset, with scenes captured at low and high resolutions, and across a span of altitudes.
+      Our results show that off-the-shelf state-of-the-art networks perform worse on this different domain.
+    code:
+      type: Lab GitHub
+      url: https://github.com/IVRL/DSR
+      date_last_commit: 2022-09-15
+    language: Python
+    tags:
+      - Images
+      - Deep Neural Networks
+    information:
+      - type: Paper
+        title: "DSR: Towards Drone Image Super-Resolution"
+        url: https://arxiv.org/abs/2208.12327
+        notes:
+          - label: Published at
+            text: ECCV 2022 Workshops
+            url: https://dl.acm.org/doi/proceedings/10.1007/978-3-031-25063-7
+    license: BSD-3-Clause
+    date_added: 2023-03-21
+    date_updated: 2024-04-14
+
+  tempsal:
+    name: TempSAL
+    type: Application, Experiments
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Uncovering Temporal Information for Deep Saliency Prediction
+    tech_desc: >
+      Deep saliency prediction algorithms complement the object recognition features, they typically rely on additional information, such as
+      scene context, semantic relationships, gaze direction, and object dissimilarity. However, none of these models consider the temporal
+      nature of gaze shifts during image observation. We introduce a novel saliency prediction model that learns to output saliency maps in
+      sequential time intervals by exploiting human temporal attention patterns.
+    url: https://ivrl.github.io/Tempsal/#section-qualitative
+    code:
+      type: Lab GitHub
+      url: https://github.com/IVRL/Tempsal
+      date_last_commit: 2023-07-24
+    tags:
+      - Images
+      - Deep Neural Networks
+    information:
+      - type: Paper
+        title: "TempSAL -- Uncovering Temporal Information for Deep Saliency Prediction"
+        url: https://arxiv.org/abs/2301.02315
+    license: MIT
+    date_added: 2023-03-21
+    date_updated: 2024-04-14
+
+  dynca:
+    name: DyNCA
+    categories:
+      - Learning
+    applications:
+      - Info
+    type: Framework
+    description: Real-Time Dynamic Texture Synthesis Using Neural Cellular Automata
+    tech_desc: >
+      Current Dynamic Texture Synthesis (DyTS) models in the literature can synthesize realistic videos. However, these methods require a
+      slow iterative optimization process to synthesize a single fixed-size short video, and they do not offer any post-training control
+      over the synthesis process. We propose Dynamic Neural Cellular Automata (DyNCA), a framework for real-time and controllable dynamic
+      texture synthesis.
+    url: https://dynca.github.io/
+    code:
+      type: Lab GitHub
+      url: https://github.com/IVRL/DyNCA
+      date_last_commit: 2024-01-29
+    tags:
+      - Images
+      - Deep Neural Networks
+    information:
+      - type: Paper
+        title: "DyNCA: Real-time Dynamic Texture Synthesis Using Neural Cellular Automata"
+        url: https://arxiv.org/abs/2211.11417
+    license: MIT
+    date_added: 2023-03-21
+    date_updated: 2024-04-14

@@ -1,0 +1,257 @@
+projects:
+  proshare:
+    name: ProShare
+    categories:
+      - Privacy
+    applications:
+      - Info
+    description: Privacy-preserving photo sharing
+    tech_desc: >
+      Proshare allows you to share your photos, while protecting sensitive regions and hiding secret messages.
+    url: https://grebproshare.epfl.ch/
+    tags:
+      - Images
+    type: Application
+    date_added: 2019-03-18
+    date_updated: 2024-03-15
+
+  quality-crowd:
+    name: QualityCrowd
+    categories:
+      - Other
+    applications:
+      - Info
+    description: Crowdsourcing image quality assessment
+    tech_desc: >
+      Video quality assessment with subjective testing is both time consuming and expensive. An interesting new approach to traditional
+      testing is the so-called crowdsourcing, moving the testing effort into the internet. QualityCrowd allows to perform subjective quality
+      assessment with crowdsourcing. QualityCrowd allows codec independent quality assessment with a simple web interface, usable with
+      common web browsers.
+    code:
+      type: Lab GitHub
+      url: https://github.com/mmspg/qualitycrowd2.1
+      date_last_commit: 2021-02-23
+    language: PHP, JavaScript
+    license: BSD-3-Clause
+    tags:
+      - Images
+    type: Application
+    information:
+      - type: Paper
+        title: QualityCrowd - A Framework for Crowd-based Quality Evaluation
+        url: https://mediatum.ub.tum.de/doc/1098076/1098076.pdf
+    date_added: 2021-05-21
+    date_updated: 2024-03-15
+
+  point-cloud-web-renderer:
+    name: Point cloud web renderer
+    categories:
+      - Other
+    applications:
+      - Info
+    description: Show point cloud files using three.js
+    tech_desc: >
+      The renderer supports visualization of point clouds with real-time interaction, while viewing conditions can be configured. The user
+      is able to choose between either an adaptive, or a fixed splat size rendering mode in order to display the models. The renderer
+      supports both PLY and PCD point cloud file formats. The current settings have been optimized for voxelized contents, without this
+      limiting its usage, since any point cloud can be displayed independently of its geometric structure.
+    code:
+      type: Lab GitHub
+      url: https://github.com/mmspg/point-cloud-web-renderer
+      date_last_commit: 2021-05-11
+    language: JavaScript
+    license: GPL-3.0
+    tags:
+      - Images
+    type: Library
+    information:
+      - type: Paper
+        title: A comprehensive study of the rate-distortion performance in MPEG point cloud compression
+        url: https://infoscience.epfl.ch/record/272124
+        notes:
+          - label: Published in
+            text: APSIPA
+            url: http://apsipa.org
+    date_added: 2021-05-21
+    date_updated: 2024-03-15
+
+  learned-residual-pcc:
+    name: Learned Residual PCC
+    categories:
+      - Other
+    applications:
+      - Info
+    description: Learning residual coding for point clouds
+    tech_desc: >
+      Recent  advancements  in  acquisition  of  three-dimensional  models have been  increasingly  drawing  attention  toimaging modalities
+      based on the plenoptic representations, such as light fields and point clouds.  Since point cloudmodels can often contain millions of
+      points, each including both geometric positions and associated attributes,efficient compression schemes are needed to enable
+      transmission and storage of this type of media. This project presents a detachable learning-based residual module for point cloud
+      compression that allows for efficientscalable coding.
+    contacts:
+      - name: Davi Nachtigall Lazzarotto
+        email: davi.nachtigalllazzarotto@epfl.ch
+    code:
+      type: Lab GitHub
+      url: https://github.com/mmspg/learned-residual-pcc
+      date_last_commit: 2021-09-01
+    language: Python
+    license: GPL-3.0
+    type: Application
+    tags:
+      - Images
+    information:
+      - type: Paper
+        title: Learning residual coding for point clouds
+        url: https://infoscience.epfl.ch/record/288000
+        notes:
+          - label: Published in
+            text: Proceedings of SPIE - Applications of Digital Image Processing XLIV
+            url: https://spie.org/Publications/Proceedings/Volume/11842
+    date_added: 2021-11-04
+    date_updated: 2024-03-15
+
+  errgb:
+    name: Error Resilient Recurring Gallery Building
+    categories:
+      - Learning
+    applications:
+      - Gov
+    description: Correctly re-identify people in different images
+    tech_desc: >
+      In person re-identification, people must to be correctly identified in images that come from different cameras or are captured at
+      different points in time. In the open-set case, the above needs be achieved for persons that have not been previously observed. We
+      propose a universal method for building a multi-shot gallery of observed reference identities recurrently online.
+    contacts:
+      - name: Evgeniy Upenik
+        email: evgeniy.upenik@epfl.ch
+    code:
+      type: Lab GitHub
+      url: https://github.com/mmspg/ERRGB
+      date_last_commit: 2021-02-03
+    language: Python
+    license: GPL-3.0
+    type: Application
+    tags:
+      - Computer Vision
+    information:
+      - type: Paper
+        title: Open-Set Person Re-Identification through Error Resilient Recurring Gallery Building
+        url: https://infoscience.epfl.ch/record/286318
+        notes:
+          - label: Published at
+            text: IEEE ICIP 2021
+            url: https://www.2021.ieeeicip.org/
+    date_added: 2021-11-04
+    date_updated: 2024-03-15
+
+  mesh-sampling:
+    name: Mesh sampling
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Generate point cloud based on mesh
+    tech_desc: >
+      It is composed of two scripts that perform mesh sampling. They were developed with the goal of generating point cloud datasets for
+      training of learning-based compression algorithms from large-scale mesh datasets such as ModelNet and ShapeNet.
+    code:
+      type: Lab GitHub
+      url: https://github.com/mmspg/mesh-sampling
+      date_last_commit: 2022-02-22
+    language: Python
+    license: other
+    type: Toolset
+    tags:
+      - Computer Vision
+    information:
+      - type: Paper
+        title: Sampling color and geometry point clouds from ShapeNet dataset
+        url: https://arxiv.org/abs/2201.06935
+    date_added: 2021-11-04
+    date_updated: 2024-03-15
+
+  pcc-geo-color:
+    name: Point-cloud compressor
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Learning-based compression of point cloud geometry and color
+    tech_desc: >
+      It includes scripts for training and testing a neural network architecture for compression of geometry and color of point clouds. The
+      compression model is based on a convolutional auto-encoder architecture that operates on block partitions of a point cloud.
+    code:
+      type: Lab GitHub
+      url: https://github.com/mmspg/pcc-geo-color
+      date_last_commit: 2022-01-04
+    language: Python
+    license: other
+    type: Toolset
+    tags:
+      - Computer Vision
+    information:
+      - type: Paper
+        title: Towards neural network approaches for point cloud compression
+        url: https://infoscience.epfl.ch/record/279585
+        notes:
+          - label: Published in
+            text: Proceedings Applications of Digital Image Processing 2020
+            url: https://www.spie.org/Publications/Proceedings/Volume/11510
+    date_added: 2021-11-04
+    date_updated: 2024-03-15
+
+  procam:
+    name: ProCam
+    categories:
+      - Privacy
+    applications:
+      - Info
+      - Health
+    description: Privacy-preserving camera system tracking individual body temperatures
+    tech_desc: >
+      Many contagious diseases such as Covid19 can induce high temperatures and fever in a significant number of affected individuals.
+      Contact tracing of such individuals and analysis of their behaviour  and interactions with others and their environment can be a
+      useful tool to contain spread of contagious diseases. A key component of ProCam is an innovative camera that combines infrared/thermal
+      and visible light sensors while securing the visible light images. Privacy-preserving camera systems are important as more and more
+      people are concerned about the ethics of massive surveillance and invasion of privacy. ProCam solves this by using a cryptographic
+      tool to hide the visible light images, only allowing to retrieve identites with the use of cryptographic keys.
+    url: https://www.epfl.ch/labs/mmspg/procam/
+    tags:
+      - Images
+      - Anonymity
+    type: Application
+    code:
+      type: Project GitLab
+      url: https://gitlab.com/procam.epfl
+      date_last_commit: 2022-01-04
+    date_added: 2022-09-14
+    date_updated: 2024-03-15
+
+  admire:
+    name: AdMiRe EPFL
+    categories:
+      - Other
+    applications:
+      - Other
+    description:
+      "EPFL's contribution to the AdMiRe project: the Background Extraction and Super Resolution modules, with input and output as NDI
+      streams."
+    tech_desc: >
+      Currently, TV audiences can only interact with the shows they are watching through social media or hybrid broadcast broadband TV.
+      Additionally, content creators in film, TV or live productions face technical challenges that result in less engaging content. The
+      EU-funded AdMiRe project aims to tackle both these problems by developing, validating and demonstrating innovative solutions based on
+      mixed reality technology. These solutions will enable audiences at home to be incorporated into the live TV programme they are
+      watching and to interact with people in the TV studio. They will also provide content creators with tools that radically improve
+      talent immersion and interaction with computer-generated elements.
+    url: http://www.admire3d.eu/
+    tags:
+      - Images
+    type: Application
+    license: GPL-3.0
+    code:
+      type: Lab GitHub
+      url: https://github.com/mmspg/AdMiRe_EPFL
+      date_last_commit: 2022-08-26
+    date_added: 2023-03-22
+    date_updated: 2024-03-15

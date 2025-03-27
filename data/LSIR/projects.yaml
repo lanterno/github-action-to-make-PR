@@ -1,0 +1,241 @@
+projects:
+  ai-data-platform-v1:
+    name: AI Research Aiding Online Children Safety
+    categories:
+      - Learning
+    applications:
+      - Info
+      - Gov
+    description: Platform for detecting specific risks and threats children are facing online
+    url: https://www.epfl.ch/labs/lsir/ai-research-aiding-online-children-safety
+    tech_desc: >
+      Machine Learning classifiers and tools to help with the detection of specific risks and threats children are facing while using their
+      newly acquired phones. The classifiers perform on par or better than what exists on the market, and have been adapted to run smoothly
+      on a mobile phone. The analysis can therefore run on the mobile phone without having to send any content to any server.
+    code:
+      type: Private GitHub
+    contacts:
+      - name: Rémi Lebret
+        email: remi.lebret@epfl.ch
+    tags:
+      - Image Classification
+    type: Framework
+    date_added: 2019-03-18
+    date_updated: 2024-02-06
+
+  ai-data-platform-v2:
+    name: AI-Driven Classifier Building Pipeline
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Platform for speeding up the development of Artificial-Intelligence classifiers
+    url: https://www.epfl.ch/labs/lsir/ai-driven-classifier-building-pipeline
+    tech_desc: >
+      The platform aims at accelerating the process of building Artificial Intelligence classifiers for image and text classification.
+    code:
+      type: Private GitHub
+    information:
+      - type: Paper
+        title: Weakly Supervised Active Learning with Cluster Annotation
+        url: https://arxiv.org/pdf/1812.11780.pdf
+        notes:
+          - label: Published at
+            text: NIPS'18
+            url: https://neurips.cc/Conferences/2018
+    contacts:
+      - name: Rémi Lebret
+        email: remi.lebret@epfl.ch
+    tags:
+      - Image Classification
+    type: Framework
+    date_added: 2019-05-22
+    date_updated: 2023-03-21
+    maturity: 2
+
+  scilens:
+    name: SciLens
+    categories:
+      - Learning
+    applications:
+      - Gov
+      - Info
+    description: Helper for science news evaluation
+    url: https://scilens.epfl.ch
+    tech_desc: >
+      A framework helping non-experts to evaluate the quality of scientific news articles, based on indicators automatically generated using
+      machine learning.
+    code:
+      type: Lab GitHub
+      url: https://github.com/LSIR/SciLens
+      date_last_commit: 2022-10-25
+    information:
+      - type: Paper
+        title: "SciLens: Evaluating the Quality of Scientific News Articles Using Social Media and Scientific Literature Indicators"
+        url: https://doi.org/10.1145/3308558.3313657
+        notes:
+          - label: Published at
+            text: WWW'19
+            url: https://www2019.thewebconf.org
+      - type: Paper
+        title: "SciLens News Platform: A System for Real-Time Evaluation of News Articles"
+        url: https://doi.org/10.14778/3415478.3415521
+        notes:
+          - label: Published at
+            text: VLDB'20
+            url: https://vldb2020.org
+      - type: Paper
+        title: "SciClops: Detecting and Contextualizing Scientific Claims for Assisting Manual Fact-Checking"
+        url: https://infoscience.epfl.ch/record/289989?
+        notes:
+          - label: Published at
+            text: CIKM '21
+            url: https://dl.acm.org/doi/10.1145/3459637.3482475
+          - label: Slides
+            text: SciClops
+            url: https://scilens.epfl.ch/files/cikm2021.pptx
+      - type: Paper
+        title: "SciLander: Mapping the Scientific News Landscape"
+        url: https://scilens.epfl.ch/files/icwsm2023.pdf
+        notes:
+          - label: Published at
+            text: ICWSM '23
+            url: https://ojs.aaai.org/index.php/ICWSM/article/view/22144
+    contacts:
+      - name: Panayiotis Smeros
+        email: panayiotis.smeros@epfl.ch
+    tags:
+      - Natural Language
+    language: Python
+    license: GPL-3.0
+    type: Application
+    date_added: 2019-03-18
+    date_updated: 2024-02-06
+
+  media-observatory:
+    name: Media Observatory
+    categories:
+      - Learning
+    applications:
+      - Gov
+      - Info
+    description: News landscape monitoring
+    tech_desc: >
+      A model of the media landscape that maps news channels based on their selection of subjects. The observatory has the following key
+      objectives: giving the public access to algorithmic solutions to monitor the news landscape, developing transparent quality and
+      credibility indicators and creating a meeting point to foster multidisciplinary research opportunities
+    url: https://www.mediaobservatory.com
+    code:
+      type: Private GitHub
+      url: https://github.com/mediaobservatory
+    tags:
+      - Natural Language
+    type: Application
+    information:
+      - type: Paper
+        title: A Dynamic Embedding Model of the Media Landscape
+        url: https://www.mediaobservatory.com/assets/papers/www19.pdf
+        notes:
+          - label: Published at
+            text: WWW'18
+            url: https://www2018.thewebconf.org
+      - type: Paper
+        title: "Selection Bias in News Coverage: Learning it, Fighting it"
+        url: https://www.mediaobservatory.com/assets/papers/www18.pdf
+        notes:
+          - label: Published at
+            text: WWW'19
+            url: https://www2019.thewebconf.org
+    date_added: 2019-09-04
+    date_updated: 2024-02-12
+
+  mozuma:
+    name: Mozuma
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Library of ML standardised models
+    tech_desc: >
+      Mozuma is a library containing a collection of machine learning models with standardised interface to run inference, train and manage
+      model state files.
+    code:
+      type: Lab GitHub
+      url: https://github.com/mozuma/mozuma
+      date_last_commit: 2023-07-11
+    tags:
+      - PyTorch
+    type: Library
+    date_added: 2022-07-06
+    date_updated: 2024-02-12
+
+  commpass:
+    name: CommPass
+    description: >
+      News article similarity visualization tool
+    type: "Application"
+    categories:
+      - "Learning"
+    applications:
+      - "Info"
+    tags:
+      - "Adversarial"
+      - "Machine Learning"
+      - "Natural Language"
+    layman_desc: >
+      This tool visualizes how similar or different news articles about the
+      same event are from multiple perspectives. It can show if articles
+      have a positive or negative stance on the topic. This helps users
+      understand if they are caught in a filter bubble and exposes them to
+      diverse viewpoints. It also assists journalists in positioning their
+      articles among others covering the same story.
+    tech_desc: >
+      The project aims to visualize semantic similarity and polarity of news
+      articles covering a given media event. It extends the NewsTeller
+      platform which processes over 1.5 million news articles per month.
+      The goal is to provide intuitive visualization tools to explore the
+      media landscape and enhance the NewsTeller platform.
+    url: https://www.media-initiative.ch/project/commpass/
+    date_added: 2024-03-19
+
+  # Most common fields:
+  upgrade_newsroom:
+    name: Upgrading the Newsroom
+    description: >
+      Automated image selection system for news articles
+    type: "Application"
+    categories:
+      - "Learning"
+    applications:
+      - "Info"
+    tags:
+      - "Adversarial"
+      - "Machine Learning"
+      - "Natural Language"
+    layman_desc: >
+      It is an automated system that can recommend suitable images to illustrate 
+      news articles by analyzing the text content of the articles. 
+      The system can handle inputs in multiple languages like German and French 
+      by using aligned multilingual word embeddings. 
+      It uses advanced neural network techniques like attention to identify 
+      the most relevant parts of the text for retrieving matching images from a 
+      large database.
+    tech_desc: >
+      The system fuses multiple textual sources (caption, body, headline, lead) 
+      from news articles using a hierarchical attention mechanism to retrieve 
+      relevant images. 
+      It utilizes subword embeddings and self-attention to better encode 
+      entities and capture important keywords within texts. 
+      The model is trained on a large-scale multimodal multilingual dataset of 
+      over 500k German and French news article-image pairs in a 
+      weakly-supervised manner.
+    url: https://modemos.epfl.ch/article
+    contacts:
+      - name: Rémi Lebret
+        email: remi.lebret@epfl.ch
+    information:
+      # One or more of:
+      - type: Paper
+        title: "Upgrading the Newsroom: An Automated Image Selection System for News Articles"
+        url: https://arxiv.org/abs/2004.11449
+    date_added: 2024-03-19

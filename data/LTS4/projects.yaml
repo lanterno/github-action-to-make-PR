@@ -1,0 +1,346 @@
+projects:
+  deepfool:
+    name: DeepFool
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Simple algorithm to find the minimum adversarial perturbations in deep networks
+    layman_desc: >
+      DeepFool is a simple algorithm to find the minimum perturbations needed in deep networks to change the outcome of its decision.
+    tech_desc: >
+      State-of-the-art deep neural networks have achieved impressive results on many image classification tasks. However, these same
+      architectures have been shown to be unstable to small, well sought, perturbations of the images. Despite the importance of this
+      phenomenon, no effective methods have been proposed to accurately compute the robustness of state-of-the-art deep classifiers to such
+      perturbations on large-scale datasets. DeepFool proposes to efficiently compute perturbations that fool deep networks, and thus
+      reliably quantify the robustness of these classifiers.
+    code:
+      type: Lab GitHub
+      url: https://github.com/LTS4/DeepFool
+      date_last_commit: 2018-09-07
+    tags:
+      - Deep Neural Networks
+    language: MATLAB, Python
+    type: Application
+    information:
+      - type: Paper
+        title: "DeepFool: A Simple and Accurate Method to Fool Deep Neural Networks"
+        url: https://infoscience.epfl.ch/record/218057
+        notes:
+          - label: Published at
+            text: 2016 IEEE Conference on Computer Vision and Pattern Recognition
+            url: https://cvpr2016.thecvf.com/program/main_conference
+    date_added: 2019-03-18
+    date_updated: 2024-03-21
+
+  manifool:
+    name: ManiFool
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Algorithm for evaluating the invariance properties of deep networks
+    tech_desc: >
+      Deep convolutional neural networks have been shown to be vulnerable to arbitrary geometric transformations. However, there is no
+      systematic method to measure the invariance properties of deep networks to such transformations. ManiFool is a simple yet scalable
+      algorithm to measure the invariance of deep networks. In particular, it measures the robustness of deep networks to geometric
+      transformations in a worst-case regime as they can be problematic for sensitive applications.
+    code:
+      type: Personal GitHub
+      url: https://github.com/moosavism/ManiFool
+      date_last_commit: 2018-01-24
+    tags:
+      - Deep Neural Networks
+    language: Python
+    type: Application
+    information:
+      - type: Paper
+        title: "Geometric Robustness of Deep Networks: Analysis and Improvement"
+        url: https://infoscience.epfl.ch/record/253668
+        notes:
+          - label: Published in
+            text: proceedings of the 2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition
+            url: https://www.computer.org/csdl/proceedings/cvpr/2018/17D45VtKirt
+    date_added: 2019-03-18
+    date_updated: 2024-03-21
+
+  sparsefool:
+    name: SparseFool
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Geometry-inspired sparse attack on deep networks
+    tech_desc: >
+      Deep Neural Networks have achieved extraordinary results on image classification tasks, but have been shown to be vulnerable to
+      attacks with carefully crafted perturbations of the input data. Although most attacks usually change values of many image’s pixels, it
+      has been shown that deep networks are also vulnerable to sparse alterations of the input. SparseFool implements an efficient algorithm
+      to compute and control sparse alterations.
+    code:
+      type: Lab GitHub
+      url: https://github.com/LTS4/SparseFool
+      date_last_commit: 2020-09-27
+    tags:
+      - Deep Neural Networks
+    language: Python
+    license: Apache-2.0
+    type: Application
+    information:
+      - type: Paper
+        title: "SparseFool: a few pixels make a big difference"
+        url: https://infoscience.epfl.ch/record/258118
+        notes:
+          - label: Published at
+            text: 2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition
+            url: https://cvpr2019.thecvf.com/program/main_conference
+    date_added: 2019-09-04
+    date_updated: 2024-03-21
+
+  universal:
+    name: Universal
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Universal adversarial perturbations
+    tech_desc: >
+      Proposing a universal (image-agnostic) and very small perturbation vector that causes natural images to be misclassified with high
+      probability in a deep neuronal network.
+    code:
+      type: Lab GitHub
+      url: https://github.com/LTS4/universal
+      date_last_commit: 2017-10-23
+    tags:
+      - Deep Neural Networks
+    language: MATLAB, Python
+    type: Application
+    information:
+      - type: Paper
+        title: Universal adversarial perturbations
+        url: https://infoscience.epfl.ch/record/226156
+        notes:
+          - label: Published in
+            text: proceedings of 2017 IEEE Conference on Computer Vision and Pattern Recognition
+            url: https://www.computer.org/csdl/proceedings/cvpr/2017/12OmNyoiYVr
+    date_added: 2019-03-18
+    date_updated: 2024-03-21
+
+  hold-me-tight:
+    name: Hold me tight!
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: >
+      Influence of discriminative features on deep network boundaries in ML
+    tech_desc: >
+      Important insights towards the explainability of neural networks reside in the characteristics of their decision boundaries. In this
+      work, we borrow tools from the field of adversarial robustness, and propose a new perspective that relates dataset features to the
+      distance of samples to the decision boundary. This enables us to carefully tweak the position of the training samples and measure the
+      induced changes on the boundaries of CNNs trained on large-scale vision datasets. We use this framework to reveal some intriguing
+      properties of CNNs. Specifically, we rigorously confirm that neural networks exhibit a high invariance to non-discriminative features,
+      and show that the decision boundaries of a DNN can only exist as long as the classifier is trained with some features that hold them
+      together. Finally, we show that the construction of the decision boundary is extremely sensitive to small perturbations of the
+      training samples, and that changes in certain directions can lead to sudden invariances in the orthogonal ones. This is precisely the
+      mechanism that adversarial training uses to achieve robustness.
+    tags:
+      - Deep Neural Networks
+      - Inductive Bias
+      - Features
+    type: Application
+    code:
+      type: Lab Github
+      url: https://github.com/LTS4/hold-me-tight
+      date_last_commit: 2021-12-10
+    language: Python
+    license: Apache-2.0
+    information:
+      - type: Paper
+        title: Hold me tight! Influence of discriminative features on deep network boundaries
+        url: https://infoscience.epfl.ch/record/280278
+        notes:
+          - label: Published at
+            text: Neural Information Processing Systems (NeurIPS) 2020
+            url: https://neurips.cc/virtual/2020/public/papers.html?filter=sessions&search=poster+session+2
+    date_added: 2021-01-27
+    date_updated: 2024-03-21
+
+  neural-anisotropy-directions:
+    name: Neural Anisotropy Directions
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: >
+      Analyzing the role of the network architecture in shaping the inductive bias of deep classifiers.
+    tech_desc: >
+      In this work, we analyze the role of the network architecture in shaping the inductive bias of deep classifiers. To that end, we start
+      by focusing on a very simple problem, i.e., classifying a class of linearly separable distributions, and show that, depending on the
+      direction of the discriminative feature of the distribution, many state-of-the-art deep convolutional neural networks (CNNs) have a
+      surprisingly hard time solving this simple task. We then define as neural anisotropy directions (NADs) the vectors that encapsulate
+      the directional inductive bias of an architecture. These vectors, which are specific for each architecture and hence act as a
+      signature, encode the preference of a network to separate the input data based on some particular features. We provide an efficient
+      method to identify NADs for several CNN architectures and thus reveal their directional inductive biases. Furthermore, we show that,
+      for the CIFAR-10 dataset, NADs characterize the features used by CNNs to discriminate between different classes.
+    tags:
+      - Deep Neural Networks
+      - Inductive Bias
+      - Features
+    type: Application
+    code:
+      type: Lab Github
+      url: https://github.com/LTS4/neural-anisotropy-directions
+      date_last_commit: 2020-11-17
+    language: Python
+    license: Apache-2.0
+    information:
+      - type: Paper
+        title: "Neural Anisotropy Directions"
+        url: https://infoscience.epfl.ch/record/280279
+        notes:
+          - label: Published at
+            text: Neural Information Processing Systems (NeurIPS) 2020
+            url: https://neurips.cc/virtual/2020/public/papers.html?filter=sessions&search=Poster+Session+4
+    date_added: 2021-01-27
+    date_updated: 2024-03-21
+
+  orthonet:
+    name: OrthoNet
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Multilayer network data clustering
+    tech_desc: >
+      Network data appears in very diverse applications, like biological, social, or sensor networks. Clustering of network nodes into
+      categories or communities has thus become a very common task in machine learning and data mining. Network data comes with some
+      information about the network edges. In some cases, this network information can even be given with multiple views or multiple layers,
+      each one representing a different type of relationship between the network nodes. Increasingly often, network nodes also carry a
+      feature vector. We propose to extend the node clustering problem, that commonly considers only the network information, to a problem
+      where both the network information and the node features are considered together for learning a clustering-friendly representation of
+      the feature space.
+    code:
+      type: Lab GitHub
+      url: https://github.com/LTS4/OrthoNet
+      date_last_commit: 2020-07-28
+    language: Python
+    license: CeCILL-B
+    type: Library
+    tags:
+      - Features
+      - PyTorch
+    information:
+      - type: Paper
+        title: "OrthoNet: Multilayer Network Data Clustering"
+        url: https://infoscience.epfl.ch/record/276521
+        notes:
+          - label: Published in
+            text: IEEE Transactions on Signal and Information Processing over Networks, Volume 6
+            url: https://ieeexplore.ieee.org/document/8974205
+    date_added: 2021-11-04
+    date_updated: 2024-03-21
+
+  prime:
+    name: PRIME
+    categories:
+      - Learning
+      - Security
+    applications:
+      - Info
+    description: Boost robustness of images to common corruptions
+    tech_desc: >
+      PRIME is a generic, plug-n-play data augmentation scheme that consists of simple families of max-entropy image transformations for
+      conferring robustness to common corruptions. PRIME leads to significant improvements in corruption robustness on multiple benchmarks.
+    code:
+      type: Lab GitHub
+      url: https://github.com/LTS4/PRIME-augmentations
+      date_last_commit: 2021-12-28
+    language: Python
+    license: Apache-2.0
+    type: Toolset
+    tags:
+      - Images
+      - PyTorch
+    information:
+      - type: Paper
+        title: "PRIME: A few primitives can boost robustness to common corruptions"
+        url: https://arxiv.org/abs/2112.13547
+    date_added: 2022-07-06
+    date_updated: 2024-03-21
+
+  transfool:
+    name: TransFool
+    description: >
+      Adversarial attack against neural machine translation models
+    type: "Toolset"
+    categories:
+      - "Learning"
+    applications:
+      - "Info"
+    tags:
+      - Machine Learning
+      - Natural Language
+      - Adversarial
+    layman_desc: >
+      TransFool is an attack algorithm to against translation models to make the output translation wrong.
+    tech_desc: >
+      Deep neural networks have been shown to be vulnerable to small perturbations of their inputs. 
+      In this paper, we investigate the vulnerability of Neural Machine Translation (NMT) models to these attacks
+      and propose a new attack algorithm called TransFool. 
+      TransFool can severely degrade the translation quality for different translation tasks and NMT architectures. 
+      Moreover, we show that TransFool is transferable to unknown target models. 
+      Finally, based on automatic and human evaluations, TransFool leads to improvement in performance compared to the
+      existing attacks.
+      Thus, TransFool permits us to better characterize the vulnerability of NMT models and outlines the necessity to
+      design strong defense mechanisms and more robust NMT systems for real-life applications.
+    code:
+      type: Personal Gihub
+      url: https://github.com/sssadrizadeh/TransFool
+      date_last_commit: 2023-06-23
+    language: Python
+    license: Apache-2.0
+    information:
+      - type: Paper
+        title: "TransFool: An Adversarial Attack against Neural Machine Translation Models"
+        url: https://openreview.net/pdf?id=sFk3aBNb81
+    date_added: 2024-04-12
+
+  act:
+    name: Adversarial Classification aTtack
+    description: >
+      Classification-Guided Adversarial Attack against NMT
+    type: "Toolset"
+    categories:
+      - "Learning"
+    applications:
+      - "Info"
+    tags:
+      - Machine Learning
+      - Natural Language
+      - Adversarial
+    layman_desc: >
+      ACT is a new attack framework against translation models to change the class (such as sentiment) of the 
+      output translation.
+    tech_desc: >
+      Neural Machine Translation (NMT) models have been shown to be vulnerable to adversarial attacks, wherein 
+      carefully crafted perturbations of the input can mislead the target model. 
+      In this paper, we introduce ACT, a novel adversarial attack framework against NMT systems guided by a classifier. 
+      In our attack, the adversary aims to craft meaning-preserving adversarial examples whose translations in the 
+      target language by the NMT model belong to a different class (such as sentiment) than the original translations. 
+      Unlike previous attacks, our new approach has a more substantial effect on the translation by altering the overall 
+      meaning, which then leads to a different class determined by a classifier.  
+      Our attack is considerably more successful in altering the class of the output translation and has more effect on 
+      the translation. 
+      This new paradigm can reveal the vulnerabilities of NMT systems by focusing on the class of translation rather 
+      than the mere translation quality as studied traditionally.
+    code:
+      type: Personal Gihub
+      url: https://github.com/sssadrizadeh/ACT
+      date_last_commit: 2024-02-22
+    language: Python
+    license: Apache-2.0
+    date_added: 2024-12-31
+    information:
+      - type: Paper
+        title: A Classification-Guided Approach for Adversarial Attacks against Neural Machine Translation
+        url: https://aclanthology.org/2024.eacl-long.70/

@@ -1,0 +1,90 @@
+projects:
+  decopt:
+    name: DECOPT
+    categories:
+      - Other
+    applications:
+      - Info
+    description: Decomposition Convex Optimization
+    layman_desc: >
+      Package for the generic constrained convex optimization problems.
+    url: https://www.epfl.ch/labs/lions/technology/decopt/
+    code:
+      type: Lab Download
+      url: https://www.epfl.ch/labs/lions/wp-content/uploads/2019/01/DECOPT-v1.0.zip
+    language: MATLAB
+    type: Framework, Experiments
+    tags:
+      - Optimization
+    information:
+      - type: Paper
+        title: Constrained convex minimization via model-based excessive gap
+        url: https://infoscience.epfl.ch/record/201842
+        notes:
+          - label: Published at
+            text: NIPS 2014
+            url: https://researchr.org/publication/nips-2014
+      - type: Paper
+        title: A Primal-Dual Algorithmic Framework for Constrained Convex Minimization
+        url: https://infoscience.epfl.ch/record/199844
+    date_added: 2021-11-04
+    date_updated: 2022-07-05
+
+  lb-csmri:
+    name: LB-CSMRI
+    categories:
+      - Learning
+    applications:
+      - Health
+      - Info
+    description: Magnetic imaging resonance optimization
+    layman_desc: >
+      Learning-based framework for optimizing magnetic resonance imaging (MRI) reconstruction.
+    url: https://www.epfl.ch/labs/lions/technology/lb-csmri-2/
+    code:
+      type: Lab Download
+      url: https://www.epfl.ch/labs/lions/wp-content/uploads/2019/01/LB-CSMRI.zip
+    language: MATLAB
+    type: Framework, Simulation
+    tags:
+      - Optimization
+      - Images
+    information:
+      - type: Paper
+        title: Learning-Based Compressive MRI
+        url: https://infoscience.epfl.ch/record/255182
+        notes:
+          - label: Published in
+            text: IEEE Transactions on Medical Imaging, Vol. 37, 2018
+            url: https://ieeexplore.ieee.org/document/8353419
+    date_added: 2021-11-05
+    date_updated: 2022-07-05
+
+  storm+:
+    name: STORM+
+    categories:
+      - Learning
+    applications:
+      - Info
+    description: Faster PyTorch optimizer
+    layman_desc: >
+      Compared to the largely used SGD optimizer for PyTorch, STORM+ is faster but requires two passes on the data.
+    code:
+      type: Lab GitHub
+      url: https://github.com/LIONS-EPFL/storm-plus-code
+      date_last_commit: 2022-05-14
+    language: Python
+    type: Library
+    tags:
+      - PyTorch
+    information:
+      - type: Paper
+        title: "STORM+: Fully Adaptive SGD with Momentum for Nonconvex Optimization"
+        url: https://infoscience.epfl.ch/record/289807
+        notes:
+          - label: Published at
+            text: NeurIPS 2021
+            url: https://neurips.cc/Conferences/2021
+    maturity: 1
+    date_added: 2022-07-05
+    date_updated: 2022-08-11
