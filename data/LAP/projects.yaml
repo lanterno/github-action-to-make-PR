@@ -1,0 +1,69 @@
+projects:
+  dynamatic:
+    name: Dynamatic
+    type: Toolset
+    categories:
+      - Other
+    applications:
+      - Info
+    description: High-level synthesis compiler
+    tech_desc: >
+      Dynamatic is an academic, open-source high-level synthesis compiler that produces synchronous dynamically-scheduled circuits from
+      C/C++ code. It delivers significant performance improvements compared to state-of-the-art commercial tools in specific situations.
+    url: https://dynamatic.epfl.ch/
+    code:
+      type: Lab GitHub
+      url: https://github.com/EPFL-LAP/dynamatic
+      date_last_commit: 2024-03-21
+    language: C++
+    license: MIT
+    tags:
+      - Low-Level
+    information:
+      - type: Paper
+        title: Dynamically Scheduled High-level Synthesis
+        url: https://www.epfl.ch/labs/lap/wp-content/uploads/2018/11/JosipovicFeb18_DynamicallyScheduledHighLevelSynthesis_FPGA18.pdf
+        notes:
+          - label: Published in
+            text: Proceedings of the 2018 ACM/SIGDA International Symposium on FPGAs
+            url: https://dl.acm.org/doi/proceedings/10.1145/3174243
+      - type: Tutorial
+        title: "Dynamatic: From C/C++ to Dynamically Scheduled Circuits"
+        url: https://dynamatic.epfl.ch/papers/FPGA_20_Dynamatic_From_C_C_to_Dynamically_Scheduled_Circuits.pdf
+        notes:
+          - label: Published in
+            text: Proceedings of the 2020 ACM/SIGDA International Symposium on FPGAs
+            url: https://www.sigda.org/publications/fpga-2020-toc/
+    date_added: 2021-11-04
+    date_updated: 2024-03-22
+
+  dynaburst:
+    name: DynaBurst
+    type: Application, Library
+    categories:
+      - Other
+    applications:
+      - Info
+    description: Group DRAM bursts
+    tech_desc: >
+      DynaBurst is a highly flexible, FPGA-optimized, memory system for bandwidth-bound accelerators that perform frequent irregular
+      accesses to DRAM memory. DynaBurst is an extension of the lab's miss-optimized nonblocking cache which groups incoming requests into
+      bursts of memory requests.
+    code:
+      type: Lab GitHub
+      url: https://github.com/EPFL-LAP/fpl19-DynaBurst
+      date_last_commit: 2019-09-06
+    language: VHDL
+    license: MIT
+    tags:
+      - Low-Level
+    information:
+      - type: Paper
+        title: "DynaBurst: Dynamically Assemblying DRAM Bursts over a Multitude of Random Accesses"
+        url: https://infoscience.epfl.ch/record/276498
+        notes:
+          - label: Published at
+            text: FPL 2019
+            url: https://fpl2019.bsc.es
+    date_added: 2022-07-05
+    date_updated: 2024-03-22

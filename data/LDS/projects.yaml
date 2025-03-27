@@ -1,0 +1,239 @@
+projects:
+  lattigo:
+    categories:
+      - Privacy
+    applications:
+      - Info
+      - Infra
+    name: Lattigo
+    description: A lattice-based multiparty homomorphic encryption library in Go
+    tech_desc: >
+      Lattigo is a Go module for Multiparty Homomorphic Encryption, that implements Ring-Learning-With-Errors-based homomorphic encryption
+      primitives. It comprises highly-efficient RNS versions of the BFV and CKKS schemes and their multiparty (N-out-of-N-threshold)
+      counterparts. It also implements a dense-key and sparse-key Bootstrapping procedure for RNS-CKKS.
+
+      The Lattigo library was originally exclusively developed by the EPFL Laboratory for Data Security until its version 2.4.0. Starting
+      with the release of version 3.0.0, Lattigo is maintained and supported by Tune Insight SA.
+
+      Lattigo 2.0.0 has been code-reviewed by ELCA in November 2020 and, within the allocated time for the code review, no critical or
+      high-risk issues were found.
+    layman_desc: >
+      Homomorphic encryption (HE) comprises a special class of cryptographic schemes that enable computing directly on encrypted data,
+      without requiring the data to be decrypted first. It therefore enables a set of operations (polynomial evaluation and approximations
+      of non-polynomial functions) to be "blindly" performed on encrypted sensitive data by an untrustworthy party, with a controlled
+      computational overhead. Lattigo implements HE and its multiparty extension (MHE), that enables several entities to collaboratively
+      compute a function on their confidential or sensitive data, without revealing to each other anything besides the result of this
+      computation. Lattigo's multiparty homomorphic encryption technology is an enabler for secure data sharing in multiple scenarios.
+    code:
+      type: Lab GitHub
+      url: https://github.com/tuneinsight/lattigo
+      date_last_commit: 2023-03-14
+    incubator:
+      type: retired
+      work: 2020/Q1 maturity evaluation
+    tags:
+      - Homomorphic Encryption
+      - Secure Multi-Party Computation
+    language: GoLang
+    type: Library
+    license: Apache-2.0
+    date_added: 2019-08-15
+    date_updated: 2023-03-21
+    maturity: 3
+
+  unlynx:
+    name: Unlynx
+    categories:
+      - Privacy
+    applications:
+      - Health
+      - Info
+    description: Privacy-preserving data sharing
+    layman_desc: >
+      Unlynx offers a series of independent protocols that when combined offer a verifiably-secure and safe way to share sensitive data
+      (e.g., medical data).
+    notes: Transfered to TuneInsight
+    code:
+      type: Lab GitHub
+      url: https://github.com/ldsec/unlynx
+      date_last_commit: 2021-10-11
+    information:
+      - type: Paper
+        title: "UnLynx: A Decentralized System for Privacy-Conscious Data Sharing"
+        url: https://doi.org/10.1515/popets-2017-0047
+        notes:
+          - label: Published at
+            text: "Privacy Enhancing Technologies Symposium, Minneapolis, MN, USA, July 18–21, 2017"
+            url: https://petsymposium.org/2017/program.php
+    lines_of_code: 11000
+    tags:
+      - Protocol
+      - Homomorphic Encryption
+      - Secure Multi-Party Computation
+    language: GoLang
+    type: Application
+    license: non-commercial
+    date_added: 2019-03-18
+    date_updated: 2022-09-28
+
+  medco:
+    name: MedCo
+    categories:
+      - Privacy
+    applications:
+      - Health
+    description: Privacy-preserving cohort exploration
+    layman_desc: >
+      MedCo enables privacy-preserving cohort exploration by providing ways of querying medical datasets with end-to-end encryption of
+      queries, data at rest, in transfer and during computation, all the while guaranteeing differential privacy.
+    notes: Transfered to TuneInsight
+    url: https://medco.epfl.ch/
+    code:
+      type: Lab GitHub
+      url: https://github.com/ldsec/medco
+      date_last_commit: 2022-05-25
+    lines_of_code: 16000
+    tags:
+      - Homomorphic Encryption
+      - Secure Multi-Party Computation
+    language: GoLang
+    type: Application
+    license: non-commercial
+    incubator:
+      type: retired
+      work: 2020/Q2 Maturity Evaluation and library support
+    date_added: 2019-03-18
+    date_updated: 2023-03-21
+    maturity: 2
+
+  drynx:
+    name: Drynx
+    categories:
+      - Privacy
+    applications:
+      - Health
+    description: Decentralized, secure, verifiable system for statistical queries and machine learning on distributed datasets
+    tech_desc: >
+      Drynx allows to create privacy-preserving queries on encrypted datasets that are stored at different data providers who don't want to
+      share the original data. Different types of statistical queries are possible, like average, standard deviation, linear and logistic
+      regressions - all using homomorphic encryption, which means that the data is never shared in cleartext.
+    notes: Transfered to TuneInsight
+    information:
+      - type: Paper
+        title: "Drynx: Decentralized, Secure, Verifiable System for Statistical Queries and Machine Learning on Distributed Datasets"
+        url: https://arxiv.org/abs/1902.03785
+        notes:
+          - label: Published in
+            text: "IEEE Transactions On Information Forensics And Security"
+            url: https://ieeexplore.ieee.org/document/9019831
+    tags:
+      - Homomorphic Encryption
+      - Secure Multi-Party Computation
+    language: GoLang
+    type: Application
+    license: other
+    incubator:
+      type: retired_archived
+      work: 2020/Q1 created demonstrator for SwissRe
+      products:
+        - type: Demo
+          title: Decentralized Data Analysis
+          url: https://github.com/c4dt/service-drynx
+          code: https://github.com/c4dt/service-drynx
+    date_added: 2019-03-18
+    date_updated: 2022-09-28
+    maturity: 1
+
+  spindle:
+    name: SPINDLE
+    categories:
+      - Privacy
+      - Learning
+    applications:
+      - Info
+    description: >
+      Scalable, privacy-preserving, distributed learning on distributed datasets
+    tech_desc: >
+      SPINDLE allows to train and evaluate generalized linear models on datasets that are stored at different data providers who don't want
+      to share the original data.
+    notes: Transfered to TuneInsight
+    information:
+      - type: Paper
+        title: Scalable Privacy-Preserving Distributed Learning
+        url: https://petsymposium.org/2021/files/papers/issue2/popets-2021-0030.pdf
+        notes:
+          - label: Published at
+            text: PETS 2021
+            url: https://petsymposium.org/2021/
+    tags:
+      - Homomorphic Encryption
+      - Secure Multi-Party Computation
+    language: GoLang
+    type: Application
+    license: other
+    incubator:
+      type: retired_archived
+      work: 2021/Q1 created Spindle demonstrator
+      products:
+        - type: Demo
+          title: SPINDLE demonstrator
+          url: https://github.com/c4dt/service-spindle
+    date_added: 2021-01-21
+    date_updated: 2022-09-28
+
+  pricell:
+    name: PriCell
+    categories:
+      - Learning
+      - Privacy
+    applications:
+      - Info
+    description: Privacy preserving neural network learning for diseased cell classification
+    tech_desc: >
+      PriCell is a Golang library that ensures CellCnn analysis in privacy-preserving, distributed, N-party setting.
+    code:
+      type: Lab GitHub
+      url: https://github.com/ldsec/cellCNN
+      date_last_commit: 2022-03-05
+    information:
+      - type: Paper
+        title: Privacy-Preserving Federated Neural Network Learning for Disease-Associated Cell Classification
+        url: https://doi.org/10.1101/2022.01.10.475610
+    tags:
+      - Homomorphic Encryption
+    language: GoLang
+    type: Application
+    license: non-commercial
+    date_added: 2022-07-05
+    date_updated: 2022-07-05
+
+  crisp:
+    name: CRISP
+    categories:
+      - Privacy
+    applications:
+      - Health
+      - Gov
+    description: Offload computation to services while keeping data private
+    tech_desc: >
+      CRISP relies on quantum-resistant lattice-based approximate homomorphic encryption primitives that support flexible polynomial
+      computations on encrypted data without degrading utility. To ensure data integrity, it employs lattice-based commitments and
+      zero-knowledge proofs based on the multi-party-computation-in-the-head paradigm, which enables users to simultaneously convince
+      service providers about the correctness of the encrypted data as well as the authenticity of the underlying plaintext data, using the
+      deployed certification mechanism.
+    code:
+      type: Lab GitHub
+      url: https://github.com/ldsec/CRISP
+      date_last_commit: 2021-12-03
+    information:
+      - type: Paper
+        title: Privacy and Integrity Preserving Computations with CRISP
+        url: https://infoscience.epfl.ch/record/291261
+    tags:
+      - Homomorphic Encryption
+      - Zero-Knowledge Proofs
+    language: GoLang
+    type: Application
+    license: Apache-2.0
+    date_added: 2022-07-05
+    date_updated: 2022-07-05

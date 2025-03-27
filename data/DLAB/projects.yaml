@@ -1,0 +1,417 @@
+projects:
+  secvm:
+    name: SecVM
+    categories:
+      - Learning
+      - Privacy
+    applications:
+      - Infra
+    type: Experiments
+    description: Privacy-preserving classification
+    layman_desc: >
+      Today, large amounts of valuable data are distributed among millions of user-held devices, such as personal computers, phones, or
+      Internet-of-things devices. Many companies collect such data with the goal of using it for training machine learning models
+      allowingthem to improve their services. User-held data is, however, often sensitive, and collecting it is problematic in terms of
+      privacy.  We propose a novel way of training a supervised classifier in a distributed setting akin to the recently proposed federated
+      learning paradigm, but under the stricter privacy requirement that the server that trains the model is assumed to be untrusted and
+      potentially malicious. We thus preserve user privacy by design, rather than by trust.
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfl-dlab/secvm-server
+      date_last_commit: 2020-08-17
+    language: Java
+    tags:
+      - Decentralized
+      - Distributed Learning
+    information:
+      - type: Paper
+        title: Privacy-Preserving Classification with Secret Vector Machines
+        url: https://arxiv.org/pdf/1907.03373.pdf
+      - type: Paper
+        title: Privacy-Preserving Distributed Learning with Secret Gradient Descent
+        url: https://arxiv.org/pdf/1906.11993.pdf
+    date_added: 2021-11-05
+    date_updated: 2024-04-16
+    maturity: 1
+
+  invariant-language-models:
+    name: Invariant Language Modeling
+    categories:
+      - Learning
+    applications:
+      - Info
+    type: Application
+    description: Invariant natural language modeling
+    layman_desc: >
+      Modern pretrained language models are critical components for natural language processing. Yet, they suffer from spurious
+      correlations, poor out-of-domain generalization, and biases. This is a framework to learn invariant representations that should
+      generalize across training environments.
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfl-dlab/invariant-language-models
+      date_last_commit: 2022-01-24
+    language: Python
+    license: Apache-2.0
+    tags:
+      - Natural Language
+    date_added: 2021-11-05
+    date_updated: 2024-04-16
+
+  eighenthemes:
+    name: Eigenthemes
+    categories:
+      - Learning
+    applications:
+      - Info
+    type: Experiments
+    description: Improved entity linking
+    layman_desc: >
+      In natural language processing, entity linking, i.e. the task of assigning a unique identity to entities (for example "Paris" in a
+      sentence refers to the city, not to someone's name), is an important problem. Most previous solutions rely on annotated data, which is
+      however not available in many domains. We propose a method for entity linking without the need for annotated data.
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfl-dlab/eigenthemes
+      date_last_commit: 2021-09-23
+    language: Python
+    license: Apache-2.0
+    tags:
+      - Natural Language
+    information:
+      - type: Paper
+        title: Low-Rank Subspaces for Unsupervised Entity Linking
+        url: https://arxiv.org/pdf/2104.08737.pdf
+        notes:
+          - label: Published at
+            text: EMNLP 2021
+            url: https://2021.emnlp.org/
+    date_added: 2021-11-05
+    date_updated: 2024-04-16
+
+  quotebank:
+    name: Quotebank
+    categories:
+      - Learning
+    applications:
+      - Info
+    type: Experiments
+    description: Corpus of quotations from a decade of news
+    layman_desc: >
+      News from half a million of website, over the last 15 years, labelled by writer. Quotebank shows that it can accurately associate any
+      citation with who most probably wrote it. It helps in identifying the source of a given news without any metadata.
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfl-dlab/Quotebank
+      date_last_commit: 2021-07-23
+    language: Python
+    license: MIT
+    tags:
+      - Natural Language
+    information:
+      - type: Paper
+        title: "Quotebank: A Corpus of Quotations from a Decade of News"
+        url: https://infoscience.epfl.ch/record/294900
+        notes:
+          - label: Published at
+            text: WSDM 2021
+            url: https://www.wsdm-conference.org/2021/proceedings.php
+      - type: Demo
+        title: Quotebank
+        url: https://quotebank.dlab.tools
+    date_added: 2022-09-28
+    date_updated: 2024-04-16
+
+  dipps:
+    name: DiPPS
+    categories:
+      - Privacy
+      - Learning
+    applications:
+      - Info
+    type: Experiments
+    tags:
+      - Survey
+    description: Differentially Private Propensity Scores for Bias Correction
+    layman_desc: >
+      In surveys, it is typically up to the individuals to decide if they want to participate or not, which leads to participation bias: the
+      individuals willing to share their data might not be representative of the entire population. Similarly, there are cases where one
+      does not have direct access to any data of the target population and has to resort to publicly available proxy data sampled from a
+      different distribution. In this paper, we present Differentially Private Propensity Scores for Bias Correction (DiPPS), a method for
+      approximating the true data distribution of interest in both of the above settings
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfl-dlab/DIPPS
+      date_last_commit: 2022-10-02
+    language: Python
+    license: other
+    information:
+      - type: Paper
+        title: Differentially Private Propensity Scores for Bias Correction
+        url: https://arxiv.org/abs/2210.02360
+    date_added: 2023-03-16
+    date_updated: 2024-04-16
+
+  genie:
+    name: GenIE
+    categories:
+      - Privacy
+      - Learning
+    applications:
+      - Info
+    type: Experiments
+    tags:
+      - Natural Language
+    description: Autoregressive information extraction system
+    layman_desc: >
+      GenIE uses a sequence-to-sequence model that takes unstructured text as input and autoregressively generates a structured semantic
+      representation of the information expressed in it, in the form of (subject, relation, object) triplets, as output.
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfl-dlab/GenIE
+      date_last_commit: 2023-03-28
+    language: Python
+    license: MIT
+    information:
+      - type: Paper
+        title: "GenIE: Generative Information Extraction"
+        url: https://arxiv.org/abs/2112.08340
+    date_added: 2023-03-16
+    date_updated: 2024-04-16
+
+  synthie:
+    name: SynthIE
+    categories:
+      - Learning
+    applications:
+      - Info
+    type: Experiments
+    tags:
+      - Natural Language
+    description: Exploiting Asymmetry for Synthetic Training Data Generation
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfl-dlab/SynthIE
+      date_last_commit: 2023-05-27
+    language: Python
+    license: MIT
+    information:
+      - type: Paper
+        title: "Exploiting Asymmetry for Synthetic Training Data Generation: SynthIE and the Case of Information Extraction"
+        url: https://arxiv.org/abs/2303.04132
+    date_added: 2023-03-16
+    date_updated: 2024-04-16
+
+  aiflows:
+    name: aiFlows
+    description: >
+      Modular AI collaboration framework
+    type: "Framework"
+    categories:
+      - "Learning"
+    applications:
+      - "Info"
+    tags:
+      - Machine Learning
+      - Cloud
+      - Protocol
+    layman_desc: >
+      aiFlows simplifies the design and implementation of complex workflows involving humans, 
+      AI systems, and tools.  
+      It enables modularity by allowing Flows to be stacked like LEGO blocks, reusability by 
+      sharing Flows on the FlowVerse, remote peer-to-peer collaboration between Flows, and 
+      concurrent execution of multiple Flows.  
+      The goal is to empower researchers and practitioners with complete control and 
+      customizability over their AI workflows.
+    tech_desc: >
+      aiFlows is a framework centered around Flows and messages.  
+      Flows are independent, self-contained computational building blocks that can complete 
+      semantically meaningful units of work.  
+      Flows communicate via a standardized message-based interface, enabling modularity, 
+      reusability, remote peer-to-peer collaboration, and concurrency.
+    url: https://epfl-dlab.github.io/aiflows/docs/built_with_sphinx/html/index.html
+    code:
+      type: Lab Github
+      url: https://github.com/epfl-dlab/aiflows?tab=readme-ov-file
+      date_last_commit: 2024-04-12
+    language: Python
+    license: MIT
+    date_added: 2024-04-16
+
+  transformers-cfg:
+    name: Transformers CFG
+    description: >
+      Grammar-constrained text generation with Transformers models
+    type: "Library"
+    categories:
+      - "Learning"
+    applications:
+      - "Info"
+    tags:
+      - Machine Learning
+      - Natural Language
+    layman_desc: >
+      The transformers_cfg library allows you to control the output of
+      language models like GPT-3 by providing a set of rules (grammar) that
+      the generated text must follow.  
+      This is useful for generating structured data like code, JSON
+      objects, or any text that needs to conform to specific patterns or
+      rules.  
+      The library works with popular language models and provides an
+      easy way to incorporate grammar constraints into the text generation
+      process without modifying the underlying models.
+    tech_desc: >
+      Transformers_cfg is an extension library for the Hugging Face
+      Transformers library that enables grammar-constrained text generation.  
+      It provides tools and functionalities to work with context-free
+      grammars (CFGs) for natural language processing tasks involving CFGs.  
+      The library supports various Transformer models, including LLaMa,
+      GPT, Bloom, Mistral, and Falcon, and offers features like multilingual
+      grammar support and integration with Text-Generation-WebUI.
+    code:
+      type: Lab Github
+      url: https://github.com/epfl-dlab/transformers-CFG
+      date_last_commit: 2024-04-13
+    language: Python
+    license: MIT
+    date_added: 2024-04-16
+
+  multilingual-entity-insertion:
+    name: "Entity Insertion in Wikipedia"
+    description: >
+      Multilingual entity insertion in Wikipedia articles
+    type: "Experiments"
+    categories:
+      - "Learning"
+    applications:
+      - "Info"
+    tags:
+      - Machine Learning
+      - Natural Language
+    layman_desc: >
+      Automatically adding relevant links to entities in Wikipedia articles
+      across different languages is a challenging task. This project provides
+      a solution by processing data from Wikipedia dumps and training machine
+      learning models. The data processing extracts information like articles,
+      links, and mentions from the dumps. The modeling code trains models to
+      rank candidate text spans for inserting an entity link. The models are
+      evaluated against various baselines like keyword matching and language
+      models. This helps in improving the quality and consistency of Wikipedia
+      by suggesting relevant entity links across multiple languages.
+    tech_desc: >
+      Proposes a framework for inserting entities into Wikipedia articles
+      across multiple languages. It processes Wikipedia dumps to extract
+      data and train models for entity insertion. The key components are:
+      1) Data processing pipeline to extract relevant data from Wikipedia dumps.
+      2) Modeling code for training entity insertion models using a ranking
+      loss or pointwise loss. 3) Benchmarking code to evaluate models against
+      baselines like BM25, EntQA, and GPT language models.
+    code:
+      type: Lab Github
+      url: https://github.com/epfl-dlab/multilingual-entity-insertion
+      date_last_commit: 2024-04-15
+    language: Jupyter Notebook
+    date_added: 2024-04-16
+
+  # Most common fields:
+  refiner:
+    name: Refiner
+    description: >
+      Reasoning framework with feedback on intermediate steps
+    type: "Toolset"
+    categories:
+      - "Learning"
+    applications:
+      - "Info"
+    tags:
+      - Machine Learning
+      - Natural Language
+      - Optimization
+    layman_desc: >
+      This project introduces REFINER, a system that helps language models
+      improve their reasoning abilities through feedback.  It has one model
+      that generates initial reasoning steps, and another model that
+      critiques those steps.  By getting feedback on the intermediate
+      reasoning, the first model can refine its final answer.  This allows
+      language models to solve complex reasoning tasks more accurately.
+    tech_desc: >
+      REFINER is an interaction-based framework for natural language
+      reasoning tasks.  It has a CRITIC model that provides structured
+      feedback on intermediate reasoning steps, and a GENERATOR model that
+      solves the reasoning task by first generating intermediate steps.  The
+      core idea is the interaction between the generator and critic, where
+      the generator's steps are improved via feedback from the critic.
+    code:
+      type: Personal GitHub
+      url: https://github.com/debjitpaul/refiner
+      date_last_commit: 2024-02-21
+    language: Python
+    license: Apache-2.0
+    date_added: 2024-05-03
+
+  lamen:
+    name: LAMEN
+    description: >
+      Evaluating language models through negotiation tasks
+    type: "Toolset"
+    categories:
+      - "Learning"
+    applications:
+      - "Info"
+    tags:
+      - Machine Learning
+      - Natural Language
+      - Optimization
+    layman_desc: >
+      This project introduces a new way to test the decision-making abilities of
+      AI language models by having them engage in negotiations with each other.
+      By designing various negotiation scenarios, such as dividing pizza slices
+      or deciding on the amount of cheese, the researchers can evaluate how well
+      the AI models perform in terms of reaching agreements, maximizing their
+      own benefits, and cooperating when necessary. The study also examines how
+      faithfully the AI models follow their own reasoning and instructions,
+      providing insights into their reliability and alignment with human values.
+    tech_desc: >
+      The project proposes using structured negotiations as a dynamic benchmark
+      for evaluating language model (LM) agents. The negotiation framework
+      consists of a game setting, issues to negotiate, and optional preference
+      weights, allowing for the design of complex games by increasing the number
+      of issues, mixing issue types, and adding non-uniform preferences. The
+      benchmark setup jointly evaluates performance metrics (utility and
+      completion rate) and alignment metrics (faithfulness and
+      instruction-following) in self-play and cross-play settings.
+    url: https://dlab.epfl.ch/2024-01-10-evaluating-language-model-agency/
+    code:
+      type: Lab Github
+      url: https://github.com/epfl-dlab/LAMEN
+      date_last_commit: 2024-02-04
+    language: Python
+    date_added: 2024-05-03
+
+  llm-ga:
+    name: LLM Grounding Analysis
+    description: >
+      LLM grounding vs. factual recall
+    type: "Experiments"
+    categories:
+      - "Learning"
+    applications:
+      - "Gov"
+    tags:
+      - Machine Learning
+      - Natural Language
+    layman_desc: >
+      Large language models (LLMs) can memorize and apply new information. However,
+      it's unclear how they balance this new context with their pre-existing knowledge.
+      This research analyzes how LLMs manage this conflict using a new counterfactual dataset.
+    tech_desc: >
+      The study investigates LLMs using Fakepedia, a dataset presenting contradictions 
+      between known facts and new information. Through Masked Grouped Causal Tracing (MGCT),
+      the research deciphers LLMs' grounding mechanisms by contrasting neural activation patterns.
+      Findings help understand the co-functioning of grounding with recall capabilities within LLMs.
+    code:
+      type: Lab Github
+      url: https://github.com/epfl-dlab/llm-grounding-analysis
+      date_last_commit: 2024-02-19
+    language: Python
+    license: Apache-2.0
+    date_added: 2024-05-03

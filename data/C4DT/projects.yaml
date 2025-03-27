@@ -1,0 +1,24 @@
+projects:
+  eid-demo:
+    name: E-ID Demo (Issuer & Verifier)
+    categories:
+      - Security
+      - Privacy
+    applications:
+      - Gov
+    type: Application
+    description: Demo for the swiss E-ID ledger. It includes an issuer and a verifier.
+    tech_desc: >
+      The issuer is a web application that allows to create a new identity and issue a credential. 
+      The verifier is a web application that allows to verify the credential.
+    code:
+      type: Lab GitHub
+      url: https://github.com/c4dt/eid-demo
+      date_last_commit: 2024-01-01
+    language: TypeScript
+    tags:
+      - Access Control
+      - Development
+    maturity: 0
+    date_added: 2024-01-09
+    date_updated: 2024-01-09

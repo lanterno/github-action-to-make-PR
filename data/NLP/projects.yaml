@@ -1,0 +1,144 @@
+projects:
+  peacok:
+    name: peacok
+    description: >
+      Persona Commonsense Knowledge for Consistent and Engaging Narratives
+    tech_desc: >
+      PeaCoK is a large-scale persona commonsense knowledge graph, containing
+      approximately 100K human-validated persona facts. It schematizes five dimensions
+      of persona knowledge identified in previous studies of human interactive
+      behaviours, and distils facts in this schema from both existing commonsense
+      knowledge graphs and large-scale pretrained language models. The analysis
+      indicates that PeaCoK contains rich and precise world persona inferences that
+      help downstream systems generate more consistent and engaging narratives.
+    layman_desc: >
+      PeaCoK is a project that creates a big network of common knowledge about
+      different personas, with around 100,000 facts that have been checked by humans.
+      It organizes this knowledge into five categories based on how people interact,
+      and it gets this information from existing networks of common knowledge and
+      computer models that have been trained on large amounts of data. The project
+      shows that this network can help create more realistic and engaging stories or
+      conversations in digital systems.
+    type: Experiments
+    categories:
+      - Learning
+    applications:
+      - Info
+    tags:
+      - Machine Learning
+      - Natural Language
+    code:
+      type: Personal Github
+      url: https://github.com/Silin159/PeaCoK
+      date_last_commit: 2023-09-01
+    information:
+      - type: video
+        url: https://www.youtube.com/watch?v=QQfiKRsOYwU
+        title: Persona Commonsense Knowledge for Consistent and Engaging Narratives
+    language: Python
+    date_added: 2024-02-20
+
+  disco_nli:
+    name: distilled counterfactual data
+    description: >
+      Automated generation of high-quality counterfactual data.
+    tech_desc: >
+      DISCO (DIStilled COunterfactual Data) is a method for automatically
+      generating high-quality counterfactual data at scale. It uses a large
+      general language model to generate phrasal perturbations, which are then
+      filtered by a task-specific teacher model to distill high-quality
+      counterfactual data. The method has been applied to natural language
+      inference tasks, demonstrating improved robustness and generalization
+      across distributions.
+    layman_desc: >
+      DISCO is a system that creates alternative versions of data, which can
+      help machines learn better. It uses a language model, similar to how
+      autocorrect works, to create these alternatives. When tested, machines
+      trained with these alternatives performed better, especially in
+      understanding and inferring language.
+    type: Framework
+    categories:
+      - Learning
+    applications:
+      - Info
+    tags:
+      - Machine Learning
+      - Natural Language
+      - Adversarial
+    code:
+      type: Personal Github
+      url: https://github.com/eric11eca/disco
+      date_last_commit: 2023-07-27
+    language: Python
+    license: MIT
+    date_added: 2024-02-20
+
+  meditron:
+    name: meditron
+    description: >
+      Medical language model pretraining
+    tech_desc: >
+      MEDITRON-70B is a large language model (LLM) aimed at democratizing 
+      access to medical knowledge. It is an open-source LLM with 7B and 70B 
+      parameters, adapted specifically for the medical domain. The model builds 
+      on Llama-2 and extends pretraining on a curated medical corpus, including 
+      selected PubMed articles and internationally-recognized medical guidelines.
+    layman_desc: >
+      MEDITRON-70B is a computer program designed to understand and generate 
+      medical language. It's like a super-smart medical dictionary that's been 
+      trained on a vast amount of medical literature. This tool is open for 
+      anyone to use and improve, making medical knowledge more accessible to all.
+    type: Application
+    categories:
+      - Learning
+    applications:
+      - Health
+    tags:
+      - Machine Learning
+      - Natural Language
+    code:
+      type: Lab Github
+      url: https://github.com/epfLLM/meditron
+      date_last_commit: 2024-01-12
+    information:
+      - type: video
+        url: https://youtu.be/37ZQI_-17TI
+        title: "ICRC LLM Symposium 2023: Real World Use Cases - Meditron-70B"
+    language: Python
+    license: Apache-2.0
+    date_added: 2024-02-20
+
+  crow:
+    name: crow
+    description: >
+      Benchmarking Commonsense Reasoning in Real-World Tasks
+    tech_desc: >
+      CRoW is a manually-curated, multi-task benchmark that evaluates the ability 
+      of models to apply commonsense reasoning in the context of six real-world NLP 
+      tasks. It is constructed using a multi-stage data collection pipeline that 
+      rewrites examples from existing datasets using commonsense-violating 
+      perturbations. The study reveals a significant performance gap when NLP systems 
+      are evaluated on CRoW compared to humans, indicating that commonsense reasoning 
+      is far from being solved in real-world task settings.
+    layman_desc: >
+      CRoW is a tool that tests how well computer models can use common sense when 
+      performing six different language-related tasks. It does this by taking examples 
+      from existing datasets and changing them in ways that violate common sense. The 
+      results show that these computer models are still far from matching human 
+      performance in using common sense in real-world tasks.
+    type: Toolset
+    categories:
+      - Learning
+    applications:
+      - Info
+    tags:
+      - Machine Learning
+      - Natural Language
+      - Benchmark
+    url: https://www.mete.is/crow/
+    code:
+      type: Personal Github
+      url: https://github.com/mismayil/crow
+      date_last_commit: 2023-12-14
+    language: Python
+    date_added: 2024-02-20

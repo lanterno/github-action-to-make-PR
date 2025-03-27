@@ -1,0 +1,73 @@
+projects:
+  lstools:
+    name: EPFL Logic Synthesis Libraries
+    categories:
+      - Other
+    applications:
+      - Info
+    description: Collection of modular libraries for the development of logic synthesis applications
+    code:
+      type: Lab GitHub
+      url: https://github.com/lsils/lstools-showcase
+      date_last_commit: 2022-06-08
+    language: C++
+    license: MIT
+    type: Framework
+    tags:
+      - Low-Level
+    information:
+      - type: Paper
+        title: The EPFL Logic Synthesis Libraries
+        url: https://arxiv.org/abs/1805.05121
+        notes:
+          - label: Published at
+            text: 27th International Workshop on Logic & Synthesis
+            url: https://www.iwls.org/iwls2018/
+    date_added: 2021-11-04
+    date_updated: 2022-07-05
+
+  benchmarks:
+    name: EPFL Combinational Benchmark Suite
+    categories:
+      - Other
+    applications:
+      - Info
+    description: Benchmarks for logical gates optimizer
+    code:
+      type: Lab GitHub
+      url: https://github.com/lsils/benchmarks
+      date_last_commit: 2022-10-11
+    language: VHDL
+    license: MIT
+    type: Simulation
+    tags:
+      - Low-Level
+    information:
+      - type: Paper
+        title: The EPFL Combinational Benchmark Suite
+        url: https://infoscience.epfl.ch/record/207551
+        notes:
+          - label: Published at
+            text: IWLS 2015
+            url: https://www.iwls.org/iwls2015/
+    date_added: 2022-07-05
+    date_updated: 2023-03-21
+
+  cirkit:
+    name: CirKit
+    categories:
+      - Other
+    applications:
+      - Info
+    description: Logic synthesis and optimization framework
+    code:
+      type: Personal GitHub
+      url: https://github.com/msoeken/cirkit
+      date_last_commit: 2020-02-23
+    language: C++
+    license: MIT
+    type: Toolset
+    tags:
+      - Low-Level
+    date_added: 2022-07-05
+    date_updated: 2022-07-05

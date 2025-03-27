@@ -1,12 +1,16 @@
-name: Weekly update for secret stuff
+name: Weekly update for last commit date
 
-env:
-  BRANCH_NAME: "test-branch-$(date +%s)"
 on:
   schedule:
     # Runs every Monday at 5 AM UTC
     - cron: "0 5 * * 1"
   workflow_dispatch:
+  push:
+    branches:
+      - main
+
+env:
+  BRANCH_NAME: "data/weekly-last-commit-date-update-${{ github.run_id }}"
 
 jobs:
   update-last-commit-date:
@@ -21,7 +25,7 @@ jobs:
         uses: oven-sh/setup-bun@v2
       - run: bun install
       - name: Run script
-        run: echo "Hello, world $(date)" >> logs.txt
+        run: echo $(bun utils/updateLastCommitDate.ts) > logs.txt 2> errors.txt
 
       - name: Check for Changes
         id: changes
@@ -29,29 +33,23 @@ jobs:
           # Exit if no changes were made by the script
           git diff --quiet || echo "has_changes=true" >> $GITHUB_OUTPUT
 
-      - name: Create Branch, Commit, and Push
-        if: steps.changes.outputs.has_changes == 'true'
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -b "$branch_name"
-          git add logs.txt
-          git commit -m "chore: automated updates"
-          git push origin "$branch_name"
-
       - name: Create Pull Request
         id: pullrequest
         if: steps.changes.outputs.has_changes == 'true'
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v7
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          branch: "$branch_name"
-          base: main
-          title: "data: Automated Weekly Update"
+          branch: ${{ env.BRANCH_NAME }}
+          commit-message: Update dependencies
+          title: "data: Automated Weekly last commit date update"
           body: |
-            Auto-generated PR with logs updates. Review before merging!
+            Auto-generated PR with data updates. Review before merging!
             - **Triggered by:** Scheduled workflow
-            - **Author: ** ${{ github.actor }}
-            - **Date:** $(date)
-            - **Commit:** $(git log --format="%H" -n 1)
-            - **Changes:** $(git diff --name-only HEAD^)
+            - **Command:** `bun utils/updateLastCommitDate.ts`
+      - name: Comment on PR with data update issues
+        if: steps.changes.outputs.has_changes == 'true'
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ steps.pullrequest.outputs.pull-request-number }}
+          body: |
+            ⚠️ **Note:** We faced these issues while updating the data. Maybe it needs your attention
+          reactions: '+1'

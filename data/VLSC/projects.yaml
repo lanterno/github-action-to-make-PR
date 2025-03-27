@@ -1,0 +1,101 @@
+projects:
+  memoro:
+    name: Memoro
+    categories:
+      - Other
+    applications:
+      - Infra
+    description: Highly detailed heap profiler
+    tech_desc: >
+      Modern software systems heavily use the memory heap. As systems grow more complex and compute with increasing amounts of data, it can
+      be difficult for developers to understand how their programs actually use the bytes that they allocate on the heap and whether
+      improvements are possible. Memoro as built to answer this question of heap usage efficiency. It uses a combination of static
+      instrumentation, subroutine interception, and runtime data collection to build a clear picture of exactly when and where a program
+      performs heap allocation, and crucially how it actually uses that memory. Memoro also introduces a new visualization application that
+      can distill collected data into scores and visual cues that allow developers to quickly pinpoint and eliminate inefficient heap usage
+      in their software.
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfl-vlsc/memoro
+      date_last_commit: 2021-01-14
+    language: C++, JavaScript
+    type: Application
+    license: MIT
+    tags:
+      - Low-Level
+      - Development
+    information:
+      - type: Paper
+        title: Detailed Heap Profiling
+        url: https://infoscience.epfl.ch/record/255550
+        notes:
+          - label: Published at
+            text: ISMM 2018
+            url: https://conf.researchr.org/home/ismm-2018
+    date_added: 2021-11-05
+    date_updated: 2022-07-07
+
+  abacus:
+    name: Abacus
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Precise side-channel analysis
+    tech_desc: >
+      Side-channel attacks allow adversaries to infer sensitive information from non-functional characteristics. Typical side-channel
+      detection tools are able to identify many potential vulnerabilities, but do not provide information regarding their severity, making
+      it difficult for developers to decide whether to address them, as their leaks are often negligible in practice. Abacus is able to
+      precisely quantify the leaked information and finds flaws that would otherwise be difficult for a developer to find.
+    code:
+      type: Non-lab GitHub
+      url: https://github.com/s3team/Abacus
+      date_last_commit: 2022-05-17
+    language: C
+    type: Application
+    license: MIT
+    tags:
+      - Development
+      - Protection
+    information:
+      - type: Paper
+        title: "Abacus: Precise Side-Channel Analysis"
+        url: https://infoscience.epfl.ch/record/288814
+        notes:
+          - label: Published at
+            text: ICSE 2021
+            url: https://conf.researchr.org/track/icse-2021/icse-2021-papers
+    date_added: 2021-11-05
+    date_updated: 2022-07-07
+
+  bitfiltrator:
+    name: Bitfiltrator
+    categories:
+      - Security
+    applications:
+      - Other
+    type: Toolset
+    description: Bitfiltrator is an automated bitstream parameter extraction tool for Xilinx UltraScale and UltraScale+ FPGAs.
+    tech_desc: >
+      Prior work has reverse-engineered parts of the bitstream format for security or debugging/instrumentation activities, but no paper has
+      explained how to do this reverse engineering systematically! Our work bridges this gap by explaining: (1) the various parameters
+      needed to navigate a bitstream correctly, (2) the experiments to obtain them, and (3) the many pitfalls and erroneous assumptions to
+      avoid while undertaking this endeavor. We demonstrate our technique by using it to extract the bitstream format of initial LUT
+      equations, LUTRAM contents, BRAM contents, and register values in Xilinx UltraScale and UltraScale+ FPGAs. Our methods are implemented
+      in an open-source tool, Bitfiltrator [1], that can extract device layouts and architecture-specific bitstream formats for these cells
+      automatically and without physical access to an FPGA.
+    code:
+      type: Lab GitHub
+      url: https://github.com/epfl-vlsc/bitfiltrator
+      date_last_commit: 2022-11-27
+    language: Python
+    license: MIT
+    tags:
+      - Low-Level
+      - Debug
+    information:
+      - type: Paper
+        title: "Bitfiltrator: A general approach for reverse-engineering Xilinx bitstream formats"
+        url: https://github.com/epfl-vlsc/bitfiltrator/blob/main/fpl22-bitfiltrator-paper.pdf
+    date_added: 2023-03-22
+    date_updated: 2023-03-22
