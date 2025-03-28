@@ -99,7 +99,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/epfl-vlsc/bitfiltrator
-      date_last_commit: 2022-11-27
+      date_last_commit: 2023-04-08
     language: Python
     license: MIT
     tags:

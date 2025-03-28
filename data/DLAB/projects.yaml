@@ -23,7 +23,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/epfl-dlab/secvm-server
-      date_last_commit: 2020-08-17
+      date_last_commit: 2020-08-16
     language: Java
     tags:
       - Decentralized
@@ -153,7 +153,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/epfl-dlab/DIPPS
-      date_last_commit: 2022-10-02
+      date_last_commit: 2022-10-06
     language: Python
     license: other
     information:
@@ -279,7 +279,7 @@ projects:
     code:
       type: Lab Github
       url: https://github.com/epfl-dlab/transformers-CFG
-      date_last_commit: 2024-04-13
+      date_last_commit: 2025-03-12
     language: Python
     license: MIT
     date_added: 2024-04-16
@@ -316,7 +316,7 @@ projects:
     code:
       type: Lab Github
       url: https://github.com/epfl-dlab/multilingual-entity-insertion
-      date_last_commit: 2024-04-15
+      date_last_commit: 2024-10-04
     language: Jupyter Notebook
     date_added: 2024-04-16
   refiner:
@@ -349,7 +349,7 @@ projects:
     code:
       type: Personal GitHub
       url: https://github.com/debjitpaul/refiner
-      date_last_commit: 2024-02-21
+      date_last_commit: 2024-02-20
     language: Python
     license: Apache-2.0
     date_added: 2024-05-03
@@ -388,7 +388,7 @@ projects:
     code:
       type: Lab Github
       url: https://github.com/epfl-dlab/LAMEN
-      date_last_commit: 2024-02-04
+      date_last_commit: 2024-05-03
     language: Python
     date_added: 2024-05-03
   llm-ga:

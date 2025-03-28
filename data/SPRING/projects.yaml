@@ -400,7 +400,7 @@ projects:
     code:
       type: C4DT Github
       url: https://github.com/C4DT/lightarti-rest
-      date_last_commit: 2022-11-14
+      date_last_commit: 2024-08-15
     incubator:
       type: incubated_market
       work: Created and updated a library for mobile
@@ -542,7 +542,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/spring-epfl/WebGraph
-      date_last_commit: 2022-08-25
+      date_last_commit: 2024-07-30
     type: Application
     language: Python
     license: other
@@ -577,7 +577,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/spring-epfl/disparate-vulnerability
-      date_last_commit: 2021-10-20
+      date_last_commit: 2022-01-04
     type: Simulation, Experiments
     language: Python
     license: MIT

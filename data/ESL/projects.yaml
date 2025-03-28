@@ -15,7 +15,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/esl-epfl/gem5-X
-      date_last_commit: 2021-08-03
+      date_last_commit: 2023-05-22
     language: C++, Python
     type: Framework
     tags:
@@ -52,7 +52,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/esl-epfl/3d-ice
-      date_last_commit: 2022-06-20
+      date_last_commit: 2023-06-19
     language: C
     type: Simulation
     tags:
@@ -207,7 +207,7 @@ projects:
     code:
       type: Lab Github
       url: https://github.com/esl-epfl/x-heep
-      date_last_commit: 2024-02-14
+      date_last_commit: 2025-03-24
     language: C
     license: SOLDERPAD HARDWARE LICENSE, Apache-2.0
     date_added: 2024-02-20

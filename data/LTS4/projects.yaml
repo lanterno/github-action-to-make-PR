@@ -330,7 +330,7 @@ projects:
     code:
       type: Personal Gihub
       url: https://github.com/sssadrizadeh/TransFool
-      date_last_commit: 2023-06-23
+      date_last_commit: 2024-06-26
     language: Python
     license: Apache-2.0
     information:
@@ -374,7 +374,7 @@ projects:
     code:
       type: Personal Gihub
       url: https://github.com/sssadrizadeh/ACT
-      date_last_commit: 2024-02-22
+      date_last_commit: 2024-06-26
     language: Python
     license: Apache-2.0
     date_added: 2024-12-31

@@ -453,7 +453,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/dslab-epfl/svshi
-      date_last_commit: 2022-08-12
+      date_last_commit: 2022-09-21
     language: Python, Scala
     license: MIT
     type: Framework
