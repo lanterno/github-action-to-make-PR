@@ -11,6 +11,7 @@ on:
 
 env:
   BRANCH_NAME: "data/weekly-last-commit-date-update-${{ github.run_id }}"
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   update-last-commit-date:
@@ -25,8 +26,7 @@ jobs:
         uses: oven-sh/setup-bun@v2
       - run: bun install
       - name: Run script
-        run: echo $(bun utils/updateLastCommitDate.ts) > logs.txt 2> errors.txt
-
+        run: echo $(bun utils/updateLastCommitDate.ts)
       - name: Check for Changes
         id: changes
         run: |

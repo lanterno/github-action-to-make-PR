@@ -5,7 +5,8 @@ projects:
       - Other
     applications:
       - Info
-    description: Collection of modular libraries for the development of logic synthesis applications
+    description: Collection of modular libraries for the development of logic
+      synthesis applications
     code:
       type: Lab GitHub
       url: https://github.com/lsils/lstools-showcase
@@ -25,7 +26,6 @@ projects:
             url: https://www.iwls.org/iwls2018/
     date_added: 2021-11-04
     date_updated: 2022-07-05
-
   benchmarks:
     name: EPFL Combinational Benchmark Suite
     categories:
@@ -52,7 +52,6 @@ projects:
             url: https://www.iwls.org/iwls2015/
     date_added: 2022-07-05
     date_updated: 2023-03-21
-
   cirkit:
     name: CirKit
     categories:
