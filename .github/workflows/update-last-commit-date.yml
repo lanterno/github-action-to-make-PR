@@ -1,16 +1,17 @@
 name: Weekly update for last commit date
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     # Runs every Monday at 5 AM UTC
     - cron: "0 5 * * 1"
   workflow_dispatch:
-  push:
-    branches:
-      - main
 
 env:
   BRANCH_NAME: "data/weekly-last-commit-date-update-${{ github.run_id }}"
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 jobs:
   update-last-commit-date:
@@ -25,8 +26,10 @@ jobs:
         uses: oven-sh/setup-bun@v2
       - run: bun install
       - name: Run script
-        run: echo $(bun utils/updateLastCommitDate.ts) > logs.txt 2> errors.txt
-
+        id: run_script
+        run: |
+          bun utils/updateLastCommitDate.ts 2>&1 | tee /dev/stderr
+          exit ${PIPESTATUS[0]}
       - name: Check for Changes
         id: changes
         run: |
@@ -39,7 +42,7 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           branch: ${{ env.BRANCH_NAME }}
-          commit-message: Update dependencies
+          commit-message: "data: automatically update last commit date of projects"
           title: "data: Automated Weekly last commit date update"
           body: |
             Auto-generated PR with data updates. Review before merging!
@@ -52,4 +55,8 @@ jobs:
           issue-number: ${{ steps.pullrequest.outputs.pull-request-number }}
           body: |
             ⚠️ **Note:** We faced these issues while updating the data. Maybe it needs your attention
-          reactions: '+1'
+            ```log
+            ${{ steps.run_script.outputs.stdout }}
+            ```
+
+          reactions: "+1"
