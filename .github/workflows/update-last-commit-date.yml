@@ -28,8 +28,11 @@ jobs:
       - name: Run script
         id: run_script
         run: |
-          bun utils/updateLastCommitDate.ts 2>&1 | tee /dev/stderr
-          exit ${PIPESTATUS[0]}
+          OUTPUT=$(bun utils/updateLastCommitDate.ts 2>&1)
+          echo "$OUTPUT" | tee /dev/stderr
+          echo "output<<EOF" >> $GITHUB_OUTPUT
+          echo "$OUTPUT" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
       - name: Check for Changes
         id: changes
         run: |
@@ -56,7 +59,7 @@ jobs:
           body: |
             ⚠️ **Note:** We faced these issues while updating the data. Maybe it needs your attention
             ```log
-            ${{ steps.run_script.outputs.stdout }}
+            ${{ steps.run_script.outputs.output }}
             ```
 
           reactions: "+1"
