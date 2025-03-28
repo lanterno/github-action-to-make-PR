@@ -6,15 +6,20 @@ projects:
     applications:
       - Infra
     type: Library
-    description: GoLang extension to allow a programmer to execute a goroutine within an enclave
+    description: GoLang extension to allow a programmer to execute a goroutine
+      within an enclave
     tech_desc: >
-      Trusted Execution Environments (TEEs), such as Intel SGX enclaves, use hardware to ensure the confidentiality and integrity of
-      operations on sensitive data. While the technology is available on many processors, the complexity of its programming model and its
-      performance overhead have limited adoption. TEEs provide a new and valuable hardware functionality that has no obvious analogue in
-      programming languages, which means that developers must manually partition their application into trusted and untrusted components.
-      Gotee extends the Go language to allow a programmer to execute a goroutine within an enclave, to use low-overhead channels to
-      communicate between the trusted and untrusted environments, and to rely on a compiler to automatically extract the secure code and
-      data.
+      Trusted Execution Environments (TEEs), such as Intel SGX enclaves, use
+      hardware to ensure the confidentiality and integrity of operations on
+      sensitive data. While the technology is available on many processors, the
+      complexity of its programming model and its performance overhead have
+      limited adoption. TEEs provide a new and valuable hardware functionality
+      that has no obvious analogue in programming languages, which means that
+      developers must manually partition their application into trusted and
+      untrusted components. Gotee extends the Go language to allow a programmer
+      to execute a goroutine within an enclave, to use low-overhead channels to
+      communicate between the trusted and untrusted environments, and to rely on
+      a compiler to automatically extract the secure code and data.
     code:
       type: Lab GitHub
       url: https://github.com/epfl-dcsl/gotee
@@ -27,7 +32,8 @@ projects:
     maturity: 1
     information:
       - type: Paper
-        title: "Secured Routines: Language-based Construction of Trusted Execution Environments"
+        title: "Secured Routines: Language-based Construction of Trusted Execution
+          Environments"
         url: https://infoscience.epfl.ch/record/268171
         notes:
           - label: Published at
@@ -35,7 +41,6 @@ projects:
             url: https://www.usenix.org/conference/atc19
     date_added: 2021-11-04
     date_updated: 2024-02-20
-
   raft:
     name: Raft consensus protocol
     categories:
@@ -44,8 +49,9 @@ projects:
       - Infra
     description: Implementation of the Raft consensus protocol
     layman_desc: >
-      Implementation of the Raft consensus protocol. The library doesn't assume a network layer with ordering or duplicate detection. This
-      means you could use UDP for transmission.
+      Implementation of the Raft consensus protocol. The library doesn't assume
+      a network layer with ordering or duplicate detection. This means you could
+      use UDP for transmission.
     code:
       type: Lab GitHub
       url: https://github.com/epfl-dcsl/raft
@@ -59,7 +65,6 @@ projects:
       - Protocol
     date_added: 2021-11-05
     date_updated: 2024-02-20
-
   hovercraft:
     name: HovercRaft
     categories:
@@ -69,13 +74,18 @@ projects:
     type: Experiments
     description: Improved scalable and fault-tolerant distributed architecture
     tech_desc: >
-      Cloud platform services must simultaneously be scalable, meet low tail latency service-level objectives, and be resilient to a
-      combination of software, hardware, and network failures. Replication plays a fundamental role in meeting both the scalability and the
-      fault-tolerance requirement, but is subject to opposing requirements: (1) scalability is typicallyachieved by relaxing consistency;
-      (2) fault-tolerance is typically achieved through the consistent replication of state machines. Adding nodes to a system can therefore
-      either increase performance at the expense of consistency, or increase resiliency at the expense of performance. We propose
-      HovercRaft, a new approach by which adding nodes increases both the resilience and the performance of general-purpose state-machine
-      replication.
+      Cloud platform services must simultaneously be scalable, meet low tail
+      latency service-level objectives, and be resilient to a combination of
+      software, hardware, and network failures. Replication plays a fundamental
+      role in meeting both the scalability and the fault-tolerance requirement,
+      but is subject to opposing requirements: (1) scalability is
+      typicallyachieved by relaxing consistency; (2) fault-tolerance is
+      typically achieved through the consistent replication of state machines.
+      Adding nodes to a system can therefore either increase performance at the
+      expense of consistency, or increase resiliency at the expense of
+      performance. We propose HovercRaft, a new approach by which adding nodes
+      increases both the resilience and the performance of general-purpose
+      state-machine replication.
     code:
       type: Lab GitHub
       url: https://github.com/epfl-dcsl/hovercraft
@@ -87,7 +97,8 @@ projects:
       - Protocol
     information:
       - type: Paper
-        title: "HovercRaft: Achieving Scalability and Fault-tolerance for microsecond-scale Datacenter Services"
+        title: "HovercRaft: Achieving Scalability and Fault-tolerance for
+          microsecond-scale Datacenter Services"
         url: https://infoscience.epfl.ch/record/276586
         notes:
           - label: Published at
@@ -95,7 +106,6 @@ projects:
             url: https://www.eurosys2020.org/
     date_added: 2021-11-05
     date_updated: 2024-02-20
-
   crab:
     name: CRAB
     categories:
@@ -105,7 +115,8 @@ projects:
     type: Experiments
     description: L4 load balancer for cloud provider
     tech_desc: >
-      Connection Redirect LoAd Balancer is a new scheme for L4 load balancing targeting specifically internal cloud workloads.
+      Connection Redirect LoAd Balancer is a new scheme for L4 load balancing
+      targeting specifically internal cloud workloads.
     code:
       type: Lab GitHub
       url: https://github.com/epfl-dcsl/crab

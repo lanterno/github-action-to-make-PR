@@ -7,9 +7,12 @@ projects:
       - Infra
     description: Memory allocation preventing "use-after-free" exploits
     tech_desc: >
-      ffmalloc is a "one time allocator" where any given virtual memory address is only returned to the calling application once. Since
-      exploitation of use-after-free errors relies on being able to modify memory associated with "dangling pointers," by not reusing a
-      virtual address region in subsequent allocation, an adversary cannot negatively impact the dangling memory region.
+      ffmalloc is a "one time allocator" where any given virtual memory address
+      is only returned to the calling application once. Since exploitation of
+      use-after-free errors relies on being able to modify memory associated
+      with "dangling pointers," by not reusing a virtual address region in
+      subsequent allocation, an adversary cannot negatively impact the dangling
+      memory region.
     code:
       type: Personal GitHub
       url: https://github.com/bwickman97/ffmalloc
@@ -28,7 +31,6 @@ projects:
             url: https://www.usenix.org/conference/usenixsecurity21
     date_added: 2021-11-04
     date_updated: 2024-04-12
-
   pactree:
     name: PACTree
     categories:
@@ -37,9 +39,12 @@ projects:
       - Infra
     description: Efficient Non-Volatile Memory (NVM) access
     tech_desc: >
-      Non-Volatile Memory (NVM), which provides relatively fast and byte-addressable persistence, is now commercially available. However, we
-      cannot equate a real NVM with a slow DRAM, as it is much more complicated than we expect. We propose guidelines for designing
-      high-performance persistent index structures, allowing to increase performance and tail latency.
+      Non-Volatile Memory (NVM), which provides relatively fast and
+      byte-addressable persistence, is now commercially available. However, we
+      cannot equate a real NVM with a slow DRAM, as it is much more complicated
+      than we expect. We propose guidelines for designing high-performance
+      persistent index structures, allowing to increase performance and tail
+      latency.
     code:
       type: Non-lab GitHub
       url: https://github.com/cosmoss-vt/pactree
@@ -60,7 +65,6 @@ projects:
             url: https://sosp2021.mpi-sws.org/
     date_added: 2021-11-05
     date_updated: 2024-04-12
-
   nros:
     name: NrOS
     categories:
@@ -69,8 +73,9 @@ projects:
       - Infra
     description: OS kernel with safer approach to synchronization
     tech_desc: >
-      NrOS is an operating system primarily constructed as a simple, sequential kernel with no concurrency, making it easier to develop and
-      reason aboutits correctness.
+      NrOS is an operating system primarily constructed as a simple, sequential
+      kernel with no concurrency, making it easier to develop and reason
+      aboutits correctness.
     code:
       type: Non-lab GitHub
       url: https://github.com/vmware-labs/node-replicated-kernel
@@ -90,7 +95,6 @@ projects:
             url: https://www.usenix.org/conference/osdi21
     date_added: 2021-11-05
     date_updated: 2024-04-12
-
   syncord:
     name: SynCord
     categories:
@@ -99,9 +103,11 @@ projects:
       - Infra
     description: Application-Informed Kernel Synchronization Primitives
     tech_desc: >
-      SynCord is a framework to modify kernel locks without recompiling or rebooting the kernel. It abstracts key behaviors of kernel locks
-      and exposes them as APIs for designing user-defined kernel locks. SynCord provides the mechanisms to customize kernel locks safely and
-      correctly from userspace.
+      SynCord is a framework to modify kernel locks without recompiling or
+      rebooting the kernel. It abstracts key behaviors of kernel locks and
+      exposes them as APIs for designing user-defined kernel locks. SynCord
+      provides the mechanisms to customize kernel locks safely and correctly
+      from userspace.
     url: https://rs3lab.github.io/SynCord
     code:
       type: Lab GitHub
@@ -115,7 +121,6 @@ projects:
       - Server
     date_added: 2022-07-07
     date_updated: 2024-04-12
-
   odinfs:
     name: Odinfs
     categories:
@@ -124,10 +129,13 @@ projects:
       - Infra
     description: Scaling PM Performance with Opportunistic Delegation
     tech_desc: >
-      Odinfs is a NUMA-aware PM file system based on an opportunistic delegation framework to achieve datapath scalability. It limits
-      concurrent PM access to avoid performance meltdown due to on-DIMM cache trashing. It localizes PM access to avoid performance meltdown
-      due to remote PM access. It automatically parallelizes large PM access to utilize cumulative PM bandwidth across all NUMA nodes. It
-      maximizes concurrent access within the same file with scalable synchronization primitives.
+      Odinfs is a NUMA-aware PM file system based on an opportunistic delegation
+      framework to achieve datapath scalability. It limits concurrent PM access
+      to avoid performance meltdown due to on-DIMM cache trashing. It localizes
+      PM access to avoid performance meltdown due to remote PM access. It
+      automatically parallelizes large PM access to utilize cumulative PM
+      bandwidth across all NUMA nodes. It maximizes concurrent access within the
+      same file with scalable synchronization primitives.
     url: https://rs3lab.github.io/Odinfs
     code:
       type: Lab GitHub
@@ -142,7 +150,6 @@ projects:
     maturity: 1
     date_added: 2022-07-07
     date_updated: 2024-04-12
-
   hydra:
     name: Hydra
     categories:
@@ -161,7 +168,8 @@ projects:
     type: Framework, Experiments
     information:
       - type: Paper
-        title: Finding Semantic Bugs in File Systems with an Extensible Fuzzing Framework
+        title: Finding Semantic Bugs in File Systems with an Extensible Fuzzing
+          Framework
         url: https://sanidhya.github.io/pubs/2019/hydra.pdf
         notes:
           - label: Published at
@@ -169,39 +177,38 @@ projects:
             url: https://sosp19.rcs.uwaterloo.ca/
     date_added: 2022-09-27
     date_updated: 2024-04-12
-
   tclocks:
     name: TCLocks
     description: >
-      Scalable transparent delegation locking protocols without application modification
-    type: "Library"
+      Scalable transparent delegation locking protocols without application
+      modification
+    type: Library
     categories:
-      - "Security"
+      - Security
     applications:
-      - "Infra"
+      - Infra
     tags:
       - Concurrency
       - Development
       - Server
       - Locking
     layman_desc: >
-      In multi-core systems, locks are used to coordinate access to shared
-      data, but traditional lock designs can hurt performance by moving data
-      between cores.  TCLocks is a new way to implement locks that avoids
-      this data movement.  When a core needs to execute a critical section of
-      code guarded by a lock, it sends that code segment to the core holding
-      the lock.  That core then runs the code locally without transferring
-      data.  This transparent delegation approach improves performance
-      significantly without changing application code.
+      In multi-core systems, locks are used to coordinate access to shared data,
+      but traditional lock designs can hurt performance by moving data between
+      cores.  TCLocks is a new way to implement locks that avoids this data
+      movement.  When a core needs to execute a critical section of code guarded
+      by a lock, it sends that code segment to the core holding the lock.  That
+      core then runs the code locally without transferring data.  This
+      transparent delegation approach improves performance significantly without
+      changing application code.
     tech_desc: >
       TCLocks is a family of locking protocols that use transparent delegation
       to improve scalability of synchronization in multi-core systems.  The
       waiter encodes its critical section on its stack and notifies the lock
       holder (combiner), which executes the critical section on the waiter's
-      behalf via a light-weight context switch.  This avoids transferring
-      shared data between cores.  TCLocks require no modifications to
-      application logic and provide up to 5.2x better performance than recent
-      locking algorithms.
+      behalf via a light-weight context switch.  This avoids transferring shared
+      data between cores.  TCLocks require no modifications to application logic
+      and provide up to 5.2x better performance than recent locking algorithms.
     code:
       type: Lab Github
       url: https://github.com/rs3lab/TCLocks
@@ -210,23 +217,23 @@ projects:
     license: GPL-2.0
     information:
       - type: Paper
-        title: "Ship your Critical Section, Not Your Data: Enabling Transparent Delegation with TCLocks"
+        title: "Ship your Critical Section, Not Your Data: Enabling Transparent
+          Delegation with TCLocks"
         url: https://www.usenix.org/system/files/osdi23-gupta.pdf
         notes:
           - label: Published in
-            text: "OSDI '23"
+            text: OSDI '23
             url: https://www.usenix.org/conference/osdi23/presentation/gupta
     date_added: 2024-04-12
-
   trio:
     name: Trio Architecture
-    description: >
+    description: |
       Trio enables customizable user-level file systems with metadata integrity
-    type: "Library"
+    type: Library
     categories:
-      - "Security"
+      - Security
     applications:
-      - "Infra"
+      - Infra
     tags:
       - Cloud
       - Development
@@ -237,20 +244,20 @@ projects:
       and take full advantage of fast non-volatile memory (NVM). It separates
       the core metadata that defines the file system structure from auxiliary
       metadata that applications can customize for their needs. This split
-      design allows applications to access NVM directly for performance,
-      while still having integrity of the core metadata verified by a trusted
-      system component. Trio includes ArckFS, a general POSIX-like file
-      system, as well as examples of customized application-specific file
-      systems that are faster than previous NVM file systems.
+      design allows applications to access NVM directly for performance, while
+      still having integrity of the core metadata verified by a trusted system
+      component. Trio includes ArckFS, a general POSIX-like file system, as well
+      as examples of customized application-specific file systems that are
+      faster than previous NVM file systems.
     tech_desc: >
       Trio is a userspace NVM file system architecture that decouples file
       system design, access control, and metadata integrity enforcement. It
-      defines a core state data structure shared between LibFSes and a
-      trusted entity. LibFSes can customize with private auxiliary state while
-      directly accessing NVM. The trusted entity verifies core state integrity
-      when write access transfers between LibFSes. This allows customization
-      while ensuring metadata integrity. Trio includes ArckFS, a POSIX-like
-      FS, and customized FSes that outperform existing NVM file systems.
+      defines a core state data structure shared between LibFSes and a trusted
+      entity. LibFSes can customize with private auxiliary state while directly
+      accessing NVM. The trusted entity verifies core state integrity when write
+      access transfers between LibFSes. This allows customization while ensuring
+      metadata integrity. Trio includes ArckFS, a POSIX-like FS, and customized
+      FSes that outperform existing NVM file systems.
     code:
       type: Lab Github
       url: https://github.com/rs3lab/Trio
@@ -259,10 +266,11 @@ projects:
     license: Apache-2.0
     information:
       - type: Paper
-        title: Enabling High-Performance and Secure Userspace NVM File Systems with the Trio Architecture
+        title: Enabling High-Performance and Secure Userspace NVM File Systems with the
+          Trio Architecture
         url: https://dl.acm.org/doi/pdf/10.1145/3600006.3613171
         notes:
           - label: Published in
-            text: "SOSP '23"
+            text: SOSP '23
             url: https://dl.acm.org/doi/10.1145/3600006.3613171
     date_added: 2024-04-12
