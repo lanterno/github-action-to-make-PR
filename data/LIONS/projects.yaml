@@ -6,7 +6,7 @@ projects:
     applications:
       - Info
     description: Decomposition Convex Optimization
-    layman_desc: >
+    layman_desc: |
       Package for the generic constrained convex optimization problems.
     url: https://www.epfl.ch/labs/lions/technology/decopt/
     code:
@@ -29,7 +29,6 @@ projects:
         url: https://infoscience.epfl.ch/record/199844
     date_added: 2021-11-04
     date_updated: 2022-07-05
-
   lb-csmri:
     name: LB-CSMRI
     categories:
@@ -39,7 +38,8 @@ projects:
       - Info
     description: Magnetic imaging resonance optimization
     layman_desc: >
-      Learning-based framework for optimizing magnetic resonance imaging (MRI) reconstruction.
+      Learning-based framework for optimizing magnetic resonance imaging (MRI)
+      reconstruction.
     url: https://www.epfl.ch/labs/lions/technology/lb-csmri-2/
     code:
       type: Lab Download
@@ -59,7 +59,6 @@ projects:
             url: https://ieeexplore.ieee.org/document/8353419
     date_added: 2021-11-05
     date_updated: 2022-07-05
-
   storm+:
     name: STORM+
     categories:
@@ -68,7 +67,8 @@ projects:
       - Info
     description: Faster PyTorch optimizer
     layman_desc: >
-      Compared to the largely used SGD optimizer for PyTorch, STORM+ is faster but requires two passes on the data.
+      Compared to the largely used SGD optimizer for PyTorch, STORM+ is faster
+      but requires two passes on the data.
     code:
       type: Lab GitHub
       url: https://github.com/LIONS-EPFL/storm-plus-code

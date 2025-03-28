@@ -8,15 +8,19 @@ projects:
       - Gov
     description: Proof that you are an actual person while keeping your anonymity
     layman_desc: >
-      The internet allows for anonymous participation. While this is great for protecting people like whistleblowers, it can be a burden if
-      people abuse it and create many fake accounts. This project implements a way to prove that you are a unique individual, while still
-      guaranteeing you anonymity while you use services on the internet. Applications range from chat to e-voting and energy-efficient
-      blockchains.
+      The internet allows for anonymous participation. While this is great for
+      protecting people like whistleblowers, it can be a burden if people abuse
+      it and create many fake accounts. This project implements a way to prove
+      that you are a unique individual, while still guaranteeing you anonymity
+      while you use services on the internet. Applications range from chat to
+      e-voting and energy-efficient blockchains.
     tech_desc: >
-      Fake accounts are a big problem on the internet, while not all people want or can identify themselves using state-issued identities.
-      Proof-of-personhood proposes to use personhood parties where people have to physically show up and get identified as real persons.
-      Using cryptographic primitives, it is then possible to prove that you were part of that group, without revealing your individual
-      identity.
+      Fake accounts are a big problem on the internet, while not all people want
+      or can identify themselves using state-issued identities.
+      Proof-of-personhood proposes to use personhood parties where people have
+      to physically show up and get identified as real persons. Using
+      cryptographic primitives, it is then possible to prove that you were part
+      of that group, without revealing your individual identity.
     contacts:
       - name: Pierluca Borsò
         email: pierluca.borso@epfl.ch
@@ -31,7 +35,6 @@ projects:
     license: AGPL-3.0
     date_added: 2021-04-13
     date_updated: 2024-03-20
-
   dela:
     name: DEDIS Ledger Architecture
     logo: https://dedis.github.io/dela/assets/infograph.png
@@ -41,8 +44,10 @@ projects:
       - Infra
     description: Modular abstractions to perform Distributed Ledger (DL) operations
     tech_desc: >
-      With Dela you can: learn the architecture of a distributed ledger, run your blockchain / distributed ledger, implement and test your
-      new idea that will revolutionize the blockchain world by adding your new module’s implementation to the Dela ecosystem.
+      With Dela you can: learn the architecture of a distributed ledger, run
+      your blockchain / distributed ledger, implement and test your new idea
+      that will revolutionize the blockchain world by adding your new module’s
+      implementation to the Dela ecosystem.
     contacts:
       - name: Pierluca Borsò
         email: pierluca.borso@epfl.ch
@@ -66,7 +71,6 @@ projects:
     license: BSD-3-Clause
     date_added: 2021-04-13
     date_updated: 2024-03-20
-
   odyssey:
     name: Odyssey
     logo: https://dedis.github.io/odyssey/assets/odyssey-components.png
@@ -77,8 +81,10 @@ projects:
       - Info
     description: Auditable Sharing and Management of Sensitive Data Across Jurisdictions
     tech_desc: >
-      Odyssey is a set of applications and tools that enables sharing of sensitive data between multiple distrustful parties. This project
-      uses state-of-the-art secret management service on the blockchain coupled with an enclave delivery mechanism.
+      Odyssey is a set of applications and tools that enables sharing of
+      sensitive data between multiple distrustful parties. This project uses
+      state-of-the-art secret management service on the blockchain coupled with
+      an enclave delivery mechanism.
     url: https://dedis.github.io/odyssey/
     code:
       type: Lab GitHub
@@ -95,7 +101,6 @@ projects:
     license: GPL-3.0
     date_added: 2020-04-28
     date_updated: 2024-03-20
-
   calypso:
     name: Calypso
     categories:
@@ -105,8 +110,10 @@ projects:
       - Info
     description: Encrypted storage with access control
     layman_desc: >
-      Store data encrypted on the blockchain and use a decentralized access control mechanism to define who is allowed to decrypt. It has
-      been developed alongside with OmniLedger. But it can also be used independently of OmniLedger.
+      Store data encrypted on the blockchain and use a decentralized access
+      control mechanism to define who is allowed to decrypt. It has been
+      developed alongside with OmniLedger. But it can also be used independently
+      of OmniLedger.
     code:
       type: Lab GitHub
       url: https://github.com/dedis/cothority/tree/main/calypso
@@ -116,14 +123,15 @@ projects:
       email: linus.gasser@epfl.ch
     incubator:
       type: retired_archived
-      work: |
-        The C4DT created a demonstrator for Calypso, as well as a hands-on workshop.
+      work: >
+        The C4DT created a demonstrator for Calypso, as well as a hands-on
+        workshop.
       products:
         - type: Demo
-          title: "Calypso filesharing"
+          title: Calypso filesharing
           url: https://github.com/dedis/filesharing
         - type: Pilot
-          title: "Odyssey"
+          title: Odyssey
           url: https://github.com/dedis/odyssey
     lines_of_code: 6500 / 1500
     contacts:
@@ -150,7 +158,6 @@ projects:
     date_added: 2019-03-18
     date_updated: 2024-03-20
     maturity: 2
-
   kyber:
     name: Kyber
     categories:
@@ -159,7 +166,8 @@ projects:
       - Infra
     description: Cryptographic library
     layman_desc: >
-      A low level cryptographic library to create new cryptographic primitives. Not to be used for everyday cryptography.
+      A low level cryptographic library to create new cryptographic primitives.
+      Not to be used for everyday cryptography.
     code:
       type: Lab GitHub
       url: https://github.com/dedis/kyber
@@ -178,7 +186,6 @@ projects:
     date_added: 2019-03-18
     date_updated: 2024-03-20
     maturity: 3
-
   omniledger:
     name: OmniLedger
     categories:
@@ -187,8 +194,10 @@ projects:
       - Infra
     description: Ethereum-like blockchain implementation based on skipchains
     layman_desc: >
-      OmniLedger is a high performance blockchain solution developed by the DEDIS-lab. It supports pre-compiled smart contracts, as well as
-      Ethereum smart contracts. Combined with Calypso, it allows management of access to secure and private data in a fully audited way.
+      OmniLedger is a high performance blockchain solution developed by the
+      DEDIS-lab. It supports pre-compiled smart contracts, as well as Ethereum
+      smart contracts. Combined with Calypso, it allows management of access to
+      secure and private data in a fully audited way.
     code:
       type: Lab GitHub
       url: https://github.com/c4dt/byzcoin
@@ -209,7 +218,8 @@ projects:
       email: linus.gasser@epfl.ch
     information:
       - type: Paper
-        title: "Enhancing Bitcoin Security and Performance with Strong Consistency via Collective Signing"
+        title: Enhancing Bitcoin Security and Performance with Strong Consistency via
+          Collective Signing
         url: https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_kokoris-kogias.pdf
         notes:
           - label: Published at
@@ -244,17 +254,18 @@ projects:
     date_added: 2019-03-18
     date_updated: 2024-03-20
     maturity: 2
-
   onet:
     name: Onet
     categories:
       - Blockchain
     applications:
       - Infra
-    description: Library for simulation and deployment of decentralized, distributed protocols
+    description: Library for simulation and deployment of decentralized, distributed
+      protocols
     layman_desc: >
-      Library to write applications and protocols in a decentralized setting. Including an easy to use simulation framework to test the
-      performance of the protocols.
+      Library to write applications and protocols in a decentralized setting.
+      Including an easy to use simulation framework to test the performance of
+      the protocols.
     code:
       type: Lab GitHub
       url: http://github.com/dedis/onet
@@ -273,7 +284,6 @@ projects:
     license: LGPL-3.0
     date_added: 2019-03-18
     date_updated: 2024-03-20
-
   e-voting:
     name: E-voting
     categories:
@@ -283,11 +293,14 @@ projects:
       - Gov
     description: Decentralized, encrypted, fully anonymous e-voting
     tech_desc: >
-      Our e-voting system is inspired by the first version of Helios where the encrypted ballots are shuffled and anonymized before they are
-      decrypted. Instead of the shuffle used in Helios, we implemented a Neff shuffle which is much faster than the original Helios shuffle.
+      Our e-voting system is inspired by the first version of Helios where the
+      encrypted ballots are shuffled and anonymized before they are decrypted.
+      Instead of the shuffle used in Helios, we implemented a Neff shuffle which
+      is much faster than the original Helios shuffle.
     layman_desc: >
-      The e-voting used in the EPFL voting since 2018. It allows users to vote on a distributed system that will wait for the election to be
-      over before decrypting the votes, keeping anonymity of the users.
+      The e-voting used in the EPFL voting since 2018. It allows users to vote
+      on a distributed system that will wait for the election to be over before
+      decrypting the votes, keeping anonymity of the users.
     code:
       type: Lab GitHub
       url: https://github.com/dedis/cothority/tree/main/evoting
@@ -307,7 +320,6 @@ projects:
     license: AGPL-3.0
     date_added: 2019-03-18
     date_updated: 2024-03-20
-
   drand:
     name: DRand
     logo: https://github.com/drand/drand/blob/master/logo.png?raw=true
@@ -317,8 +329,9 @@ projects:
       - Infra
     description: Publicly verifiable randomness
     layman_desc: >
-      In many distributed applications, it is important to get a provably secure random number. DRand makes it possible to have these
-      numbers provably secure.
+      In many distributed applications, it is important to get a provably secure
+      random number. DRand makes it possible to have these numbers provably
+      secure.
     code:
       type: Lab GitHub
       url: https://github.com/drand/drand
@@ -344,7 +357,6 @@ projects:
         url: https://actu.epfl.ch/news/epfl-helps-launch-globally-distributed-randomness-/
     date_added: 2019-03-18
     date_updated: 2024-03-20
-
   purbs:
     name: PURBs
     categories:
@@ -353,7 +365,8 @@ projects:
       - Info
     description: Metadata leakage prevention for encrypted communication and storage
     layman_desc: >
-      A library for a novel encoding approach preventing metadata leakage for encrypted communication and data at rest.
+      A library for a novel encoding approach preventing metadata leakage for
+      encrypted communication and data at rest.
     code:
       type: Lab GitHub
       url: http://github.com/dedis/purbs
@@ -365,7 +378,8 @@ projects:
       - Encryption
     information:
       - type: Paper
-        title: Reducing Metadata Leakage from Encrypted Files and Communication with PURBs
+        title: Reducing Metadata Leakage from Encrypted Files and Communication with
+          PURBs
         url: https://infoscience.epfl.ch/record/271943
         notes:
           - label: Published at
@@ -375,7 +389,6 @@ projects:
     license: BSD-3-Clause
     date_added: 2019-03-18
     date_updated: 2024-03-20
-
   threshold-logical-clocks:
     name: Threshold Logical Clocks
     categories:
@@ -384,10 +397,12 @@ projects:
       - Infra
     description: Solving the consensus problem in a new way by creating a global clock
     tech_desc: >
-      An attempt to simplify asynchronous consensus by building atop a novel threshold logical clock abstraction, which enables upper layers
-      to operate as if on a synchronous network. This approach yields an asynchronous consensus protocol for fail-stop nodes that may be
-      simpler and more robust than Paxos and its leader-based variants, requiring no common coins and achieving consensus in a constant
-      expected number of rounds.
+      An attempt to simplify asynchronous consensus by building atop a novel
+      threshold logical clock abstraction, which enables upper layers to operate
+      as if on a synchronous network. This approach yields an asynchronous
+      consensus protocol for fail-stop nodes that may be simpler and more robust
+      than Paxos and its leader-based variants, requiring no common coins and
+      achieving consensus in a constant expected number of rounds.
     contacts:
       - name: Bryan Ford
         email: bryan.ford@epfl.ch
@@ -400,10 +415,12 @@ projects:
       - Consensus
     information:
       - type: Paper
-        title: Threshold Logical Clocks for Asynchronous Distributed Coordination and Consensus
+        title: Threshold Logical Clocks for Asynchronous Distributed Coordination and
+          Consensus
         url: https://arxiv.org/abs/1907.07010
       - type: Paper
-        title: "Que Sera Consensus: Simple Asynchronous Agreement with Private Coins and Threshold Logical Clocks"
+        title: "Que Sera Consensus: Simple Asynchronous Agreement with Private Coins and
+          Threshold Logical Clocks"
         url: https://arxiv.org/abs/2003.02291
       - type: Presentation
         title: "Que Sera: Simpler Asynchronous Consensus with Threshold Logical Clocks"
@@ -411,7 +428,6 @@ projects:
     type: Application
     date_added: 2019-07-26
     date_updated: 2024-03-20
-
   twins:
     name: Twins
     categories:
@@ -419,9 +435,9 @@ projects:
       - Blockchain
     applications:
       - Health
-    description: >
+    description: |
       Linking patients to their physical and digital TWINs
-    layman_desc: >
+    layman_desc: |
       Using organoids for research while protecting patients’ identity
     contacts:
       - name: Pierluca Borsò
@@ -433,18 +449,18 @@ projects:
     type: Application
     date_added: 2021-02-05
     date_updated: 2024-03-20
-
   simnet:
     name: SimNet
     categories:
       - Security
     applications:
       - Infra
-    description: >
+    description: |
       SimNet is a tool to simulate decentralized applications in the cloud
     tech_desc: >
-      SimNet provides multiple configurations to affect the topology so that specific link between two nodes can have a delay or a loss of
-      packets for instance.
+      SimNet provides multiple configurations to affect the topology so that
+      specific link between two nodes can have a delay or a loss of packets for
+      instance.
     contacts:
       - name: Pierluca Borsò
         email: pierluca.borso@epfl.ch
@@ -459,7 +475,6 @@ projects:
     license: GPL-3.0
     date_added: 2021-02-24
     date_updated: 2024-03-20
-
   hbt:
     name: HBT
     categories:
@@ -483,7 +498,6 @@ projects:
     license: other
     date_added: 2022-07-04
     date_updated: 2024-03-20
-
   determ-checker:
     name: determ-checker
     categories:
@@ -505,7 +519,6 @@ projects:
     license: other
     date_added: 2022-07-04
     date_updated: 2024-03-20
-
   matchertext:
     name: matchertext
     categories:
@@ -513,8 +526,9 @@ projects:
     applications:
       - Other
     description: >
-      Matchertext is a syntactic discipline that allows strings in one compliant language to be embedded verbatim without escaping (e.g.,
-      via cut-and-paste) into itself or another compliant language.
+      Matchertext is a syntactic discipline that allows strings in one compliant
+      language to be embedded verbatim without escaping (e.g., via
+      cut-and-paste) into itself or another compliant language.
     contacts:
       - name: Bryan Ford
         email: bryan.ford@epfl.ch
@@ -536,20 +550,20 @@ projects:
     license: other
     date_added: 2022-03-16
     date_updated: 2024-03-20
-
   apir:
     name: APIR
     categories:
       - Privacy
     applications:
       - Info
-    description: >
+    description: |
       Authenticated Private Information Retrieval
     layman_desc: >
-      This work introduces protocols for authenticated private information retrieval, 
-      which enable a client to fetch a record from a database server such that (a) the server does 
-      not learn which record the client reads, and (b) the client either obtains the "authentic" 
-      record or detects server misbehavior and safely aborts.
+      This work introduces protocols for authenticated private information
+      retrieval,  which enable a client to fetch a record from a database server
+      such that (a) the server does  not learn which record the client reads,
+      and (b) the client either obtains the "authentic"  record or detects
+      server misbehavior and safely aborts.
     contacts:
       - name: Simone Colombo
         email: simone.colombo@epfl.ch
@@ -563,11 +577,11 @@ projects:
       date_last_commit: 2023-09-05
     information:
       - type: Paper
-        title: "Authenticated private information retrieval"
+        title: Authenticated private information retrieval
         url: https://eprint.iacr.org/2023/297
         notes:
           - label: Published at
-            text: "USENIX Security Symposium 2023"
+            text: USENIX Security Symposium 2023
             url: https://www.usenix.org/conference/usenixsecurity23/presentation/colombo
       - type: Demo
         title: "Keyd: A privacy-preserving key-value store"
@@ -577,21 +591,21 @@ projects:
     maturity: 2
     date_added: 2023-07-05
     date_updated: 2024-03-20
-
   dvoting:
     name: d-voting
     description: >
       A decentralized, fully anonymous voting system for EPFL-internal elections.
     categories:
-      - "Blockchain"
+      - Blockchain
     applications:
-      - "Gov"
+      - Gov
     type: Application
     layman_desc: >
-      The d-voting project allows for electronic voting without a central point of trust.
-      It relies instead on the majority of servers to be honest during the voting process.
-      The ballots are encrypted during the voting phase, and then shuffled to anonymise the results.
-      When they are finally decrypted, it is not possible anymore to retrace who voted for what.
+      The d-voting project allows for electronic voting without a central point
+      of trust. It relies instead on the majority of servers to be honest during
+      the voting process. The ballots are encrypted during the voting phase, and
+      then shuffled to anonymise the results. When they are finally decrypted,
+      it is not possible anymore to retrace who voted for what.
     tags:
       - Anonymity
       - Byzantine Resilience

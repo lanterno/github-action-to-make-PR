@@ -7,8 +7,8 @@ projects:
       - Infra
     description: Fast distance computation for searches in large databases
     tech_desc: >
-      Quick ADC is an implementation of fast distance computation techniques for nearest neighbor search in large databases of
-      high-dimensional vectors.
+      Quick ADC is an implementation of fast distance computation techniques for
+      nearest neighbor search in large databases of high-dimensional vectors.
     code:
       type: Non-lab GitHub
       url: https://github.com/technicolor-research/quick-adc
@@ -28,7 +28,6 @@ projects:
             url: https://dl.acm.org/doi/10.1145/3078971.3078992
     date_added: 2021-11-05
     date_updated: 2022-07-07
-
   proteustm:
     name: ProteusTM
     categories:
@@ -37,10 +36,14 @@ projects:
       - Infra
     description: Automatic transactional memory adaptation
     tech_desc: >
-      There are many designs and implementations of Transactional Memory, and that is not a coincidence: different ones perform best on
-      different workloads. One cannot expect the developer to be aware of such concerns, as it is even contradictory with the simplicity
-      advocated by the use of the transactional abstraction. With ProteusTM, the developer writes transactions and the underlying
-      implementation uses techniques to automatically change Transactional Memory algorithms, parallelism degree, and others.
+      There are many designs and implementations of Transactional Memory, and
+      that is not a coincidence: different ones perform best on different
+      workloads. One cannot expect the developer to be aware of such concerns,
+      as it is even contradictory with the simplicity advocated by the use of
+      the transactional abstraction. With ProteusTM, the developer writes
+      transactions and the underlying implementation uses techniques to
+      automatically change Transactional Memory algorithms, parallelism degree,
+      and others.
     code:
       type: Personal GitHub
       url: https://github.com/nmldiegues/proteustm

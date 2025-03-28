@@ -9,9 +9,11 @@ projects:
       - Infra
     description: Ethereum smart contracts with secret parameters
     tech_desc: >
-      By design, smart contracts’ data and computations are public to all participants. Offchainer helps to create smart contracts with
-      parameters that need to stay secret. We propose a way to keep some of the parameters off-chain, while guaranteeing correctness of the
-      computation, using a combination of a commitment scheme and a zero-knowledge proof system.
+      By design, smart contracts’ data and computations are public to all
+      participants. Offchainer helps to create smart contracts with parameters
+      that need to stay secret. We propose a way to keep some of the parameters
+      off-chain, while guaranteeing correctness of the computation, using a
+      combination of a commitment scheme and a zero-knowledge proof system.
     code:
       type: Personal GitHub
       url: https://github.com/marinthiercelin/offChainer
@@ -31,7 +33,6 @@ projects:
             url: https://www.iwsec.org/scis/2020/index_en.html
     date_added: 2021-11-05
     date_updated: 2024-04-16
-
   ophcrack:
     name: ophcrack
     categories:
@@ -40,8 +41,10 @@ projects:
       - Infra
     description: Windows password cracker
     tech_desc: >
-      Ophcrack is a Windows password cracker based on rainbow tables. It is a very efficient implementation of rainbow tables done by the
-      inventors of the method. It comes with a Graphical User Interface and runs on multiple platforms
+      Ophcrack is a Windows password cracker based on rainbow tables. It is a
+      very efficient implementation of rainbow tables done by the inventors of
+      the method. It comes with a Graphical User Interface and runs on multiple
+      platforms
     url: https://ophcrack.sourceforge.io/
     code:
       type: Non-lab GitLab

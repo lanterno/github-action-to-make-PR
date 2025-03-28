@@ -7,8 +7,10 @@ projects:
       - Infra
     description: Benchmark suite for cloud services
     tech_desc: >
-      CloudSuite is a benchmark suite for cloud services. It consists of a number of applications that have been selected based on their
-      popularity in today's datacenters. The benchmarks are based on real-world software stacks and represent real-world setups.
+      CloudSuite is a benchmark suite for cloud services. It consists of a
+      number of applications that have been selected based on their popularity
+      in today's datacenters. The benchmarks are based on real-world software
+      stacks and represent real-world setups.
     url: http://cloudsuite.ch/
     code:
       type: Lab GitHub
@@ -21,7 +23,8 @@ projects:
     type: Application
     information:
       - type: Paper
-        title: "Clearing the clouds: a study of emerging scale-out workloads on modern hardware"
+        title: "Clearing the clouds: a study of emerging scale-out workloads on modern
+          hardware"
         url: https://infoscience.epfl.ch/record/173764
         notes:
           - label: Published at
@@ -30,7 +33,6 @@ projects:
     license: CloudSuite, other
     date_added: 2019-03-18
     date_updated: 2024-03-15
-
   qflex:
     name: QFlex
     categories:
@@ -39,7 +41,8 @@ projects:
       - Infra
     description: State-of-the-art modeling tools for the computer architecture community
     tech_desc: >
-      QFlex is a full-system cycle-accurate computer architecture simulator of multi-node computer systems.
+      QFlex is a full-system cycle-accurate computer architecture simulator of
+      multi-node computer systems.
     url: https://qflex.epfl.ch/
     code:
       type: Lab GitHub
@@ -59,25 +62,28 @@ projects:
           - label: Published in
             text: IEEE Micro
             url: https://ieeexplore.ieee.org/document/1677500
-    notes: >
+    notes: |
       Some issues with regard to Oracle licenses
     date_added: 2019-03-18
     date_updated: 2024-03-15
-
   hbfpemulator:
     name: ColTraIn HBFP Training Emulator
     categories:
       - Other
     applications:
       - Info
-    description: >
+    description: |
       Co-located deep neural network training and inference
     tech_desc: >
-      HBFP is a hybrid Block Floating-Point (BFP) - Floating-Point (FP) number representation for DNN training introduced by ColTraIn:
-      Co-located DNN Training and Inference team of PARSA and MLO at EPFL. HBFP offers the best of both worlds: the high accuracy of
-      floating-point at the superior hardware density of fixed-point by performing all dot products in BFP and other operations in FP32. For
-      a wide variety of models, HBFP matches floating-point’s accuracy while enabling hardware implementations that deliver up to 8.5x
-      higher throughput. This repository is for ongoing research on training DNNs with HBFP.
+      HBFP is a hybrid Block Floating-Point (BFP) - Floating-Point (FP) number
+      representation for DNN training introduced by ColTraIn: Co-located DNN
+      Training and Inference team of PARSA and MLO at EPFL. HBFP offers the best
+      of both worlds: the high accuracy of floating-point at the superior
+      hardware density of fixed-point by performing all dot products in BFP and
+      other operations in FP32. For a wide variety of models, HBFP matches
+      floating-point’s accuracy while enabling hardware implementations that
+      deliver up to 8.5x higher throughput. This repository is for ongoing
+      research on training DNNs with HBFP.
     contacts:
       - name: Tao Lin
         email: tao.lin@epfl.ch
@@ -100,14 +106,14 @@ projects:
             text: NeurIPS 2018
             url: https://neurips.cc/Conferences/2018
       - type: Paper
-        title: "Dynamic Model Pruning with Feedback"
+        title: Dynamic Model Pruning with Feedback
         url: https://infoscience.epfl.ch/record/277539
         notes:
           - label: Published in
             text: ICLR 2020
             url: https://iclr.cc/virtual_2020/poster_SJem8lSFwB.html
       - type: Blog post
-        title: "Numerical Encoding for DNN Accelerators"
+        title: Numerical Encoding for DNN Accelerators
         url: https://www.sigarch.org/numerical-encoding-for-dnn-accelerators/
         notes:
           - label: Published on

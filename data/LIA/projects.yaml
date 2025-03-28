@@ -8,10 +8,12 @@ projects:
       - Info
     description: Data distribution-aware differential privacy
     tech_desc: >
-      Traditional differential privacy is independent of the data distribution. However, this is not well-matched with the modern machine
-      learning con-text, where models are trained on specific data. As a result, achieving meaningful privacy guarantees in ML often
-      excessively reduces accuracy. Bayesian differential privacy (BDP) takes into account the data distribution to provide more practical
-      privacy guarantees.
+      Traditional differential privacy is independent of the data distribution.
+      However, this is not well-matched with the modern machine learning
+      con-text, where models are trained on specific data. As a result,
+      achieving meaningful privacy guarantees in ML often excessively reduces
+      accuracy. Bayesian differential privacy (BDP) takes into account the data
+      distribution to provide more practical privacy guarantees.
     code:
       type: Personal GitHub
       url: https://github.com/AlekseiTriastcyn/bayesian-differential-privacy
@@ -31,7 +33,6 @@ projects:
             url: https://icml.cc/Conferences/2020
     date_added: 2021-11-04
     date_updated: 2024-03-20
-
   ader:
     name: ADER
     categories:
@@ -40,9 +41,10 @@ projects:
       - Info
     description: Continual adaption of recommendation systems without forgetting
     tech_desc: >
-      Recommendation systems typically require continual adaptation to take into account new and obsolete items. A major challenge in this
-      situation is catastrophic forgetting, where the trained model forgets patterns it has learned before. We propose a method to mitigate
-      this effect.
+      Recommendation systems typically require continual adaptation to take into
+      account new and obsolete items. A major challenge in this situation is
+      catastrophic forgetting, where the trained model forgets patterns it has
+      learned before. We propose a method to mitigate this effect.
     code:
       type: Personal GitHub
       url: https://github.com/DoubleMuL/ADER
@@ -54,7 +56,8 @@ projects:
       - Decentralized
     information:
       - type: Paper
-        title: "ADER: Adaptively Distilled Exemplar Replay Towards Continual Learning for Session-based Recommendation"
+        title: "ADER: Adaptively Distilled Exemplar Replay Towards Continual Learning
+          for Session-based Recommendation"
         url: https://arxiv.org/pdf/2007.12000.pdf
         notes:
           - label: Published at
