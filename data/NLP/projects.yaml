@@ -31,7 +31,7 @@ projects:
     code:
       type: Personal Github
       url: https://github.com/Silin159/PeaCoK
-      date_last_commit: 2023-09-01
+      date_last_commit: 2025-03-22
     information:
       - type: video
         url: https://www.youtube.com/watch?v=QQfiKRsOYwU
@@ -100,7 +100,7 @@ projects:
     code:
       type: Lab Github
       url: https://github.com/epfLLM/meditron
-      date_last_commit: 2024-01-12
+      date_last_commit: 2024-04-10
     information:
       - type: video
         url: https://youtu.be/37ZQI_-17TI

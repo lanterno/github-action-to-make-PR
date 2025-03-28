@@ -15,7 +15,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/c4dt/eid-demo
-      date_last_commit: 2024-01-01
+      date_last_commit: 2024-02-08
     language: TypeScript
     tags:
       - Access Control

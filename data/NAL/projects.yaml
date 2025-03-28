@@ -31,7 +31,7 @@ projects:
     code:
       type: Old Lab Github
       url: https://github.com/NEU-SNS/wehe-py3/tree/wehe+Y
-      date_last_commit: 2023-12-05
+      date_last_commit: 2024-07-18
     language: Python
     license: Apache-2.0
     information:

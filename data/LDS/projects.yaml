@@ -38,7 +38,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/tuneinsight/lattigo
-      date_last_commit: 2023-03-14
+      date_last_commit: 2025-03-14
     incubator:
       type: retired
       work: 2020/Q1 maturity evaluation
@@ -211,7 +211,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/ldsec/cellCNN
-      date_last_commit: 2022-03-05
+      date_last_commit: 2022-07-21
     information:
       - type: Paper
         title: Privacy-Preserving Federated Neural Network Learning for

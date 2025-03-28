@@ -30,7 +30,7 @@ projects:
     code:
       type: Lab Github
       url: https://github.com/dedis/popstellar
-      date_last_commit: 2024-03-11
+      date_last_commit: 2024-06-30
     language: Go, Java, Scala, JavaScript
     license: AGPL-3.0
     date_added: 2021-04-13
@@ -59,7 +59,7 @@ projects:
     code:
       type: Lab Github
       url: https://github.com/c4dt/dela
-      date_last_commit: 2024-03-05
+      date_last_commit: 2024-10-10
     incubator:
       type: incubated_market
       work: 2023/Q3-2024/Q2 Debugging and feature enhancement
@@ -117,7 +117,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/dedis/cothority/tree/main/calypso
-      date_last_commit: 2022-06-30
+      date_last_commit: 2022-06-29
     c4dt_contact:
       name: Linus Gasser
       email: linus.gasser@epfl.ch
@@ -171,7 +171,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/dedis/kyber
-      date_last_commit: 2024-03-18
+      date_last_commit: 2025-02-19
     lines_of_code: 17000 / 4000
     contacts:
       - name: Pierluca Borsò
@@ -201,7 +201,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/c4dt/byzcoin
-      date_last_commit: 2023-09-27
+      date_last_commit: 2023-09-22
     contacts:
       - name: Pierluca Borsò
         email: pierluca.borso@epfl.ch
@@ -269,7 +269,7 @@ projects:
     code:
       type: Lab GitHub
       url: http://github.com/dedis/onet
-      date_last_commit: 2021-09-30
+      date_last_commit: 2021-09-27
     lines_of_code: 15000 / 3000
     contacts:
       - name: Pierluca Borsò
@@ -304,7 +304,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/dedis/cothority/tree/main/evoting
-      date_last_commit: 2022-06-02
+      date_last_commit: 2022-06-29
     lines_of_code: 1700 / 200
     contacts:
       - name: Pierluca Borsò
@@ -335,7 +335,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/drand/drand
-      date_last_commit: 2024-03-12
+      date_last_commit: 2025-02-19
     url: https://drand.love
     doc: https://github.com/drand/drand#documentation
     lines_of_code: 1000 / 200
@@ -493,7 +493,7 @@ projects:
     code:
       type: Lab Github
       url: https://github.com/dedis/hbt
-      date_last_commit: 2024-03-15
+      date_last_commit: 2024-05-07
     language: Go
     license: other
     date_added: 2022-07-04
@@ -514,7 +514,7 @@ projects:
     code:
       type: Lab Github
       url: https://github.com/dedis/determ-checker
-      date_last_commit: 2022-06-20
+      date_last_commit: 2022-10-14
     language: Go
     license: other
     date_added: 2022-07-04
@@ -538,7 +538,7 @@ projects:
     code:
       type: Lab Github
       url: https://github.com/dedis/matchertext
-      date_last_commit: 2022-11-08
+      date_last_commit: 2022-12-29
     information:
       - type: Paper
         title: "Matchertext: Towards Verbatim Interlanguage Embedding"
@@ -574,7 +574,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/dedis/apir-code
-      date_last_commit: 2023-09-05
+      date_last_commit: 2024-10-19
     information:
       - type: Paper
         title: Authenticated private information retrieval
@@ -617,7 +617,7 @@ projects:
     code:
       type: C4DT Github
       url: https://github.com/c4dt/d-voting
-      date_last_commit: 2024-03-15
+      date_last_commit: 2025-03-07
     incubator:
       type: incubated_market
       work: 2023/Q3-2024/Q2 Debugging and feature enhancement

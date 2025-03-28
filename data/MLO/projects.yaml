@@ -195,7 +195,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/epfml/powersgd
-      date_last_commit: 2023-07-04
+      date_last_commit: 2024-10-29
     information:
       - type: Paper
         title: "PowerSGD: Practical Low-Rank Gradient Compression for Distributed
@@ -281,7 +281,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/epfml/disco
-      date_last_commit: 2024-04-03
+      date_last_commit: 2025-03-25
     language: TypeScript
     license: Apache-2.0
     incubator:
@@ -488,7 +488,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/epfml/byzantine-robust-noniid-optimizer
-      date_last_commit: 2022-02-02
+      date_last_commit: 2021-11-20
     language: Python
     license: MIT
     type: Library
@@ -594,7 +594,7 @@ projects:
     code:
       type: Lab Github
       url: https://github.com/epfLLM/Megatron-LLM/
-      date_last_commit: 2023-12-03
+      date_last_commit: 2024-05-20
     language: Python
     license: various
     date_added: 2024-04-12

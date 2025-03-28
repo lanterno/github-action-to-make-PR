@@ -98,7 +98,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/IVRL/FG-NIC
-      date_last_commit: 2022-01-04
+      date_last_commit: 2024-04-25
     language: Python
     license: MIT
     tags:
@@ -202,7 +202,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/IVRL/LELSD
-      date_last_commit: 2022-02-20
+      date_last_commit: 2024-05-31
     language: Python
     tags:
       - Images
@@ -269,7 +269,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/IVRL/Tempsal
-      date_last_commit: 2023-07-24
+      date_last_commit: 2025-03-11
     tags:
       - Images
       - Deep Neural Networks
@@ -299,7 +299,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/IVRL/DyNCA
-      date_last_commit: 2024-01-29
+      date_last_commit: 2024-05-31
     tags:
       - Images
       - Deep Neural Networks

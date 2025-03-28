@@ -10,7 +10,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/lsils/lstools-showcase
-      date_last_commit: 2022-06-08
+      date_last_commit: 2024-04-05
     language: C++
     license: MIT
     type: Framework
@@ -36,7 +36,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/lsils/benchmarks
-      date_last_commit: 2022-10-11
+      date_last_commit: 2024-08-26
     language: VHDL
     license: MIT
     type: Simulation

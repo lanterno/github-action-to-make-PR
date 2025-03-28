@@ -16,7 +16,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/EPFL-LAP/dynamatic
-      date_last_commit: 2024-03-21
+      date_last_commit: 2025-03-27
     language: C++
     license: MIT
     tags:
