@@ -112,7 +112,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/rs3lab/SynCord
-      date_last_commit: 2022-07-01
+      date_last_commit: 2022-05-14
     language: Python, C
     type: Framework, Experiments
     license: other

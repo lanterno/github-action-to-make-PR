@@ -23,7 +23,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/epfl-dcsl/gotee
-      date_last_commit: 2020-09-20
+      date_last_commit: 2020-09-07
     language: GoLang
     license: BSD-3-Clause
     tags:
@@ -55,7 +55,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/epfl-dcsl/raft
-      date_last_commit: 2020-03-27
+      date_last_commit: 2020-03-25
     language: C
     license: BSD-3-Clause
     type: Library

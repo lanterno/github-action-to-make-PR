@@ -152,7 +152,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/Distributed-EPFL/at2-web
-      date_last_commit: 2022-02-24
+      date_last_commit: 2022-02-23
     license: AGPL-3.0
     maturity: 1
     incubator:
@@ -617,7 +617,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/LPD-EPFL/ukharon-artifacts
-      date_last_commit: 2022-05-24
+      date_last_commit: 2022-07-11
     license: other
     tags:
       - Concurrency
