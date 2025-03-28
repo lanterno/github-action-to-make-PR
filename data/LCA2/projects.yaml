@@ -7,8 +7,9 @@ projects:
       - Infra
     description: Parallel redundancy protocol for IP networks
     tech_desc: >
-      iPRP allows parallel transmission of data over a network for hard real time applications with simply installing an app on both the
-      server and the client.
+      iPRP allows parallel transmission of data over a network for hard real
+      time applications with simply installing an app on both the server and the
+      client.
     code:
       type: Lab GitHub
       url: https://github.com/LCA2-EPFL/iprp
@@ -20,7 +21,8 @@ projects:
     license: MIT
     information:
       - type: Paper
-        title: "iPRP - the Parallel Redundancy Protofol for IP Networks: Protocol Design and Operation"
+        title: "iPRP - the Parallel Redundancy Protofol for IP Networks: Protocol Design
+          and Operation"
         url: https://infoscience.epfl.ch/record/216985
         notes:
           - label: Published in
@@ -28,7 +30,6 @@ projects:
             url: https://ieeexplore.ieee.org/xpl/tocresult.jsp?isnumber=7742433
     date_added: 2019-03-18
     date_updated: 2022-07-05
-
   commelec-api:
     name: commelec-api
     categories:
@@ -37,8 +38,9 @@ projects:
       - Infra
     description: API for the Commelec real-time microgrid framework
     tech_desc: >
-      This project defines a message format, based on Cap'n Proto, for encoding certain mathematical objects (i.e., real-valued symbolic
-      expressions, sets and set-valued functions) as sequences of bytes.
+      This project defines a message format, based on Cap'n Proto, for encoding
+      certain mathematical objects (i.e., real-valued symbolic expressions, sets
+      and set-valued functions) as sequences of bytes.
     code:
       type: Lab GitHub
       url: https://github.com/LCA2-EPFL/commelec-api
@@ -54,7 +56,6 @@ projects:
     license: MIT
     date_added: 2019-03-18
     date_updated: 2022-07-05
-
   t-recs:
     name: T-RECS
     categories:
@@ -63,8 +64,10 @@ projects:
       - Infra
     description: Testbed for multi-agent real-time control of electric grids
     tech_desc: >
-      T-RECS is a software testbed for multi-agent real-time control of electric grids. T-RECS uses software containers to run each agent in
-      a virtual environment. Agents are networked via Mininet, so real packets are exchanged using TCP/IP.
+      T-RECS is a software testbed for multi-agent real-time control of electric
+      grids. T-RECS uses software containers to run each agent in a virtual
+      environment. Agents are networked via Mininet, so real packets are
+      exchanged using TCP/IP.
     code:
       type: Lab GitHub
       url: https://github.com/LCA2-EPFL/T-RECS

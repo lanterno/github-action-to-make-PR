@@ -8,8 +8,9 @@ projects:
       - Info
     description: Database of barcoded food products
     layman_desc: >
-      The Open Food Repo is an open access database on information about barcoded food products sold in Switzerland. Accessible through an
-      open API, it is the largest open data source on Swiss products.
+      The Open Food Repo is an open access database on information about
+      barcoded food products sold in Switzerland. Accessible through an open
+      API, it is the largest open data source on Swiss products.
     maturity: 3
     contacts:
       - name: contact
@@ -30,7 +31,6 @@ projects:
         url: https://www.myfoodrepo.org
     date_added: 2019-03-18
     date_updated: 2024-04-14
-
   foodandyou:
     name: Food & You
     categories:
@@ -39,11 +39,11 @@ projects:
       - Health
     description: Track your individual response to food and help advance science
     layman_desc: >
-      Take part in an exciting citizen science project on personalized nutrition! 
-      Citizen science enables volunteers and professionals to
-      make discoveries together.
-      By participating in this project, you will understand how your blood sugar levels
-      change in response to the food you eat.
+      Take part in an exciting citizen science project on personalized
+      nutrition!  Citizen science enables volunteers and professionals to make
+      discoveries together. By participating in this project, you will
+      understand how your blood sugar levels change in response to the food you
+      eat.
     maturity: 3
     contacts:
       - name: contact
@@ -54,7 +54,6 @@ projects:
     url: https://www.foodandyou.ch
     date_added: 2021-01-21
     date_updated: 2024-04-14
-
   crowdbreaks:
     name: CrowdBreaks
     categories:
@@ -78,7 +77,8 @@ projects:
     license: MIT
     information:
       - type: Paper
-        title: "Crowdbreaks: Tracking Health Trends Using Public Social Media Data and Crowdsourcing"
+        title: "Crowdbreaks: Tracking Health Trends Using Public Social Media Data and
+          Crowdsourcing"
         url: https://infoscience.epfl.ch/record/265362
         notes:
           - label: Published in
@@ -86,7 +86,6 @@ projects:
             url: https://www.frontiersin.org/articles/10.3389/fpubh.2019.00081
     date_added: 2021-01-21
     date_updated: 2024-04-14
-
   aicrowd:
     name: AIcrowd
     categories:
@@ -110,7 +109,6 @@ projects:
     maturity: 3
     date_added: 2021-01-21
     date_updated: 2024-04-14
-
   txcl:
     name: txcl
     categories:
