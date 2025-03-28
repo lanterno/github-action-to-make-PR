@@ -1,0 +1,207 @@
+projects:
+  gem5-x:
+    name: gem5-X
+    categories:
+      - Other
+    applications:
+      - Infra
+    description: gem5-based simulator with architectural extensions
+    layman_desc: >
+      gem5-X stands for a gem5-based full-system simulator with architectural eXtensions. It is a gem5-based simulator that allows
+      architectural exploration and optimization of heterogeneous systems
+    url: https://ecocloud.epfl.ch/research/sustainable-it-infrastructure/gem5-x/
+    doc: https://www.epfl.ch/labs/esl/wp-content/uploads/2021/08/gem5_X_TechnicalManual_v2.pdf
+    code:
+      type: Lab GitHub
+      url: https://github.com/esl-epfl/gem5-X
+      date_last_commit: 2021-08-03
+    language: C++, Python
+    type: Framework
+    tags:
+      - Simulator
+    information:
+      - type: Paper
+        title: "Gem5-X: A Many-Core Heterogeneous Simulation Platform for Architectural Exploration and Optimization"
+        url: https://infoscience.epfl.ch/record/285129
+      - type: Paper
+        title: "Gem5-X: A Gem5-Based System Level Simulation Framework to Optimize Many-Core Platforms"
+        url: https://infoscience.epfl.ch/record/264182
+        notes:
+          - label: Published at
+            text: HPC 2019
+            url: https://hosting.cs.vt.edu/hpc2019/
+    date_added: 2021-11-04
+    date_updated: 2022-07-05
+
+  3d-ice:
+    name: 3D-ICE
+    categories:
+      - Other
+    applications:
+      - Infra
+    description: Thermal simulator for stacked integrated circuits
+    layman_desc: >
+      Hardware is getting smaller every day, components are being stacked on top of each other, in order to make theses more compact. But as
+      it is getting smaller, it's also getting hotter. 3D-ICE helps in modelling how thermal flux are behaving.
+    url: https://www.epfl.ch/labs/esl/research/open-source-software-projects/3d-ice/
+    doc: https://eslweb.epfl.ch/3Dice/3D-ICE-User_Guide.pdf
+    code:
+      type: Lab GitHub
+      url: https://github.com/esl-epfl/3d-ice
+      date_last_commit: 2022-06-20
+    language: C
+    type: Simulation
+    tags:
+      - Low-Level
+      - Simulator
+    information:
+      - type: Paper
+        title: "3D-ICE 3.0: efficient nonlinear MPSoC thermal simulation with pluggable heat sink models"
+        url: https://infoscience.epfl.ch/record/285104
+      - type: Paper
+        title: "3D-ICE: a compact thermal model for early-stage design of liquid-cooled ICs"
+        url: https://infoscience.epfl.ch/record/186785
+      - type: Paper
+        title: "3D-ICE: Fast compact transient thermal modeling for 3D-ICs with inter-tier liquid cooling"
+        url: https://infoscience.epfl.ch/record/149790
+        notes:
+          - label: Published at
+            text: ICCAD 2010
+            url: https://iccad.com
+      - type: Paper
+        title: Compact transient thermal model for 3D ICs with liquid cooling via enhanced heat transfer cavity geometries
+        url: https://infoscience.epfl.ch/record/149792
+        notes:
+          - label: Published at
+            text: THERMINIC 2010
+            url: https://therminic.org/therminic2010/
+    date_added: 2022-07-05
+    date_updated: 2022-07-05
+
+  cloud-performance-monitor:
+    name: cloud-performance-monitor
+    description: >
+      Monitoring and improving performance of cloud services
+    tech_desc: >
+      The project on machine learning for HPC servers and data centers at the 
+      ESL lab focuses on utilizing machine learning-based approaches for 
+      multi-objective resource management. This research line aims to enhance
+      the efficiency of heterogeneous High Performance Computing (HPC) servers
+      and data centers by employing system-level resource management techniques.
+    layman_desc: >
+      In simpler terms, this project explores how to make high-performance 
+      computing servers and data centers smarter using machine learning. 
+      By applying advanced algorithms, the team aims to optimize the use of 
+      resources in these environments efficiently. Ultimately, the goal is to 
+      improve the performance and reliability of these systems while ensuring 
+      they operate in a cost-effective and sustainable manner, contributing to 
+      advancements in cloud infrastructure management and data center operations.
+    type: Application
+    categories:
+      - Security
+    applications:
+      - Infra
+    tags:
+      - Benchmark
+      - Cloud
+      - Optimization
+    url: https://www.epfl.ch/labs/esl/research/cloud-infrastructure/machine-learning-for-hpc-servers-and-data-centers/
+    date_added: 2024-02-20
+
+  digital-twins:
+    name: digital-twins
+    description: >
+      Virtual copies for real-time connections
+    type: Application
+    categories:
+      - Security
+    applications:
+      - Health
+    tags:
+      - Anonymity
+      - Predictor
+    date_added: 2024-02-20
+    layman_desc: >
+      Digital Twins are like virtual doppelgangers of physical objects, 
+      helping in predicting diseases, evaluating climate policies, and 
+      conserving resources. 
+      EPFL's DIGIPREDICT project used digital twins to anticipate how COVID-19 
+      might progress in individuals, aiding in better healthcare decisions.
+    tech_desc: >
+      Digital Twins involve creating virtual copies of real objects for 
+      real-time monitoring and analysis. These replicas are utilized in various 
+      fields like disease prediction, climate policy assessment, and resource 
+      conservation. 
+      EPFL's DIGIPREDICT consortium used digital twins to forecast 
+      COVID-19 progression in patients.
+    url: https://www.epfl.ch/labs/esl/research/digital-twins/
+
+  hdtorch:
+    name: hdtorch
+    description: >
+      PyTorch-based hyperdimensional computing library
+    tech_desc: >
+      HDTorch is a PyTorch-based library designed for hyperdimensional 
+      computing, featuring custom CUDA extensions to accelerate hypervector
+      operations. It is utilized for analyzing HDC benchmark datasets, focusing 
+      on accuracy, runtime, and memory usage. The workflow involves initializing 
+      basis vectors, encoding features, and aggregating vectors of the same 
+      class.
+    layman_desc: >
+      HDTorch is a specialized library that uses PyTorch for advanced 
+      hyperdimensional computing tasks. It helps researchers analyze complex 
+      datasets efficiently, ensuring accuracy and optimizing resource usage.
+      In simpler terms, it's like a powerful tool that assists in handling data
+      securely and effectively for projects related to privacy and digital 
+      trust.
+    type: "Library"
+    categories:
+      - Learning
+    applications:
+      - Info
+    tags:
+      - Optimization
+      - TensorFlow
+      - Machine Learning
+    code:
+      type: Lab Github
+      url: https://c4science.ch/source/hdtorch/
+      date_last_commit: 2023-10-18
+    language: Python
+    license: MIT
+    date_added: 2024-02-20
+
+  x-heep:
+    name: x-heep
+    description: >
+      Open-source RISC-V system-on-chip for healthcare monitoring
+    tech_desc: >
+      The X-HEEP project is an open-source RISC-V microcontroller designed for continuous 
+      healthcare monitoring. It provides a customizable microcontroller unit (MCU) 
+      composed of an open-source, industrial-grade RISC-V CPU, common peripherals, 
+      and memories, which users can extend with their own accelerators. The project 
+      targets both FPGA and ASIC implementations, with support for Xilinx-based 
+      FPGAs.
+    layman_desc: >
+      X-HEEP is a project that aims to improve healthcare monitoring by creating 
+      a new type of computer chip that can be customized by users. This chip can 
+      be used in small devices for personal health monitoring or in larger systems 
+      for more demanding applications. The project is open-source, meaning anyone 
+      can use, modify, and distribute it, which could lead to widespread adoption 
+      and innovation in the field of healthcare technology.
+    type: Toolset
+    categories:
+      - Security
+    applications:
+      - Health
+    tags:
+      - Development
+      - Internet of Things
+    url: https://www.epfl.ch/labs/esl/research/systems-on-chip/x-heep/
+    code:
+      type: Lab Github
+      url: https://github.com/esl-epfl/x-heep
+      date_last_commit: 2024-02-14
+    language: C
+    license: SOLDERPAD HARDWARE LICENSE, Apache-2.0
+    date_added: 2024-02-20

@@ -1,0 +1,790 @@
+projects:
+  fuzzan:
+    name: FuZZan
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Faster address sanitization to improve fuzzing speed
+    tech_desc: >
+      Our evaluation shows that on the Google fuzzer test suite, FuZZan improves fuzzing throughput over ASan by 48% starting with Google’s
+      provided seeds (52% when starting with empty seeds on the same applications). Due to this improved throughput, FuZZan discovers 13%
+      more unique paths given the same 24 hours and finds bugs 42% faster
+    tags:
+      - Fuzzing
+    type: Application
+    code:
+      type: Lab Github
+      url: https://github.com/HexHive/FuZZan
+      date_last_commit: 2021-03-31
+    language: C++
+    license: Apache-2.0
+    information:
+      - type: Paper
+        title: "FuZZan: Efficient Sanitizer Metadata Design for Fuzzing"
+        url: https://infoscience.epfl.ch/record/289212
+        notes:
+          - label: Published at
+            text: "Usenix ATC '20"
+            url: https://www.usenix.org/conference/atc20/presentation/jeon
+    date_added: 2021-03-05
+    date_updated: 2024-04-12
+
+  usbfuzz:
+    name: USBFuzz
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: "Virtual environment for fuzzing USB peripherals"
+    tech_desc: >
+      Fuzzing USB peripherals for Linux, Android, MacOS, Windows, FreeBSD Found lots of 0days in modern kernels, allowing arbitrary
+      compromise
+    tags:
+      - Fuzzing
+    type: Application
+    code:
+      type: Lab Github
+      url: https://github.com/HexHive/USBFuzz
+      date_last_commit: 2021-03-05
+    language: C
+    information:
+      - type: Paper
+        title: "USBFuzz: A Framework for Fuzzing USB Drivers by Device Emulation"
+        url: https://infoscience.epfl.ch/record/287847
+        notes:
+          - label: Published at
+            text: "Usenix S&P '20"
+            url: https://www.usenix.org/conference/usenixsecurity20/presentation/peng
+    date_added: 2021-03-05
+    date_updated: 2024-04-12
+
+  magma:
+    name: Magma
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: A ground-truth fuzzing benchmark suite based on real programs with real bugs
+    tech_desc: >
+      Magma is a collection of open-source libraries with widespread usage and a long history of security-critical bugs and vulnerabilities.
+      In light of the need for better fuzzer evaluation, we front-ported bugs from previous bug reports to the latest versions of these
+      libraries.
+
+      For each ported bug, we added in-line (source-code-level) instrumentation to collect ground-truth information about bugs reached
+      (buggy code executed) and triggered (fault condition satisfied by input). This instrumentation allows a monitoring utility to measure
+      fuzzer progress in real time.
+    url: https://hexhive.epfl.ch/magma/
+    tags:
+      - Fuzzing
+      - Benchmark
+    type: Application
+    code:
+      type: Lab Github
+      url: https://github.com/HexHive/magma
+      date_last_commit: 2022-12-07
+    information:
+      - type: Paper
+        title: "Magma: A Ground-Truth Fuzzing Benchmark"
+        url: https://arxiv.org/abs/2009.01120
+        notes:
+          - label: Published at
+            text: SIGMETRICS 2021
+            url: http://www.sigmetrics.org/sigmetrics2021
+    date_added: 2020-02-21
+    date_updated: 2024-04-12
+
+  t-fuzz:
+    name: T-Fuzz
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Fuzzing tool and crash analyzer
+    tech_desc: >
+      T-Fuzz (transformational fuzzing) improves fuzzing by detecting whenever the fuzzer is stuck and then modifying the underlying program
+      to reach new program locations. This allows fuzzing to discover and test hard to reach code.
+    code:
+      type: Lab GitHub
+      url: https://github.com/HexHive/T-Fuzz
+      date_last_commit: 2018-12-04
+    tags:
+      - Fuzzing
+      - Debug
+      - Failure
+    language: Python
+    type: Application
+    information:
+      - type: Paper
+        title: "T-Fuzz: fuzzing by program transformation"
+        url: http://hexhive.epfl.ch/publications/files/18Oakland.pdf
+        notes:
+          - label: Published at
+            text: SP 2018
+            url: https://ieeexplore.ieee.org/document/8418632
+    date_added: 2019-03-18
+    date_updated: 2024-04-12
+
+  bopc:
+    name: BOPC
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Block-oriented programming compiler
+    layman_desc: >
+      BOPC searches for exploits in the code that can be put together to execute new functions, while not tipping off any of the
+      verifications in the program. BOPC is a tool that automatically synthesizes data-flow exploits based on real programs and real
+      exploits.
+    code:
+      type: Lab GitHub
+      url: https://github.com/HexHive/BOPC
+      date_last_commit: 2020-11-05
+    tags:
+      - Fuzzing
+      - Exploit
+      - Attack
+    language: Python
+    type: Application
+    information:
+      - type: Paper
+        title: "Block Oriented Programming: Automating Data-Only attacks"
+        url: https://infoscience.epfl.ch/record/267008
+        notes:
+          - label: Published at
+            text: CCS 2018
+            url: https://dl.acm.org/doi/10.1145/3243734.3243739
+    date_added: 2019-03-18
+    date_updated: 2024-04-12
+
+  cfixx:
+    name: CFIXX
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Protection for C++ internal code pointers
+    tech_desc: >
+      CFIXX is a runtime mitigation that protects C++ programs from attacks that overwrite internal data structures containing code
+      pointers.
+    code:
+      type: Lab GitHub
+      url: https://github.com/HexHive/CFIXX
+      date_last_commit: 2018-07-04
+    tags:
+      - Fuzzing
+      - Exploit
+    language: C++
+    type: Application
+    information:
+      - type: Paper
+        title: "CFIXX: Object Type Integrity for C++ Virtual Dispatch"
+        url: https://nebelwelt.net/publications/files/18NDSS.pdf
+        notes:
+          - label: Published at
+            text: NDSS 2018
+            url: https://www.ndss-symposium.org/ndss2018
+    date_added: 2019-03-18
+    date_updated: 2024-04-12
+
+  hextype:
+    name: HexType
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Efficient detection of type confusion errors for C++
+    tech_desc: >
+      HexType is a sanitizer for C++ cast safety. The primary use case is during testing to detect type confusion issues in the code.
+      Additionally, HexType may be run in a fuzzing environment to detect type violations.
+    code:
+      type: Lab GitHub
+      url: https://github.com/HexHive/HexType
+      date_last_commit: 2021-11-16
+    tags:
+      - Fuzzing
+    language: C++
+    type: Application
+    information:
+      - type: Paper
+        title: "HexType: Efficient Detection of Type Confusion Errors for C++"
+        url: http://hexhive.epfl.ch/publications/files/17CCS.pdf
+        notes:
+          - label: Published at
+            text: CCS 2017
+            url: https://ccs2017.sigsac.org
+    maturity: 1
+    date_added: 2019-03-18
+    date_updated: 2024-04-12
+
+  retrowrite:
+    name: RetroWrite
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Static instrumentation of binaries for fuzzing and sanitation
+    tech_desc: >
+      RetroWrite can analyze the security of closed source binaries by applying an efficient fuzzing technique that usually only works when
+      the source code is available. This makes it possible to trigger more errors than the default binary fuzzers available, while being
+      much faster in finding these errors.
+    code:
+      type: Lab GitHub
+      url: https://github.com/HexHive/retrowrite
+      date_last_commit: 2023-11-30
+    tags:
+      - Fuzzing
+      - Binary
+    language: Python
+    license: MIT
+    type: Application
+    information:
+      - type: Paper
+        title: "RetroWrite: Statically Instrumenting COTS Binaries for Fuzzing and Sanitization"
+        url: https://infoscience.epfl.ch/record/284290
+        notes:
+          - label: Published at
+            text: Oakland 2020
+            url: https://ieeexplore.ieee.org/document/9152762
+      - type: Tutorial
+        title: RetroWrite Tutorial
+        url: https://github.com/HexHive/RetroWrite-Tutorial
+    date_added: 2019-09-02
+    date_updated: 2024-04-12
+
+  shadowstack:
+    name: ShadowStack
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: LLVM Implementation of different ShadowStack schemes for x86_64
+    layman_desc: >
+      In computer security, a shadow stack is a mechanism for protecting a procedure's stored return address, such as from a stack buffer
+      overflow. The shadow stack itself is a second, separate stack that \"shadows\" the program call stack. In the function prologue, a
+      function stores its return address to both the call stack and the shadow stack. In the function epilogue, a function loads the return
+      address from both the call stack and the shadow stack, and then compares them. If the two records of the return address differ, then
+      an attack is detected; the typical course of action is simply to terminate the program or alert system administrators about a possible
+      intrusion attempt.
+    code:
+      type: Lab GitHub
+      url: https://github.com/HexHive/ShadowStack
+      date_last_commit: 2020-05-02
+    tags:
+      - Binary
+      - Protection
+    language: C, assembly
+    type: Application
+    information:
+      - type: Paper
+        title: "SoK: Shining Light on Shadow Stacks"
+        url: https://infoscience.epfl.ch/record/275478
+        notes:
+          - label: Published at
+            text: Oakland 2019
+            url: https://ieeexplore.ieee.org/document/8835389
+    date_added: 2020-02-21
+    date_updated: 2024-04-12
+
+  hexpads:
+    name: HexPADS
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Host-based, performance-counter-based attack detection system
+    tech_desc: >
+      Attacks change the execution behavior of a system. Our attack detection system HexPADS detects attacks through divergences from normal
+      behavior using attack signatures. HexPADS collects information from the operating system on runtime performance metrics with
+      measurements from hardware performance counters for individual processes. Cache behavior is a strong indicator of ongoing attacks like
+      rowhammer, side channels, covert channels, or CAIN attacks. Collecting performance metrics across all running processes allows the
+      correlation and detection of these attacks. In addition, HexPADS can mitigate the attacks or significantly reduce their effectiveness
+      with negligible overhead to benign processes.
+    code:
+      type: Lab GitHub
+      url: https://github.com/HexHive/HexPADS
+      date_last_commit: 2016-01-07
+    tags:
+      - Protection
+    language: C
+    type: Application
+    information:
+      - type: Paper
+        title: 'HexPADS: a platform to detect "stealth" attacks'
+        url: http://hexhive.epfl.ch/publications/files/16ESSoS.pdf
+        notes:
+          - label: Published at
+            text: ESSoS 2016
+            url: https://dl.acm.org/conference/essos
+    date_added: 2020-02-21
+    date_updated: 2024-04-12
+
+  fuzzgen:
+    name: FuzzGen
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Automatic fuzzer generation
+    tech_desc: >
+      FuzzGen is a tool for automatically synthesizing fuzzers for complex libraries in a given environment. From a given library, it allow
+      for creating a dedicated fuzzer, aiming at good code coverage, without human interaction.
+    code:
+      type: Lab GitHub
+      url: https://github.com/HexHive/FuzzGen
+      date_last_commit: 2020-11-30
+    language: C++
+    license: Apache-2.0
+    tags:
+      - Fuzzing
+      - Debug
+      - Failure
+    type: Application
+    information:
+      - type: Paper
+        title: "FuzzGen: Automatic Fuzzer Generation"
+        url: https://infoscience.epfl.ch/record/287822
+        notes:
+          - label: Published at
+            text: SEC 2020
+            url: https://www.usenix.org/conference/usenixsecurity20
+    date_added: 2020-02-21
+    date_updated: 2024-04-12
+
+  datashield:
+    name: DataShield
+    categories:
+      - Privacy
+    applications:
+      - Info
+    description: Configurable data confidentiality and integrity
+    tech_desc: >
+      DataShield can, based on C/C++ languages annotation, protect unwanted access to secret data. By securing only theses datastructures,
+      performance overhead is greatly reduced.
+    code:
+      type: Lab GitHub
+      url: https://github.com/HexHive/datashield
+      date_last_commit: 2021-01-01
+    tags:
+      - Fuzzing
+      - Debug
+      - Failure
+    language: C++
+    license: GPL-3.0
+    type: Library
+    information:
+      - type: Paper
+        title: "DataShield: Configurable Data Confidentiality and Integrity"
+        url: http://hexhive.epfl.ch/publications/files/17AsiaCCS.pdf
+        notes:
+          - label: Published at
+            text: AsiaCCS 2017
+            url: https://dl.acm.org/doi/10.1145/3052973.3052983
+    date_added: 2020-02-21
+    date_updated: 2024-04-12
+
+  halucinator:
+    name: HALucinator
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Firmware re-hosting through abstraction layer emulation
+    tech_desc: >
+      HALucinator allow for running a firmware outside of its physical implementation. When extracting it, one can recreate the same
+      environment as the one used by the firmware's developer thus allowing for faster exploitation.
+    code:
+      type: Lab GitHub
+      url: https://github.com/embedded-sec/halucinator
+      date_last_commit: 2021-10-06
+    tags:
+      - Binary
+      - Exploit
+      - Debug
+    language: Python
+    license: GPL-3.0
+    type: Application
+    information:
+      - type: Paper
+        title: "HALucinator: Firmware Re-hosting Through Abstraction Layer Emulation"
+        url: https://infoscience.epfl.ch/record/287890
+        notes:
+          - label: Published at
+            text: SEC 2020
+            url: https://www.usenix.org/conference/usenixsecurity20
+    date_added: 2020-02-24
+    date_updated: 2024-04-12
+    maturity: 1
+
+  benchiot:
+    name: BenchIoT
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Security benchmarks for the Internet of Things
+    tech_desc: >
+      BenchIoT enables automatic evaluation of 14 metrics covering security, performance, memory usage, and energy consumption. Having a
+      sound benchmark focused on IoT allow for robust and comparable metrics.
+    code:
+      type: Lab GitHub
+      url: https://github.com/embedded-sec/BenchIoT
+      date_last_commit: 2020-11-11
+    tags:
+      - Benchmark
+      - Internet of Things
+    language: C
+    license: Apache-2.0
+    type: Application
+    information:
+      - type: Paper
+        title: "BenchIoT: Security benchmarks for the Internet of Things"
+        url: https://infoscience.epfl.ch/record/280267
+        notes:
+          - label: Published at
+            text: DSN 2019
+            url: https://ieeexplore.ieee.org/document/8809492
+    maturity: 1
+    date_added: 2020-02-24
+    date_updated: 2024-04-12
+
+  freegaen:
+    name: Free GAEN alternative
+    categories:
+      - Privacy
+    applications:
+      - Health
+    description: LibreCHovid - Alternative to GAEN for contact tracing applications
+    tech_desc: >
+      Apple and Google developed the Google-Apple Exposure Notification system in order to provide a uniform API for contact-tracing apps
+      while preserving user privacy. On Android, GAEN is integrated in the Google Play services, which is proprietary. As a consequence,
+      users wanting to keep a free system, as well as phone manufacturers such as Huawei who don't have Google Play services cannot use
+      these applications. This project aims to offer an alternative framework, based on open-source code, which requires only minimal
+      changes to the apps.
+    code:
+      type: C4DT GitHub
+      url: https://github.com/c4dt/dp3t-app-android-ch/tree/microg-nearby
+      date_last_commit: 2021-07-15
+    tags:
+      - Mobile App
+      - Protocol
+      - Bluetooth
+    language: Java, Kotlin
+    type: Application, Library, Framework
+    license: MPL-2.0
+    maturity: 1
+    incubator:
+      type: retired
+      work: 2021/Q1 worked on improving and integrating with microG and published app
+    date_added: 2020-10-05
+    date_updated: 2024-04-12
+
+  lightblue:
+    name: LightBlue
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: "Automatic profile-aware debloating of bluetooth stacks"
+    tech_desc: >
+      The Bluetooth standard is complex, many commands are defined but aren't needed in many use cases. It allows for a big surface attack
+      which can be cumbersome to correctly reduce. Based on Bluetooth usage profiling, LightBlue allows to reduce the number of exposed
+      commands understood by the firmware and the runtime, thus greatly reducing the potential future attacks that might arise.
+    tags:
+      - Attack
+      - Bluetooth
+    type: Application
+    code:
+      type: Lab Github
+      url: https://github.com/purseclab/lightblue
+      date_last_commit: 2022-07-01
+    information:
+      - type: Paper
+        title: "LIGHTBLUE : Automatic Profile-Aware Debloating of Bluetooth Stacks"
+        url: https://infoscience.epfl.ch/record/291299
+        notes:
+          - label: Published at
+            text: USENIX 2021
+            url: https://www.usenix.org/conference/usenixsecurity21/
+    language: C++, Python
+    date_added: 2020-02-26
+    date_updated: 2024-04-12
+
+  igor:
+    name: Igor
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Crash deduplication through root-cause clustering
+    tech_desc: >
+      Fuzzing has emerged as the most effective bug-finding technique. The output of a fuzzer is a set of proof-of-concept (PoC) test cases
+      for all observed “unique” crashes. It costs developers substantial efforts to analyze each crashing test case. This, mostly manual,
+      process has lead to the number of reported crashes out-pacing the number of bug fixes. Igor is a tool for automated crash
+      grouping/deduplication.
+    code:
+      type: Lab GitHub
+      url: https://github.com/HexHive/Igor
+      date_last_commit: 2022-08-02
+    language: C
+    type: Application
+    tags:
+      - Fuzzing
+    information:
+      - type: Paper
+        title: "Igor: Crash Deduplication Through Root-Cause Clustering"
+        url: https://infoscience.epfl.ch/record/294166
+        notes:
+          - label: Published at
+            text: ACM CCS 2021
+            url: https://sigsac.org/ccs/CCS2021/
+      - type: Video
+        title: "Igor: Crash Deduplication Through Root-Cause Clustering (CCS'21)"
+        url: https://www.youtube.com/watch?v=V06x1Ad5dRo
+    date_added: 2021-11-04
+    date_updated: 2024-04-12
+
+  dis-cover:
+    name: dis-cover
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Disassemble binaries and recover as much info as possible
+    code:
+      type: Lab GitHub
+      url: https://github.com/HexHive/dis-cover
+      date_last_commit: 2021-09-03
+    language: Python
+    license: MIT
+    type: Application
+    tags:
+      - Binary
+      - Low-Level
+    date_added: 2021-11-04
+    date_updated: 2024-04-12
+
+  gramatron:
+    name: Gramatron
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Grammar-aware fuzzing
+    tech_desc: >
+      Coverage-guided fuzzer that uses grammar automatons to perform grammar-aware fuzzing.
+    code:
+      type: Lab GitHub
+      url: https://github.com/HexHive/Gramatron
+      date_last_commit: 2021-11-28
+    language: C
+    license: Apache-2.0
+    type: Application
+    tags:
+      - Fuzzing
+    maturity: 1
+    information:
+      - type: Paper
+        title: "Gramatron: Effective Grammar-Aware Fuzzing"
+        url: https://infoscience.epfl.ch/record/290978
+        notes:
+          - label: Published at
+            text: ISSTA 2021
+            url: https://conf.researchr.org/home/issta-2021
+    date_added: 2021-11-04
+    date_updated: 2024-04-12
+
+  dataflow:
+    name: datAFLow
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Data-flow based fuzzing
+    tech_desc: >
+      DatAFLow is a fuzzer built on top of AFL++. However, instead of a control-flow-based feedback mechanism, it uses a data-flow-based
+      feedback mechanism; specifically, data flows based on def-use associations.
+    code:
+      type: Lab GitHub
+      url: https://github.com/HexHive/datAFLow
+      date_last_commit: 2023-02-01
+    language: C++
+    license: Apache-2.0
+    type: Toolset
+    tags:
+      - Fuzzing
+    information:
+      - type: Report
+        title: "Registered Report: DatAFLow"
+        url: https://www.ndss-symposium.org/wp-content/uploads/fuzzing2022_23001_paper.pdf
+        notes:
+          - label: Published at
+            text: FUZZING 2022
+            url: https://fuzzingworkshop.github.io
+    date_added: 2022-07-05
+    date_updated: 2024-04-12
+
+  midas:
+    name: Midas
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Systematic kernel TOCTTOU protection
+    tech_desc: >
+      During a syscall, the kernel might read multiple times a value from userspace. As theses are controlled by the unpriviliged process,
+      it may introduce subtle changes of behavior and possible hard-to-detect attacks, a classic time-of-check-to-time-of-use bug. Midas
+      disable this attack surface by always returning the same values during a given syscall.
+    code:
+      type: Lab GitHub
+      url: https://github.com/HexHive/Midas
+      date_last_commit: 2021-12-08
+    language: C
+    license: other
+    type: Application
+    tags:
+      - Binary
+      - Debug
+      - Protection
+    information:
+      - type: Paper
+        title: "Midas: Systematic Kernel TOCTTOU Protection"
+        url: https://infoscience.epfl.ch/record/290014
+        notes:
+          - label: Published at
+            text: "Usenix SEC '22"
+            url: https://www.usenix.org/conference/usenixsecurity22/summer-accepted-papers
+    date_added: 2022-09-27
+    date_updated: 2024-04-12
+
+  gleefuzz:
+    name: GLeeFuzz
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Fuzzing WebGL Through Error Message Guided Mutation
+    tech_desc: >
+      Our fuzzing technique, GLeeFuzz, guides input mutation by error messages instead of code coverage. Our key observation is that
+      browsers emit meaningful error messages to aid developers in debugging their WebGL programs. Error messages indicate which part of the
+      input fails (e.g., incomplete arguments, invalid arguments, or unsatisfied dependencies between API calls). Leveraging error messages
+      as feedback, the fuzzer effectively expands coverage by focusing mutation on erroneous parts of the input. We analyze Chrome’s WebGL
+      implementation to identify the dependencies between error-emitting statements and rejected parts of the input, and use this
+      information to guide input mutation. We evaluate our GLeeFuzz prototype on Chrome, Firefox, and Safari on diverse desktop and mobile
+      OSes. We discovered 7 vulnerabilities, 4 in Chrome, 2 in Safari, and 1 in Firefox. The Chrome vulnerabilities allow a remote attacker
+      to freeze the GPU and possibly execute remote code at the browser privilege.
+    tags:
+      - Fuzzing
+    type: Application
+    code:
+      type: Lab Github
+      url: https://github.com/HexHive/GLeeFuzz
+      date_last_commit: 2022-11-17
+    information:
+      - type: Paper
+        title: "GLeeFuzz: Fuzzing WebGL Through Error Message Guided Mutation"
+        url: https://www.usenix.org/system/files/sec23summer_249-peng-prepub.pdf
+        notes:
+          - label: Published at
+            text: Usenix SEC '23
+            url: https://www.usenix.org/conference/usenixsecurity23/summer-accepted-papers
+    date_added: 2023-03-20
+    date_updated: 2024-04-12
+
+  evocatio:
+    name: Evocatio
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Evocatio is a bug analyzer built on top of AFL++ and AddressSanitizer. It automatically discovers a bug’s capabilities.
+    tech_desc: >
+      Evocatio automatically discovers a bug’s capabilities: analyzing a crashing test case (i.e., an input exposing a bug) to understand
+      the full extent of how an attacker can exploit a bug. Evocatio leverages a capability-guided fuzzer to efficiently uncover new bug
+      capabilities (rather than only generating a single crashing test case for a given bug, as a traditional greybox fuzzer does).
+    tags:
+      - Fuzzing
+    type: Application
+    code:
+      type: Lab Github
+      url: https://github.com/HexHive/Evocatio
+      date_last_commit: 2023-07-21
+    information:
+      - type: Paper
+        title: "Evocatio: Conjuring Bug Capabilities from a Single PoC"
+        url: https://hexhive.epfl.ch/publications/files/22CCS.pdf
+    date_added: 2023-03-20
+    date_updated: 2024-04-12
+
+  warpattack:
+    name: WarpAttack
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Bypassing CFI through Compiler-Introduced Double-Fetches
+    tech_desc: >
+      WarpAttack is a new attack vector that exploits compiler-introduced double-fetch optimizations to mount TOCTTOU attacks and bypass
+      code-reuse mitigations.
+    tags:
+      - Attack
+    type: Application
+    code:
+      type: Lab Github
+      url: https://github.com/HexHive/WarpAttack
+      date_last_commit: 2023-04-13
+    information:
+      - type: Paper
+        title: "WarpAttack: Bypassing CFI through Compiler-Introduced Double-Fetches"
+        url: https://hexhive.epfl.ch/publications/files/23Oakland3.pdf
+    date_added: 2023-04-24
+    date_updated: 2024-04-12
+
+  videzzo:
+    name: ViDeZZo
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Dependency-aware Virtual Device Fuzzing Framework
+    tech_desc: >
+      ViDeZZo is a virtual device fuzzing framework considering both intra- and inter-message dependencies to balance fuzzing scalability
+      and efficiency.
+    tags:
+      - Fuzzing
+    type: Framework
+    code:
+      type: Lab Github
+      url: https://github.com/HexHive/ViDeZZo
+      date_last_commit: 2023-03-19
+    information:
+      - type: Paper
+        title: "VIDEZZO: Dependency-aware Virtual Device Fuzzing"
+        url: https://hexhive.epfl.ch/publications/files/23Oakland4.pdf
+    date_added: 2023-04-24
+    date_updated: 2024-04-12
+
+  sievefuzz:
+    name: SieveFuzz
+    categories:
+      - Security
+    applications:
+      - Infra
+    description: Optimizing Directed Fuzzing via Target-tailored Program State Restriction
+    tech_desc: >
+      We implement tripwiring-directed fuzzing as a prototype, Sieve-Fuzz, and evaluate it alongside the state-of-the-art directed fuzzers
+      AFLGo, BEACON and the leading undirected fuzzer AFL++. Overall, across nine benchmarks, SieveFuzz’s tripwiring enables it to trigger
+      bugs on an average 47% more consistently and 117% faster than AFLGo, BEACON and AFL++.
+    tags:
+      - Fuzzing
+    type: Framework
+    code:
+      type: Lab Github
+      url: https://github.com/HexHive/SieveFuzz
+      date_last_commit: 2023-04-10
+    information:
+      - type: Paper
+        title: "One Fuzz Doesn’t Fit All: Optimizing Directed Fuzzing via Target-tailored Program State Restriction"
+        url: https://hexhive.epfl.ch/publications/files/22ACSAC2.pdf
+    date_added: 2023-04-24
+    date_updated: 2024-04-12

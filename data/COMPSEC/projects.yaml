@@ -1,0 +1,43 @@
+projects:
+  # Most common fields:
+  arkworks:
+    name: arkworks
+    description: >
+      Rust ecosystem for zkSNARK programming
+    type: "Library"
+    categories:
+      - "Privacy"
+      - "Blockchain"
+      - "Security"
+    applications:
+      - "Finance"
+      - "Health"
+      - "Info"
+    tags:
+      - "Zero-Knowledge Proofs"
+    layman_desc: >
+      Arkworks is a collection of Rust libraries for building
+      privacy-preserving applications using zero-knowledge proofs called
+      zkSNARKs.  It has efficient implementations of the underlying
+      cryptographic primitives like finite fields and elliptic curves.  It
+      also provides tools to encode computations as circuits that can be
+      proven using zkSNARKs while keeping inputs private.
+    tech_desc: >
+      Arkworks provides efficient implementations of components required for
+      zkSNARK applications.  It includes libraries for finite fields,
+      elliptic curves, R1CS constraints, and SNARK proving systems like
+      Groth16 and Marlin.  It defines interfaces for relations like R1CS,
+      and for building SNARK circuits using gadgets and subcircuits.
+    url: https://arkworks.rs/
+    code:
+      type: Project Github
+      url: https://github.com/arkworks-rs
+      date_last_commit: 2024-03-08
+    language: Rust
+    license: Apache-2.0
+    information:
+      - type: Video
+        title: Rust Ecosystem for zkSNARKs
+        url: https://www.youtube.com/watch?v=Bz2KN_h3VKM&t=90s
+    date_added: 2024-03-13
+    maturity: 3
