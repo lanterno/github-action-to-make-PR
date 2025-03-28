@@ -9,8 +9,9 @@ projects:
     type: Application
     description: Demo for the swiss E-ID ledger. It includes an issuer and a verifier.
     tech_desc: >
-      The issuer is a web application that allows to create a new identity and issue a credential. 
-      The verifier is a web application that allows to verify the credential.
+      The issuer is a web application that allows to create a new identity and
+      issue a credential.  The verifier is a web application that allows to
+      verify the credential.
     code:
       type: Lab GitHub
       url: https://github.com/c4dt/eid-demo

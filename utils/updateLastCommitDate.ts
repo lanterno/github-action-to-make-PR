@@ -56,6 +56,8 @@ async function getProjectLastCommitDate(gitRepo: string): Promise<string | null>
     const commitsURL = `https://api.github.com/repos/${owner}/${repo}/commits?per_page=1`;
 
     try {
+        console.log("All env vars:", process.env); // Check if GITHUB_TOKEN exists
+        console.log(`using github token: ${process.env.GITHUB_TOKEN}`);
         const response = await fetch(commitsURL, {
             headers: {
                 Accept: "application/vnd.github.v3+json",
