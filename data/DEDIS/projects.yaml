@@ -171,7 +171,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/dedis/kyber
-      date_last_commit: 2025-02-19
+      date_last_commit: 2025-04-14
     lines_of_code: 17000 / 4000
     contacts:
       - name: Pierluca Borsò
@@ -335,7 +335,7 @@ projects:
     code:
       type: Lab GitHub
       url: https://github.com/drand/drand
-      date_last_commit: 2025-02-19
+      date_last_commit: 2025-04-25
     url: https://drand.love
     doc: https://github.com/drand/drand#documentation
     lines_of_code: 1000 / 200
