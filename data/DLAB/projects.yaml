@@ -279,7 +279,7 @@ projects:
     code:
       type: Lab Github
       url: https://github.com/epfl-dlab/transformers-CFG
-      date_last_commit: 2025-03-29
+      date_last_commit: 2025-04-10
     language: Python
     license: MIT
     date_added: 2024-04-16
