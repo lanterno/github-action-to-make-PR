@@ -207,7 +207,7 @@ projects:
     code:
       type: Lab Github
       url: https://github.com/esl-epfl/x-heep
-      date_last_commit: 2025-03-24
+      date_last_commit: 2025-10-17
     language: C
     license: SOLDERPAD HARDWARE LICENSE, Apache-2.0
     date_added: 2024-02-20
